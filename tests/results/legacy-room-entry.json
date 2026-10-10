@@ -1,0 +1,930 @@
+{
+  "backend": "actual legacy Lua selector; no native RNG used",
+  "scope": "exhaustive 200 residue phases x 169 synthetic slots x uses 0,1,2",
+  "selected_run_seed": 4263037529,
+  "draws": 101570,
+  "warning": "Synthetic equal-weight grid. Not actual floor generation or real player routes.",
+  "results": {
+    "currentGrid": {
+      "neutral": 35,
+      "negative": 66,
+      "positive": 68
+    },
+    "rooms": {
+      "1": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "2": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "3": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "4": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "5": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "6": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "7": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "8": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "9": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "10": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "11": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "12": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "13": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "14": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "15": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "16": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "17": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "18": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "19": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "20": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "21": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "22": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "23": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "24": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "25": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "26": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "27": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "28": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "29": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "30": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "31": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "32": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "33": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "34": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "35": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "36": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "37": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "38": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "39": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "40": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "41": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "42": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "43": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "44": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "45": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "46": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "47": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "48": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "49": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "50": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "51": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "52": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "53": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "54": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "55": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "56": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "57": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "58": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "59": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "60": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "61": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "62": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "63": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "64": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "65": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "66": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "67": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "68": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "69": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "70": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "71": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "72": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "73": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "74": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "75": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "76": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "77": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "78": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "79": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "80": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "81": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "82": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "83": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "84": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "85": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "86": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "87": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "88": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "89": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "90": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "91": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "92": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "93": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "94": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "95": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "96": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "97": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "98": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "99": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "100": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "101": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "102": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "103": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "104": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "105": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "106": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "107": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "108": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "109": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "110": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "111": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "112": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "113": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "114": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "115": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "116": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "117": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "118": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "119": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "120": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "121": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "122": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "123": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "124": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "125": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "126": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "127": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "128": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "129": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "130": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "131": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "132": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "133": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "134": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "135": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "136": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "137": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "138": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "139": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "140": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "141": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "142": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "143": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "144": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "145": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "146": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "147": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "148": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "149": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "150": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "151": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "152": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "153": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "154": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "155": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "156": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "157": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "158": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "159": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "160": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "161": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "162": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "163": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "164": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "165": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "166": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "167": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "168": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      },
+      "0": {
+        "neutral": 40,
+        "negative": 80,
+        "positive": 80
+      }
+    },
+    "neighborPairs": 31200,
+    "room84": "positive",
+    "firstEqualsNeighborSecond": 31200,
+    "vertical": {
+      "neutral": {
+        "neutral": 0,
+        "negative": 6240,
+        "positive": 0
+      },
+      "negative": {
+        "neutral": 0,
+        "negative": 5928,
+        "positive": 6552
+      },
+      "positive": {
+        "neutral": 6240,
+        "negative": 312,
+        "positive": 5928
+      }
+    },
+    "horizontal": {
+      "neutral": {
+        "neutral": 936,
+        "negative": 5304,
+        "positive": 0
+      },
+      "negative": {
+        "neutral": 0,
+        "negative": 7176,
+        "positive": 5304
+      },
+      "positive": {
+        "neutral": 5304,
+        "negative": 0,
+        "positive": 7176
+      }
+    },
+    "currentGridPattern": {
+      "1": "PUUNNPPUNNNPP",
+      "2": "UNNNPPUNNNPPU",
+      "3": "NNPPPUNNPPPUN",
+      "4": "NPPPUNNPPUUNN",
+      "5": "PPUNNNPPUNNNP",
+      "6": "PUNNNPPUNNPPP",
+      "7": "UNNPPPUNNPPPU",
+      "8": "NNPPUUNNPPUUN",
+      "9": "NPPUNNNPPUNNN",
+      "10": "PPUNNNPPUNNPP",
+      "11": "PUNNPPPUNNPPP",
+      "12": "UNNPPUUNNPPUN",
+      "0": "PPPUNNPPUUNNP"
+    },
+    "uses": {
+      "0": {
+        "neutral": 6760,
+        "negative": 13520,
+        "positive": 13520
+      },
+      "1": {
+        "neutral": 6760,
+        "negative": 13520,
+        "positive": 13520
+      },
+      "2": {
+        "neutral": 6760,
+        "negative": 13520,
+        "positive": 13520
+      }
+    }
+  }
+}

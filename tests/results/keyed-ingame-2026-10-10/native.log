@@ -1,0 +1,1021 @@
+[MC ROOM TEST] BEGIN v3 backend=SplitMix64+Isaac.RNG runs=1000 seed=2067025391 grid=0..168 uses=0,1,2 stage=1 stageType=1
+[MC ROOM TEST] EXPECTED pct=40.000000/20.000000/40.000000 forced=None language=KR
+[MC ROOM TEST] Synthetic: all 169 slots have equal weight; these are NOT actual floor layouts or player routes.
+[MC ROOM TEST] keyed is the LIVE stateless room+counter selector. legacy and rng_sum are comparison baselines only.
+[MC ROOM TEST] Native rng_sum advances through uses 0,1,2. keyed calculates each use independently from the full context.
+[MC ROOM TEST] Z scores are descriptive IID screens: shared seeds, overlapping strata and deterministic grids are dependent; no multiple-testing certification.
+[MC ROOM TEST] PHRASE counts are conditional on type. TOTAL contains every first use once; strata overlap and must not be added together.
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=0 pattern=UNNPPUNNNPPUN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=1 pattern=NNPPUNNNPPUNN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=2 pattern=PPPUNNPPPUNNP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=3 pattern=PPUNNPPUUNNPP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=4 pattern=UUNNPPUNNNPPU (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=5 pattern=NNNPPUNNNPPUN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=6 pattern=NPPPUNNPPPUNN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=7 pattern=PPPUNNPPUUNNP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=8 pattern=PUNNNPPUNNNPP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=9 pattern=UNNNPPUNNPPPU (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=10 pattern=NNPPPUNNPPPUN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=11 pattern=NPPUUNNPPUUNN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=legacy seed=2067025391 row=12 pattern=PPUNNNPPUNNNP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=0 pattern=NPPNNPUPPNNUN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=1 pattern=PPNPUUPPPPNNP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=2 pattern=NNNNUUUPPNNUP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=3 pattern=PNNUUUPNNNUNP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=4 pattern=PPPNNNNUNPUPP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=5 pattern=PPNNUUPPPUPPN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=6 pattern=NUNNNPPUPNNUU (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=7 pattern=NUPPPPNUNNPNP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=8 pattern=PPPUUNUNNNNPP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=9 pattern=UUNNPPPUNNNPN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=10 pattern=NPPNPPUPPPPPU (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=11 pattern=UNNPNNPUNPUNP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=rng_sum seed=2067025391 row=12 pattern=UNPNNPPNPNPUN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=0 pattern=PNPNNNPNNUNNP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=1 pattern=PUNUPPNPPNNPN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=2 pattern=PUNUUNNPUUNPN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=3 pattern=NNUPNNPUNNPPU (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=4 pattern=UUPPNUNNNNNNN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=5 pattern=PNPPNNPPNNPPP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=6 pattern=NNNPPNUPNPNPP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=7 pattern=PPPUNPUNPPPPN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=8 pattern=PPPNNNPPPNPNN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=9 pattern=PNNPNNPUPPPPP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=10 pattern=UNPNPUNPNPPNN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=11 pattern=PUPPPPNUPNNNP (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] GRID method=keyed seed=2067025391 row=12 pattern=NNUPPPPPNPNPN (P=positive,U=neutral,N=negative)
+[MC ROOM TEST] PROGRESS runs=100/1000
+[MC ROOM TEST] PROGRESS runs=200/1000
+[MC ROOM TEST] PROGRESS runs=300/1000
+[MC ROOM TEST] PROGRESS runs=400/1000
+[MC ROOM TEST] PROGRESS runs=500/1000
+[MC ROOM TEST] PROGRESS runs=600/1000
+[MC ROOM TEST] PROGRESS runs=700/1000
+[MC ROOM TEST] PROGRESS runs=800/1000
+[MC ROOM TEST] PROGRESS runs=900/1000
+[MC ROOM TEST] PROGRESS runs=1000/1000
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=positive count=8449 withinType=12.498% text="물론."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=positive count=8452 withinType=12.503% text="확실해."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=positive count=8451 withinType=12.501% text="해도 돼."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=positive count=8448 withinType=12.497% text="좋아."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=positive count=8454 withinType=12.506% text="당연하지."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=positive count=8452 withinType=12.503% text="진행해."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=positive count=8444 withinType=12.491% text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=positive count=8451 withinType=12.501% text="소라고동을 따라."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=neutral count=8452 withinType=25.007% text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=neutral count=8447 withinType=24.992% text="불분명한 시기야."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=neutral count=8444 withinType=24.983% text="언젠가는 하겠지."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=neutral count=8456 withinType=25.018% text="다시 한 번 물어봐."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=negative count=8452 withinType=12.503% text="오늘은 절대 안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=negative count=8447 withinType=12.496% text="그것도 안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=negative count=8449 withinType=12.499% text="불가능해."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=negative count=8452 withinType=12.503% text="안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=negative count=8450 withinType=12.500% text="묻지도 마."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=negative count=8450 withinType=12.500% text="가만있어."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=negative count=8447 withinType=12.496% text="다 안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=legacy usage=0 type=negative count=8453 withinType=12.504% text="금지야."
+[MC ROOM TEST] TOTAL method=legacy usage=0 n=169000 counts=67601/33799/67600 pct=40.001/19.999/40.000 maxDeltaPP=0.001 typeMaxZ=0.01 textMaxZ=0.08 top="다시 한 번 물어봐." topCount=8456
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=positive count=8 withinType=12.121% text="물론."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=positive count=8 withinType=12.121% text="확실해."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=positive count=9 withinType=13.636% text="해도 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=positive count=9 withinType=13.636% text="좋아."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=positive count=8 withinType=12.121% text="당연하지."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=positive count=9 withinType=13.636% text="진행해."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=positive count=7 withinType=10.606% text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=positive count=8 withinType=12.121% text="소라고동을 따라."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=neutral count=7 withinType=20.588% text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=neutral count=8 withinType=23.529% text="불분명한 시기야."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=neutral count=9 withinType=26.471% text="언젠가는 하겠지."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=neutral count=10 withinType=29.412% text="다시 한 번 물어봐."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=negative count=8 withinType=11.594% text="오늘은 절대 안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=negative count=9 withinType=13.043% text="그것도 안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=negative count=8 withinType=11.594% text="불가능해."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=negative count=9 withinType=13.043% text="안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=negative count=8 withinType=11.594% text="묻지도 마."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=negative count=9 withinType=13.043% text="가만있어."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=negative count=9 withinType=13.043% text="다 안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=legacy type=negative count=9 withinType=13.043% text="금지야."
+[MC ROOM TEST] CURRENT_GRID method=legacy n=169 counts=66/34/69 pct=39.053/20.118/40.828 maxDeltaPP=0.947 typeMaxZ=0.25 textMaxZ=0.59 top="다시 한 번 물어봐." topCount=10
+[MC ROOM TEST] ADJACENT_SEEDS method=legacy n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.00 top="소라고동은 모든 걸 알아." topCount=50
+[MC ROOM TEST] SPECIAL_INDICES method=legacy n=13000 counts=5200/2600/5200 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.00 top="좋아." topCount=650
+[MC ROOM TEST] STRATUM method=legacy group=byUse bucket=0 n=169000 counts=67601/33799/67600 pct=40.001/19.999/40.000 maxDeltaPP=0.001 typeMaxZ=0.01 textMaxZ=0.08 top="다시 한 번 물어봐." topCount=8456
+[MC ROOM TEST] STRATUM method=legacy group=byUse bucket=1 n=169000 counts=67603/33798/67599 pct=40.002/19.999/39.999 maxDeltaPP=0.002 typeMaxZ=0.01 textMaxZ=0.04 top="확실해." topCount=8453
+[MC ROOM TEST] STRATUM method=legacy group=byUse bucket=2 n=169000 counts=67604/33796/67600 pct=40.002/19.998/40.000 maxDeltaPP=0.002 typeMaxZ=0.02 textMaxZ=0.08 top="확실해." topCount=8455
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=0 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.65 top="소라고동을 따라." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=1 n=1000 counts=398/202/400 pct=39.800/20.200/40.000 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=2 n=1000 counts=402/197/401 pct=40.200/19.700/40.100 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.70 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=3 n=1000 counts=401/198/401 pct=40.100/19.800/40.100 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="진행해." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=4 n=1000 counts=400/202/398 pct=40.000/20.200/39.800 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=5 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=6 n=1000 counts=401/198/401 pct=40.100/19.800/40.100 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="좋아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=7 n=1000 counts=399/199/402 pct=39.900/19.900/40.200 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.78 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=8 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.82 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=9 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.65 top="당연하지." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=10 n=1000 counts=401/201/398 pct=40.100/20.100/39.800 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.61 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=11 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.78 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=12 n=1000 counts=399/200/401 pct=39.900/20.000/40.100 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=13 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=14 n=1000 counts=402/199/399 pct=40.200/19.900/39.900 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.53 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=15 n=1000 counts=402/197/401 pct=40.200/19.700/40.100 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.53 top="확실해." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=16 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=17 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=18 n=1000 counts=399/200/401 pct=39.900/20.000/40.100 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="안 돼." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=19 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=20 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.70 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=21 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.44 top="나중에 다시 물어봐." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=22 n=1000 counts=401/202/397 pct=40.100/20.200/39.700 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.57 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=23 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=24 n=1000 counts=398/199/403 pct=39.800/19.900/40.300 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.70 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=25 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="다시 한 번 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=26 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.82 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=27 n=1000 counts=402/198/400 pct=40.200/19.800/40.000 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.45 top="물론." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=28 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.49 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=29 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="해도 돼." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=30 n=1000 counts=398/201/401 pct=39.800/20.100/40.100 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.86 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=31 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.45 top="좋아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=32 n=1000 counts=401/197/402 pct=40.100/19.700/40.200 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.78 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=33 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=34 n=1000 counts=399/203/398 pct=39.900/20.300/39.800 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.61 top="당연하지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=35 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.47 top="물론." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=36 n=1000 counts=399/198/403 pct=39.900/19.800/40.300 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.74 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=37 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="해도 돼." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=38 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="소라고동을 따라." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=39 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.49 top="좋아." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=40 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="확실해." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=41 n=1000 counts=399/200/401 pct=39.900/20.000/40.100 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.44 top="진행해." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=42 n=1000 counts=397/203/400 pct=39.700/20.300/40.000 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.61 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=43 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.49 top="물론." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=44 n=1000 counts=403/197/400 pct=40.300/19.700/40.000 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.62 top="소라고동은 모든 걸 알아." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=45 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=46 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=47 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.65 top="좋아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=48 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.78 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=49 n=1000 counts=399/199/402 pct=39.900/19.900/40.200 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.53 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=50 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="다시 한 번 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=51 n=1000 counts=400/202/398 pct=40.000/20.200/39.800 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=52 n=1000 counts=402/199/399 pct=40.200/19.900/39.900 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.78 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=53 n=1000 counts=399/198/403 pct=39.900/19.800/40.300 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.57 top="진행해." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=54 n=1000 counts=398/202/400 pct=39.800/20.200/40.000 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=55 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.82 top="다시 한 번 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=56 n=1000 counts=403/198/399 pct=40.300/19.800/39.900 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.57 top="물론." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=57 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.78 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=58 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=59 n=1000 counts=399/200/401 pct=39.900/20.000/40.100 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=60 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=61 n=1000 counts=401/197/402 pct=40.100/19.700/40.200 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.70 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=62 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.65 top="해도 돼." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=63 n=1000 counts=400/202/398 pct=40.000/20.200/39.800 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=64 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=65 n=1000 counts=400/197/403 pct=40.000/19.700/40.300 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.62 top="그것도 안 돼." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=66 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=67 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=68 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.44 top="불분명한 시기야." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=69 n=1000 counts=402/199/399 pct=40.200/19.900/39.900 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.53 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=70 n=1000 counts=399/200/401 pct=39.900/20.000/40.100 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.49 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=71 n=1000 counts=398/201/401 pct=39.800/20.100/40.100 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.69 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=72 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=73 n=1000 counts=403/197/400 pct=40.300/19.700/40.000 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.78 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=74 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.47 top="언젠가는 하겠지." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=75 n=1000 counts=400/203/397 pct=40.000/20.300/39.700 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.61 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=76 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="다시 한 번 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=77 n=1000 counts=401/198/401 pct=40.100/19.800/40.100 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.74 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=78 n=1000 counts=399/199/402 pct=39.900/19.900/40.200 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.45 top="다 안 돼." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=79 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.82 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=80 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="소라고동을 따라." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=81 n=1000 counts=402/200/398 pct=40.200/20.000/39.800 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.49 top="물론." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=82 n=1000 counts=400/198/402 pct=40.000/19.800/40.200 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.45 top="소라고동은 모든 걸 알아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=83 n=1000 counts=398/201/401 pct=39.800/20.100/40.100 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.86 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=84 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="소라고동을 따라." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=85 n=1000 counts=403/198/399 pct=40.300/19.800/39.900 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.74 top="좋아." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=86 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=87 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="해도 돼." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=88 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.44 top="소라고동을 따라." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=89 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=90 n=1000 counts=401/198/401 pct=40.100/19.800/40.100 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.41 top="소라고동은 모든 걸 알아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=91 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="진행해." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=92 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=93 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="다시 한 번 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=94 n=1000 counts=401/197/402 pct=40.100/19.700/40.200 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.53 top="확실해." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=95 n=1000 counts=397/201/402 pct=39.700/20.100/40.200 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.61 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=96 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=97 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=98 n=1000 counts=402/199/399 pct=40.200/19.900/39.900 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.78 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=99 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=100 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.65 top="당연하지." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=101 n=1000 counts=398/202/400 pct=39.800/20.200/40.000 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=102 n=1000 counts=402/197/401 pct=40.200/19.700/40.100 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.70 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=103 n=1000 counts=401/198/401 pct=40.100/19.800/40.100 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="해도 돼." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=104 n=1000 counts=400/202/398 pct=40.000/20.200/39.800 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=105 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=106 n=1000 counts=401/198/401 pct=40.100/19.800/40.100 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="물론." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=107 n=1000 counts=399/199/402 pct=39.900/19.900/40.200 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.78 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=108 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.82 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=109 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.65 top="소라고동을 따라." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=110 n=1000 counts=401/201/398 pct=40.100/20.100/39.800 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.61 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=111 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.78 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=112 n=1000 counts=399/200/401 pct=39.900/20.000/40.100 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=113 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=114 n=1000 counts=402/199/399 pct=40.200/19.900/39.900 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.53 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=115 n=1000 counts=402/197/401 pct=40.200/19.700/40.100 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.53 top="소라고동은 모든 걸 알아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=116 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=117 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=118 n=1000 counts=399/200/401 pct=39.900/20.000/40.100 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="오늘은 절대 안 돼." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=119 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=120 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.70 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=121 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.44 top="나중에 다시 물어봐." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=122 n=1000 counts=401/202/397 pct=40.100/20.200/39.700 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.57 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=123 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="불분명한 시기야." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=124 n=1000 counts=398/199/403 pct=39.800/19.900/40.300 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.70 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=125 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="다시 한 번 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=126 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.82 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=127 n=1000 counts=402/198/400 pct=40.200/19.800/40.000 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.45 top="좋아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=128 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.49 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=129 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="진행해." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=130 n=1000 counts=398/201/401 pct=39.800/20.100/40.100 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.86 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=131 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.45 top="물론." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=132 n=1000 counts=401/197/402 pct=40.100/19.700/40.200 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.78 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=133 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=134 n=1000 counts=399/203/398 pct=39.900/20.300/39.800 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.61 top="소라고동을 따라." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=135 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.47 top="좋아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=136 n=1000 counts=399/198/403 pct=39.900/19.800/40.300 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.74 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=137 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="해도 돼." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=138 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="당연하지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=139 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.49 top="물론." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=140 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="소라고동은 모든 걸 알아." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=141 n=1000 counts=399/200/401 pct=39.900/20.000/40.100 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.44 top="해도 돼." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=142 n=1000 counts=397/203/400 pct=39.700/20.300/40.000 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.61 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=143 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.49 top="좋아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=144 n=1000 counts=403/197/400 pct=40.300/19.700/40.000 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.62 top="확실해." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=145 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=146 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=147 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.65 top="물론." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=148 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.78 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=149 n=1000 counts=399/199/402 pct=39.900/19.900/40.200 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.53 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=150 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="다시 한 번 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=151 n=1000 counts=400/202/398 pct=40.000/20.200/39.800 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=152 n=1000 counts=402/199/399 pct=40.200/19.900/39.900 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=0.78 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=153 n=1000 counts=399/198/403 pct=39.900/19.800/40.300 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.57 top="해도 돼." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=154 n=1000 counts=398/202/400 pct=39.800/20.200/40.000 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=155 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.82 top="다시 한 번 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=156 n=1000 counts=403/198/399 pct=40.300/19.800/39.900 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=0.57 top="좋아." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=157 n=1000 counts=400/199/401 pct=40.000/19.900/40.100 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.78 top="언젠가는 하겠지." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=158 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.89 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=159 n=1000 counts=399/200/401 pct=39.900/20.000/40.100 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.65 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=160 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=161 n=1000 counts=401/197/402 pct=40.100/19.700/40.200 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.70 top="언젠가는 하겠지." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=162 n=1000 counts=400/200/400 pct=40.000/20.000/40.000 maxDeltaPP=0.000 typeMaxZ=0.00 textMaxZ=0.65 top="진행해." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=163 n=1000 counts=400/202/398 pct=40.000/20.200/39.800 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=0.57 top="다시 한 번 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=164 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="불분명한 시기야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=165 n=1000 counts=400/197/403 pct=40.000/19.700/40.300 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=0.62 top="금지야." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=166 n=1000 counts=399/201/400 pct=39.900/20.100/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.53 top="나중에 다시 물어봐." topCount=53
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=167 n=1000 counts=400/201/399 pct=40.000/20.100/39.900 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=0.61 top="나중에 다시 물어봐." topCount=54
+[MC ROOM TEST] STRATUM method=legacy group=byRoom bucket=168 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=0.44 top="불분명한 시기야." topCount=52
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=0 n=13000 counts=5200/2598/5202 pct=40.000/19.985/40.015 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.13 top="진행해." topCount=653
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=1 n=13000 counts=5200/2602/5198 pct=40.000/20.015/39.985 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.13 top="좋아." topCount=652
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=2 n=13000 counts=5201/2599/5200 pct=40.008/19.992/40.000 maxDeltaPP=0.008 typeMaxZ=0.02 textMaxZ=0.15 top="다시 한 번 물어봐." topCount=653
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=3 n=13000 counts=5199/2602/5199 pct=39.992/20.015/39.992 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.16 top="다시 한 번 물어봐." topCount=653
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=4 n=13000 counts=5201/2599/5200 pct=40.008/19.992/40.000 maxDeltaPP=0.008 typeMaxZ=0.02 textMaxZ=0.17 top="오늘은 절대 안 돼." topCount=654
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=5 n=13000 counts=5201/2600/5199 pct=40.008/20.000/39.992 maxDeltaPP=0.008 typeMaxZ=0.02 textMaxZ=0.14 top="불분명한 시기야." topCount=653
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=6 n=13000 counts=5199/2599/5202 pct=39.992/19.992/40.015 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.17 top="확실해." topCount=654
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=7 n=13000 counts=5200/2598/5202 pct=40.000/19.985/40.015 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.12 top="금지야." topCount=653
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=8 n=13000 counts=5202/2600/5198 pct=40.015/20.000/39.985 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.14 top="가만있어." topCount=653
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=9 n=13000 counts=5200/2602/5198 pct=40.000/20.015/39.985 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.13 top="해도 돼." topCount=653
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=10 n=13000 counts=5196/2602/5202 pct=39.969/20.015/40.015 maxDeltaPP=0.031 typeMaxZ=0.07 textMaxZ=0.11 top="다시 한 번 물어봐." topCount=653
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=11 n=13000 counts=5200/2599/5201 pct=40.000/19.992/40.008 maxDeltaPP=0.008 typeMaxZ=0.02 textMaxZ=0.16 top="안 돼." topCount=654
+[MC ROOM TEST] STRATUM method=legacy group=byRow bucket=12 n=13000 counts=5202/2599/5199 pct=40.015/19.992/39.992 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.08 top="좋아." topCount=652
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=0 n=13000 counts=5203/2599/5198 pct=40.023/19.992/39.985 maxDeltaPP=0.023 typeMaxZ=0.05 textMaxZ=0.55 top="다시 한 번 물어봐." topCount=662
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=1 n=13000 counts=5203/2596/5201 pct=40.023/19.969/40.008 maxDeltaPP=0.031 typeMaxZ=0.09 textMaxZ=0.41 top="불분명한 시기야." topCount=658
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=2 n=13000 counts=5200/2596/5204 pct=40.000/19.969/40.031 maxDeltaPP=0.031 typeMaxZ=0.09 textMaxZ=0.54 top="언젠가는 하겠지." topCount=661
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=3 n=13000 counts=5198/2602/5200 pct=39.985/20.015/40.000 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.61 top="나중에 다시 물어봐." topCount=664
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=4 n=13000 counts=5198/2606/5196 pct=39.985/20.046/39.969 maxDeltaPP=0.046 typeMaxZ=0.13 textMaxZ=0.38 top="다시 한 번 물어봐." topCount=660
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=5 n=13000 counts=5201/2596/5203 pct=40.008/19.969/40.023 maxDeltaPP=0.031 typeMaxZ=0.09 textMaxZ=0.45 top="불분명한 시기야." topCount=659
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=6 n=13000 counts=5198/2596/5206 pct=39.985/19.969/40.046 maxDeltaPP=0.046 typeMaxZ=0.11 textMaxZ=0.63 top="언젠가는 하겠지." topCount=663
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=7 n=13000 counts=5198/2602/5200 pct=39.985/20.015/40.000 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.38 top="언젠가는 하겠지." topCount=658
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=8 n=13000 counts=5200/2607/5193 pct=40.000/20.054/39.946 maxDeltaPP=0.054 typeMaxZ=0.15 textMaxZ=0.42 top="다시 한 번 물어봐." topCount=661
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=9 n=13000 counts=5205/2596/5199 pct=40.038/19.969/39.992 maxDeltaPP=0.038 typeMaxZ=0.09 textMaxZ=0.68 top="불분명한 시기야." topCount=664
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=10 n=13000 counts=5200/2598/5202 pct=40.000/19.985/40.015 maxDeltaPP=0.015 typeMaxZ=0.04 textMaxZ=0.39 top="불분명한 시기야." topCount=658
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=11 n=13000 counts=5197/2601/5202 pct=39.977/20.008/40.015 maxDeltaPP=0.023 typeMaxZ=0.05 textMaxZ=0.33 top="언젠가는 하겠지." topCount=655
+[MC ROOM TEST] STRATUM method=legacy group=byColumn bucket=12 n=13000 counts=5200/2604/5196 pct=40.000/20.031/39.969 maxDeltaPP=0.031 typeMaxZ=0.09 textMaxZ=0.54 top="다시 한 번 물어봐." topCount=663
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=1 n=14196 counts=5678/2839/5679 pct=39.997/19.999/40.004 maxDeltaPP=0.004 typeMaxZ=0.01 textMaxZ=0.21 top="해도 돼." topCount=715
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=2 n=14196 counts=5679/2839/5678 pct=40.004/19.999/39.997 maxDeltaPP=0.004 typeMaxZ=0.01 textMaxZ=0.23 top="다 안 돼." topCount=714
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=3 n=14196 counts=5676/2841/5679 pct=39.983/20.013/40.004 maxDeltaPP=0.017 typeMaxZ=0.04 textMaxZ=0.14 top="소라고동을 따라." topCount=713
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=4 n=14196 counts=5681/2837/5678 pct=40.018/19.985/39.997 maxDeltaPP=0.018 typeMaxZ=0.05 textMaxZ=0.17 top="소라고동은 모든 걸 알아." topCount=713
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=5 n=14027 counts=5612/2802/5613 pct=40.009/19.976/40.016 maxDeltaPP=0.024 typeMaxZ=0.07 textMaxZ=0.15 top="안 돼." topCount=704
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=6 n=14027 counts=5608/2809/5610 pct=39.980/20.026/39.994 maxDeltaPP=0.026 typeMaxZ=0.08 textMaxZ=0.16 top="진행해." topCount=705
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=7 n=14027 counts=5610/2807/5610 pct=39.994/20.011/39.994 maxDeltaPP=0.011 typeMaxZ=0.03 textMaxZ=0.11 top="불가능해." topCount=704
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=8 n=14027 counts=5613/2804/5610 pct=40.016/19.990/39.994 maxDeltaPP=0.016 typeMaxZ=0.04 textMaxZ=0.10 top="진행해." topCount=704
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=9 n=14027 counts=5613/2801/5613 pct=40.016/19.969/40.016 maxDeltaPP=0.031 typeMaxZ=0.09 textMaxZ=0.18 top="안 돼." topCount=706
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=10 n=14027 counts=5611/2806/5610 pct=40.001/20.004/39.994 maxDeltaPP=0.006 typeMaxZ=0.01 textMaxZ=0.19 top="당연하지." topCount=706
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=11 n=14027 counts=5608/2808/5611 pct=39.980/20.019/40.001 maxDeltaPP=0.020 typeMaxZ=0.05 textMaxZ=0.12 top="확실해." topCount=704
+[MC ROOM TEST] STRATUM method=legacy group=byStage bucket=12 n=14027 counts=5612/2806/5609 pct=40.009/20.004/39.987 maxDeltaPP=0.013 typeMaxZ=0.03 textMaxZ=0.16 top="묻지도 마." topCount=705
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=0 n=16900 counts=6757/3384/6759 pct=39.982/20.024/39.994 maxDeltaPP=0.024 typeMaxZ=0.08 textMaxZ=0.31 top="당연하지." topCount=853
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=1 n=16900 counts=6762/3381/6757 pct=40.012/20.006/39.982 maxDeltaPP=0.018 typeMaxZ=0.05 textMaxZ=0.31 top="가만있어." topCount=853
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=2 n=16900 counts=6755/3385/6760 pct=39.970/20.030/40.000 maxDeltaPP=0.030 typeMaxZ=0.10 textMaxZ=0.33 top="오늘은 절대 안 돼." topCount=854
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=3 n=16731 counts=6695/3345/6691 pct=40.016/19.993/39.992 maxDeltaPP=0.016 typeMaxZ=0.04 textMaxZ=0.32 top="해도 돼." topCount=845
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=4 n=16900 counts=6755/3380/6765 pct=39.970/20.000/40.030 maxDeltaPP=0.030 typeMaxZ=0.08 textMaxZ=0.32 top="확실해." topCount=853
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=5 n=16900 counts=6767/3372/6761 pct=40.041/19.953/40.006 maxDeltaPP=0.047 typeMaxZ=0.15 textMaxZ=0.30 top="진행해." topCount=854
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=6 n=16900 counts=6758/3381/6761 pct=39.988/20.006/40.006 maxDeltaPP=0.012 typeMaxZ=0.03 textMaxZ=0.33 top="다 안 돼." topCount=854
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=7 n=16900 counts=6764/3378/6758 pct=40.024/19.988/39.988 maxDeltaPP=0.024 typeMaxZ=0.06 textMaxZ=0.28 top="좋아." topCount=853
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=8 n=17069 counts=6824/3416/6829 pct=39.979/20.013/40.008 maxDeltaPP=0.021 typeMaxZ=0.06 textMaxZ=0.31 top="불가능해." topCount=862
+[MC ROOM TEST] STRATUM method=legacy group=bySeedResidue bucket=9 n=16900 counts=6764/3377/6759 pct=40.024/19.982/39.994 maxDeltaPP=0.024 typeMaxZ=0.06 textMaxZ=0.39 top="나중에 다시 물어봐." topCount=854
+[MC ROOM TEST] CONDITIONAL method=legacy relation=horizontal given bucket=negative n=62404 counts=26495/0/35909 pct=42.457/0.000/57.543 maxDeltaPP=20.000 typeMaxZ=124.90 textMaxZ=10.91 top="오늘은 절대 안 돼." topCount=4693
+[MC ROOM TEST] CONDITIONAL method=legacy relation=horizontal given bucket=neutral n=31195 counts=0/4702/26493 pct=0.000/15.073/84.927 maxDeltaPP=44.927 typeMaxZ=161.97 textMaxZ=39.59 top="금지야." topCount=3898
+[MC ROOM TEST] CONDITIONAL method=legacy relation=horizontal given bucket=positive n=62401 counts=35903/26498/0 pct=57.536/42.464/0.000 maxDeltaPP=40.000 typeMaxZ=203.96 textMaxZ=16.71 top="나중에 다시 물어봐." topCount=7802
+[MC ROOM TEST] CONDITIONAL method=legacy relation=vertical given bucket=negative n=62401 counts=32764/0/29637 pct=52.506/0.000/47.494 maxDeltaPP=20.000 typeMaxZ=124.90 textMaxZ=10.34 top="물론." topCount=4683
+[MC ROOM TEST] CONDITIONAL method=legacy relation=vertical given bucket=neutral n=31200 counts=0/0/31200 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=216.33 textMaxZ=0.07 top="그것도 안 돼." topCount=3904
+[MC ROOM TEST] CONDITIONAL method=legacy relation=vertical given bucket=positive n=62399 counts=29637/31201/1561 pct=47.496/50.002/2.502 maxDeltaPP=37.498 typeMaxZ=191.20 textMaxZ=45.14 top="다시 한 번 물어봐." topCount=7807
+[MC ROOM TEST] CONDITIONAL method=legacy relation=second_use given bucket=negative n=67600 counts=28724/0/38876 pct=42.491/0.000/57.509 maxDeltaPP=20.000 typeMaxZ=130.00 textMaxZ=11.34 top="오늘은 절대 안 돼." topCount=5076
+[MC ROOM TEST] CONDITIONAL method=legacy relation=second_use given bucket=neutral n=33799 counts=0/5076/28723 pct=0.000/15.018/84.982 maxDeltaPP=44.982 typeMaxZ=168.80 textMaxZ=41.13 top="금지야." topCount=4230
+[MC ROOM TEST] CONDITIONAL method=legacy relation=second_use given bucket=positive n=67601 counts=38879/28722/0 pct=57.512/42.488/0.000 maxDeltaPP=40.000 typeMaxZ=212.29 textMaxZ=17.26 top="나중에 다시 물어봐." topCount=8447
+[MC ROOM TEST] PAIR method=legacy relation=changed_stage n=169000 typeMatches=169000 textMatches=169000 typePct=100.000 textPct=100.000
+[MC ROOM TEST] PAIR method=legacy relation=changed_stageType n=169000 typeMatches=169000 textMatches=169000 typePct=100.000 textPct=100.000
+[MC ROOM TEST] PAIR method=legacy relation=changed_dimension n=169000 typeMatches=169000 textMatches=169000 typePct=100.000 textPct=100.000
+[MC ROOM TEST] PAIR method=legacy relation=right_first_vs_left_second n=156000 typeMatches=156000 textMatches=156000 typePct=100.000 textPct=100.000
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=positive count=8360 withinType=12.352% text="해도 돼."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=positive count=8479 withinType=12.528% text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=positive count=8463 withinType=12.504% text="소라고동을 따라."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=positive count=8588 withinType=12.689% text="확실해."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=positive count=8290 withinType=12.248% text="당연하지."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=positive count=8491 withinType=12.545% text="진행해."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=positive count=8445 withinType=12.477% text="물론."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=positive count=8567 withinType=12.658% text="좋아."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=neutral count=8535 withinType=25.245% text="언젠가는 하겠지."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=neutral count=8545 withinType=25.274% text="불분명한 시기야."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=neutral count=8331 withinType=24.641% text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=neutral count=8398 withinType=24.840% text="다시 한 번 물어봐."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=negative count=8453 withinType=12.521% text="오늘은 절대 안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=negative count=8471 withinType=12.548% text="묻지도 마."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=negative count=8540 withinType=12.650% text="그것도 안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=negative count=8504 withinType=12.597% text="안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=negative count=8376 withinType=12.407% text="불가능해."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=negative count=8390 withinType=12.428% text="가만있어."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=negative count=8412 withinType=12.461% text="다 안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=rng_sum usage=0 type=negative count=8362 withinType=12.387% text="금지야."
+[MC ROOM TEST] TOTAL method=rng_sum usage=0 n=169000 counts=67683/33809/67508 pct=40.049/20.005/39.946 maxDeltaPP=0.054 typeMaxZ=0.46 textMaxZ=1.98 top="확실해." topCount=8588
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=positive count=6 withinType=8.824% text="해도 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=positive count=11 withinType=16.176% text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=positive count=9 withinType=13.235% text="소라고동을 따라."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=positive count=9 withinType=13.235% text="확실해."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=positive count=7 withinType=10.294% text="당연하지."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=positive count=9 withinType=13.235% text="진행해."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=positive count=8 withinType=11.765% text="물론."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=positive count=9 withinType=13.235% text="좋아."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=neutral count=9 withinType=25.000% text="언젠가는 하겠지."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=neutral count=8 withinType=22.222% text="불분명한 시기야."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=neutral count=9 withinType=25.000% text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=neutral count=10 withinType=27.778% text="다시 한 번 물어봐."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=negative count=7 withinType=10.769% text="오늘은 절대 안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=negative count=9 withinType=13.846% text="묻지도 마."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=negative count=9 withinType=13.846% text="그것도 안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=negative count=10 withinType=15.385% text="안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=negative count=5 withinType=7.692% text="불가능해."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=negative count=10 withinType=15.385% text="가만있어."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=negative count=7 withinType=10.769% text="다 안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=rng_sum type=negative count=8 withinType=12.308% text="금지야."
+[MC ROOM TEST] CURRENT_GRID method=rng_sum n=169 counts=68/36/65 pct=40.237/21.302/38.462 maxDeltaPP=1.538 typeMaxZ=0.42 textMaxZ=1.17 top="소라고동은 모든 걸 알아." topCount=11
+[MC ROOM TEST] ADJACENT_SEEDS method=rng_sum n=1000 counts=393/205/402 pct=39.300/20.500/40.200 maxDeltaPP=0.700 typeMaxZ=0.45 textMaxZ=1.55 top="가만있어." topCount=60
+[MC ROOM TEST] SPECIAL_INDICES method=rng_sum n=13000 counts=5129/2616/5255 pct=39.454/20.123/40.423 maxDeltaPP=0.546 typeMaxZ=1.27 textMaxZ=6.42 top="진행해." topCount=779
+[MC ROOM TEST] STRATUM method=rng_sum group=byUse bucket=0 n=169000 counts=67683/33809/67508 pct=40.049/20.005/39.946 maxDeltaPP=0.054 typeMaxZ=0.46 textMaxZ=1.98 top="확실해." topCount=8588
+[MC ROOM TEST] STRATUM method=rng_sum group=byUse bucket=1 n=169000 counts=67532/33994/67474 pct=39.960/20.115/39.925 maxDeltaPP=0.115 typeMaxZ=1.18 textMaxZ=1.19 top="물론." topCount=8531
+[MC ROOM TEST] STRATUM method=rng_sum group=byUse bucket=2 n=169000 counts=67892/33782/67326 pct=40.173/19.989/39.838 maxDeltaPP=0.173 typeMaxZ=1.45 textMaxZ=1.55 top="확실해." topCount=8569
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=0 n=1000 counts=425/182/393 pct=42.500/18.200/39.300 maxDeltaPP=2.500 typeMaxZ=1.61 textMaxZ=1.85 top="묻지도 마." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=1 n=1000 counts=386/187/427 pct=38.600/18.700/42.700 maxDeltaPP=2.700 typeMaxZ=1.74 textMaxZ=2.10 top="안 돼." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=2 n=1000 counts=378/215/407 pct=37.800/21.500/40.700 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=2.29 top="금지야." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=3 n=1000 counts=376/221/403 pct=37.600/22.100/40.300 maxDeltaPP=2.400 typeMaxZ=1.66 textMaxZ=1.98 top="불분명한 시기야." topCount=68
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=4 n=1000 counts=401/196/403 pct=40.100/19.600/40.300 maxDeltaPP=0.400 typeMaxZ=0.32 textMaxZ=2.40 top="해도 돼." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=5 n=1000 counts=396/195/409 pct=39.600/19.500/40.900 maxDeltaPP=0.900 typeMaxZ=0.58 textMaxZ=2.22 top="불가능해." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=6 n=1000 counts=414/201/385 pct=41.400/20.100/38.500 maxDeltaPP=1.500 typeMaxZ=0.97 textMaxZ=2.33 top="소라고동은 모든 걸 알아." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=7 n=1000 counts=378/194/428 pct=37.800/19.400/42.800 maxDeltaPP=2.800 typeMaxZ=1.81 textMaxZ=2.99 top="다 안 돼." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=8 n=1000 counts=381/204/415 pct=38.100/20.400/41.500 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=1.65 top="가만있어." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=9 n=1000 counts=383/204/413 pct=38.300/20.400/41.300 maxDeltaPP=1.700 typeMaxZ=1.10 textMaxZ=1.69 top="그것도 안 돼." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=10 n=1000 counts=383/191/426 pct=38.300/19.100/42.600 maxDeltaPP=2.600 typeMaxZ=1.68 textMaxZ=2.18 top="물론." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=11 n=1000 counts=378/222/400 pct=37.800/22.200/40.000 maxDeltaPP=2.200 typeMaxZ=1.74 textMaxZ=1.98 top="나중에 다시 물어봐." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=12 n=1000 counts=386/206/408 pct=38.600/20.600/40.800 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=2.58 top="당연하지." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=13 n=1000 counts=408/184/408 pct=40.800/18.400/40.800 maxDeltaPP=1.600 typeMaxZ=1.26 textMaxZ=2.10 top="좋아." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=14 n=1000 counts=394/216/390 pct=39.400/21.600/39.000 maxDeltaPP=1.600 typeMaxZ=1.26 textMaxZ=1.33 top="언젠가는 하겠지." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=15 n=1000 counts=400/195/405 pct=40.000/19.500/40.500 maxDeltaPP=0.500 typeMaxZ=0.40 textMaxZ=3.36 top="오늘은 절대 안 돼." topCount=73
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=16 n=1000 counts=390/197/413 pct=39.000/19.700/41.300 maxDeltaPP=1.300 typeMaxZ=0.84 textMaxZ=1.95 top="해도 돼." topCount=56
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=17 n=1000 counts=408/187/405 pct=40.800/18.700/40.500 maxDeltaPP=1.300 typeMaxZ=1.03 textMaxZ=1.95 top="진행해." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=18 n=1000 counts=406/188/406 pct=40.600/18.800/40.600 maxDeltaPP=1.200 typeMaxZ=0.95 textMaxZ=2.14 top="금지야." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=19 n=1000 counts=410/197/393 pct=41.000/19.700/39.300 maxDeltaPP=1.000 typeMaxZ=0.65 textMaxZ=1.66 top="좋아." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=20 n=1000 counts=413/198/389 pct=41.300/19.800/38.900 maxDeltaPP=1.300 typeMaxZ=0.84 textMaxZ=2.73 top="확실해." topCount=70
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=21 n=1000 counts=415/206/379 pct=41.500/20.600/37.900 maxDeltaPP=2.100 typeMaxZ=1.36 textMaxZ=1.53 top="확실해." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=22 n=1000 counts=392/214/394 pct=39.200/21.400/39.400 maxDeltaPP=1.400 typeMaxZ=1.11 textMaxZ=1.82 top="다시 한 번 물어봐." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=23 n=1000 counts=397/221/382 pct=39.700/22.100/38.200 maxDeltaPP=2.100 typeMaxZ=1.66 textMaxZ=2.52 top="언젠가는 하겠지." topCount=67
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=24 n=1000 counts=410/189/401 pct=41.000/18.900/40.100 maxDeltaPP=1.100 typeMaxZ=0.87 textMaxZ=1.97 top="소라고동은 모든 걸 알아." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=25 n=1000 counts=392/190/418 pct=39.200/19.000/41.800 maxDeltaPP=1.800 typeMaxZ=1.16 textMaxZ=3.05 top="물론." topCount=69
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=26 n=1000 counts=394/207/399 pct=39.400/20.700/39.900 maxDeltaPP=0.700 typeMaxZ=0.55 textMaxZ=1.33 top="확실해." topCount=58
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=27 n=1000 counts=387/199/414 pct=38.700/19.900/41.400 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=1.29 top="금지야." topCount=58
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=28 n=1000 counts=393/218/389 pct=39.300/21.800/38.900 maxDeltaPP=1.800 typeMaxZ=1.42 textMaxZ=1.74 top="불분명한 시기야." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=29 n=1000 counts=391/210/399 pct=39.100/21.000/39.900 maxDeltaPP=1.000 typeMaxZ=0.79 textMaxZ=1.85 top="좋아." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=30 n=1000 counts=379/226/395 pct=37.900/22.600/39.500 maxDeltaPP=2.600 typeMaxZ=2.06 textMaxZ=2.12 top="불분명한 시기야." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=31 n=1000 counts=381/205/414 pct=38.100/20.500/41.400 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=1.92 top="묻지도 마." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=32 n=1000 counts=416/188/396 pct=41.600/18.800/39.600 maxDeltaPP=1.600 typeMaxZ=1.03 textMaxZ=1.90 top="불가능해." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=33 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=2.12 top="가만있어." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=34 n=1000 counts=388/203/409 pct=38.800/20.300/40.900 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=1.30 top="당연하지." topCount=57
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=35 n=1000 counts=399/209/392 pct=39.900/20.900/39.200 maxDeltaPP=0.900 typeMaxZ=0.71 textMaxZ=2.75 top="안 돼." topCount=67
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=36 n=1000 counts=410/218/372 pct=41.000/21.800/37.200 maxDeltaPP=2.800 typeMaxZ=1.81 textMaxZ=2.13 top="확실해." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=37 n=1000 counts=413/208/379 pct=41.300/20.800/37.900 maxDeltaPP=2.100 typeMaxZ=1.36 textMaxZ=2.03 top="확실해." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=38 n=1000 counts=429/189/382 pct=42.900/18.900/38.200 maxDeltaPP=2.900 typeMaxZ=1.87 textMaxZ=2.20 top="해도 돼." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=39 n=1000 counts=413/177/410 pct=41.300/17.700/41.000 maxDeltaPP=2.300 typeMaxZ=1.82 textMaxZ=1.88 top="오늘은 절대 안 돼." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=40 n=1000 counts=385/197/418 pct=38.500/19.700/41.800 maxDeltaPP=1.800 typeMaxZ=1.16 textMaxZ=1.98 top="그것도 안 돼." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=41 n=1000 counts=407/199/394 pct=40.700/19.900/39.400 maxDeltaPP=0.700 typeMaxZ=0.45 textMaxZ=2.17 top="물론." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=42 n=1000 counts=365/188/447 pct=36.500/18.800/44.700 maxDeltaPP=4.700 typeMaxZ=3.03 textMaxZ=1.37 top="오늘은 절대 안 돼." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=43 n=1000 counts=380/202/418 pct=38.000/20.200/41.800 maxDeltaPP=2.000 typeMaxZ=1.29 textMaxZ=1.37 top="가만있어." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=44 n=1000 counts=384/194/422 pct=38.400/19.400/42.200 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=1.85 top="안 돼." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=45 n=1000 counts=370/209/421 pct=37.000/20.900/42.100 maxDeltaPP=3.000 typeMaxZ=1.94 textMaxZ=1.88 top="다시 한 번 물어봐." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=46 n=1000 counts=396/213/391 pct=39.600/21.300/39.100 maxDeltaPP=1.300 typeMaxZ=1.03 textMaxZ=2.05 top="확실해." topCount=58
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=47 n=1000 counts=429/180/391 pct=42.900/18.000/39.100 maxDeltaPP=2.900 typeMaxZ=1.87 textMaxZ=1.95 top="당연하지." topCount=67
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=48 n=1000 counts=428/209/363 pct=42.800/20.900/36.300 maxDeltaPP=3.700 typeMaxZ=2.39 textMaxZ=1.83 top="확실해." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=49 n=1000 counts=404/183/413 pct=40.400/18.300/41.300 maxDeltaPP=1.700 typeMaxZ=1.34 textMaxZ=1.84 top="불가능해." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=50 n=1000 counts=434/201/365 pct=43.400/20.100/36.500 maxDeltaPP=3.500 typeMaxZ=2.26 textMaxZ=1.92 top="진행해." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=51 n=1000 counts=414/204/382 pct=41.400/20.400/38.200 maxDeltaPP=1.800 typeMaxZ=1.16 textMaxZ=1.51 top="당연하지." topCount=57
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=52 n=1000 counts=399/211/390 pct=39.900/21.100/39.000 maxDeltaPP=1.100 typeMaxZ=0.87 textMaxZ=2.18 top="다 안 돼." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=53 n=1000 counts=389/210/401 pct=38.900/21.000/40.100 maxDeltaPP=1.100 typeMaxZ=0.79 textMaxZ=1.74 top="소라고동은 모든 걸 알아." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=54 n=1000 counts=387/196/417 pct=38.700/19.600/41.700 maxDeltaPP=1.700 typeMaxZ=1.10 textMaxZ=1.46 top="안 돼." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=55 n=1000 counts=385/190/425 pct=38.500/19.000/42.500 maxDeltaPP=2.500 typeMaxZ=1.61 textMaxZ=1.19 top="다 안 돼." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=56 n=1000 counts=396/213/391 pct=39.600/21.300/39.100 maxDeltaPP=1.300 typeMaxZ=1.03 textMaxZ=2.43 top="그것도 안 돼." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=57 n=1000 counts=410/206/384 pct=41.000/20.600/38.400 maxDeltaPP=1.600 typeMaxZ=1.03 textMaxZ=1.16 top="당연하지." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=58 n=1000 counts=408/200/392 pct=40.800/20.000/39.200 maxDeltaPP=0.800 typeMaxZ=0.52 textMaxZ=1.80 top="진행해." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=59 n=1000 counts=393/204/403 pct=39.300/20.400/40.300 maxDeltaPP=0.700 typeMaxZ=0.45 textMaxZ=1.09 top="나중에 다시 물어봐." topCount=57
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=60 n=1000 counts=405/215/380 pct=40.500/21.500/38.000 maxDeltaPP=2.000 typeMaxZ=1.29 textMaxZ=2.40 top="언젠가는 하겠지." topCount=68
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=61 n=1000 counts=401/200/399 pct=40.100/20.000/39.900 maxDeltaPP=0.100 typeMaxZ=0.06 textMaxZ=2.29 top="불분명한 시기야." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=62 n=1000 counts=406/185/409 pct=40.600/18.500/40.900 maxDeltaPP=1.500 typeMaxZ=1.19 textMaxZ=1.78 top="묻지도 마." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=63 n=1000 counts=409/190/401 pct=40.900/19.000/40.100 maxDeltaPP=1.000 typeMaxZ=0.79 textMaxZ=2.82 top="좋아." topCount=70
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=64 n=1000 counts=380/188/432 pct=38.000/18.800/43.200 maxDeltaPP=3.200 typeMaxZ=2.07 textMaxZ=1.89 top="오늘은 절대 안 돼." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=65 n=1000 counts=403/181/416 pct=40.300/18.100/41.600 maxDeltaPP=1.900 typeMaxZ=1.50 textMaxZ=2.32 top="해도 돼." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=66 n=1000 counts=380/226/394 pct=38.000/22.600/39.400 maxDeltaPP=2.600 typeMaxZ=2.06 textMaxZ=1.94 top="불분명한 시기야." topCount=69
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=67 n=1000 counts=394/200/406 pct=39.400/20.000/40.600 maxDeltaPP=0.600 typeMaxZ=0.39 textMaxZ=1.84 top="가만있어." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=68 n=1000 counts=433/187/380 pct=43.300/18.700/38.000 maxDeltaPP=3.300 typeMaxZ=2.13 textMaxZ=2.02 top="물론." topCount=68
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=69 n=1000 counts=415/208/377 pct=41.500/20.800/37.700 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=1.58 top="당연하지." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=70 n=1000 counts=409/214/377 pct=40.900/21.400/37.700 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=1.85 top="다시 한 번 물어봐." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=71 n=1000 counts=422/192/386 pct=42.200/19.200/38.600 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=2.24 top="해도 돼." topCount=68
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=72 n=1000 counts=377/212/411 pct=37.700/21.200/41.100 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=1.85 top="묻지도 마." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=73 n=1000 counts=375/192/433 pct=37.500/19.200/43.300 maxDeltaPP=3.300 typeMaxZ=2.13 textMaxZ=2.99 top="진행해." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=74 n=1000 counts=392/173/435 pct=39.200/17.300/43.500 maxDeltaPP=3.500 typeMaxZ=2.26 textMaxZ=1.53 top="불가능해." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=75 n=1000 counts=408/194/398 pct=40.800/19.400/39.800 maxDeltaPP=0.800 typeMaxZ=0.52 textMaxZ=1.50 top="물론." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=76 n=1000 counts=429/184/387 pct=42.900/18.400/38.700 maxDeltaPP=2.900 typeMaxZ=1.87 textMaxZ=1.84 top="좋아." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=77 n=1000 counts=407/187/406 pct=40.700/18.700/40.600 maxDeltaPP=1.300 typeMaxZ=1.03 textMaxZ=1.48 top="물론." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=78 n=1000 counts=408/212/380 pct=40.800/21.200/38.000 maxDeltaPP=2.000 typeMaxZ=1.29 textMaxZ=1.95 top="소라고동은 모든 걸 알아." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=79 n=1000 counts=394/208/398 pct=39.400/20.800/39.800 maxDeltaPP=0.800 typeMaxZ=0.63 textMaxZ=2.93 top="가만있어." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=80 n=1000 counts=394/204/402 pct=39.400/20.400/40.200 maxDeltaPP=0.600 typeMaxZ=0.39 textMaxZ=2.38 top="다 안 돼." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=81 n=1000 counts=414/190/396 pct=41.400/19.000/39.600 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=2.36 top="그것도 안 돼." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=82 n=1000 counts=399/190/411 pct=39.900/19.000/41.100 maxDeltaPP=1.100 typeMaxZ=0.79 textMaxZ=1.80 top="소라고동을 따라." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=83 n=1000 counts=403/193/404 pct=40.300/19.300/40.400 maxDeltaPP=0.700 typeMaxZ=0.55 textMaxZ=2.05 top="좋아." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=84 n=1000 counts=409/186/405 pct=40.900/18.600/40.500 maxDeltaPP=1.400 typeMaxZ=1.11 textMaxZ=2.16 top="금지야." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=85 n=1000 counts=399/202/399 pct=39.900/20.200/39.900 maxDeltaPP=0.200 typeMaxZ=0.16 textMaxZ=2.10 top="언젠가는 하겠지." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=86 n=1000 counts=420/208/372 pct=42.000/20.800/37.200 maxDeltaPP=2.800 typeMaxZ=1.81 textMaxZ=1.84 top="진행해." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=87 n=1000 counts=396/206/398 pct=39.600/20.600/39.800 maxDeltaPP=0.600 typeMaxZ=0.47 textMaxZ=2.82 top="나중에 다시 물어봐." topCount=69
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=88 n=1000 counts=396/202/402 pct=39.600/20.200/40.200 maxDeltaPP=0.400 typeMaxZ=0.26 textMaxZ=2.36 top="나중에 다시 물어봐." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=89 n=1000 counts=420/189/391 pct=42.000/18.900/39.100 maxDeltaPP=2.000 typeMaxZ=1.29 textMaxZ=2.58 top="진행해." topCount=70
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=90 n=1000 counts=408/206/386 pct=40.800/20.600/38.600 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=2.84 top="좋아." topCount=70
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=91 n=1000 counts=403/211/386 pct=40.300/21.100/38.600 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=1.71 top="다시 한 번 물어봐." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=92 n=1000 counts=407/205/388 pct=40.700/20.500/38.800 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=2.23 top="물론." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=93 n=1000 counts=400/191/409 pct=40.000/19.100/40.900 maxDeltaPP=0.900 typeMaxZ=0.71 textMaxZ=2.37 top="불가능해." topCount=67
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=94 n=1000 counts=401/201/398 pct=40.100/20.100/39.800 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=2.01 top="그것도 안 돼." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=95 n=1000 counts=415/186/399 pct=41.500/18.600/39.900 maxDeltaPP=1.500 typeMaxZ=1.11 textMaxZ=2.84 top="진행해." topCount=71
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=96 n=1000 counts=436/176/388 pct=43.600/17.600/38.800 maxDeltaPP=3.600 typeMaxZ=2.32 textMaxZ=2.24 top="좋아." topCount=70
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=97 n=1000 counts=417/186/397 pct=41.700/18.600/39.700 maxDeltaPP=1.700 typeMaxZ=1.11 textMaxZ=1.73 top="오늘은 절대 안 돼." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=98 n=1000 counts=407/195/398 pct=40.700/19.500/39.800 maxDeltaPP=0.700 typeMaxZ=0.45 textMaxZ=1.63 top="해도 돼." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=99 n=1000 counts=405/204/391 pct=40.500/20.400/39.100 maxDeltaPP=0.900 typeMaxZ=0.58 textMaxZ=2.27 top="좋아." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=100 n=1000 counts=383/228/389 pct=38.300/22.800/38.900 maxDeltaPP=2.800 typeMaxZ=2.21 textMaxZ=1.59 top="나중에 다시 물어봐." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=101 n=1000 counts=410/205/385 pct=41.000/20.500/38.500 maxDeltaPP=1.500 typeMaxZ=0.97 textMaxZ=2.18 top="소라고동은 모든 걸 알아." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=102 n=1000 counts=399/193/408 pct=39.900/19.300/40.800 maxDeltaPP=0.800 typeMaxZ=0.55 textMaxZ=1.99 top="확실해." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=103 n=1000 counts=372/193/435 pct=37.200/19.300/43.500 maxDeltaPP=3.500 typeMaxZ=2.26 textMaxZ=2.27 top="오늘은 절대 안 돼." topCount=70
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=104 n=1000 counts=418/201/381 pct=41.800/20.100/38.100 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=1.44 top="당연하지." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=105 n=1000 counts=391/198/411 pct=39.100/19.800/41.100 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=2.71 top="언젠가는 하겠지." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=106 n=1000 counts=400/213/387 pct=40.000/21.300/38.700 maxDeltaPP=1.300 typeMaxZ=1.03 textMaxZ=1.66 top="불분명한 시기야." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=107 n=1000 counts=429/176/395 pct=42.900/17.600/39.500 maxDeltaPP=2.900 typeMaxZ=1.90 textMaxZ=1.74 top="좋아." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=108 n=1000 counts=406/176/418 pct=40.600/17.600/41.800 maxDeltaPP=2.400 typeMaxZ=1.90 textMaxZ=1.29 top="묻지도 마." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=109 n=1000 counts=390/205/405 pct=39.000/20.500/40.500 maxDeltaPP=1.000 typeMaxZ=0.65 textMaxZ=2.41 top="그것도 안 돼." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=110 n=1000 counts=397/210/393 pct=39.700/21.000/39.300 maxDeltaPP=1.000 typeMaxZ=0.79 textMaxZ=2.27 top="다 안 돼." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=111 n=1000 counts=411/213/376 pct=41.100/21.300/37.600 maxDeltaPP=2.400 typeMaxZ=1.55 textMaxZ=1.56 top="소라고동은 모든 걸 알아." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=112 n=1000 counts=407/217/376 pct=40.700/21.700/37.600 maxDeltaPP=2.400 typeMaxZ=1.55 textMaxZ=1.78 top="진행해." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=113 n=1000 counts=399/199/402 pct=39.900/19.900/40.200 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=2.53 top="불가능해." topCount=67
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=114 n=1000 counts=384/188/428 pct=38.400/18.800/42.800 maxDeltaPP=2.800 typeMaxZ=1.81 textMaxZ=1.97 top="금지야." topCount=67
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=115 n=1000 counts=387/211/402 pct=38.700/21.100/40.200 maxDeltaPP=1.300 typeMaxZ=0.87 textMaxZ=1.63 top="언젠가는 하겠지." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=116 n=1000 counts=396/215/389 pct=39.600/21.500/38.900 maxDeltaPP=1.500 typeMaxZ=1.19 textMaxZ=1.90 top="불분명한 시기야." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=117 n=1000 counts=398/196/406 pct=39.800/19.600/40.600 maxDeltaPP=0.600 typeMaxZ=0.39 textMaxZ=1.40 top="불가능해." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=118 n=1000 counts=382/205/413 pct=38.200/20.500/41.300 maxDeltaPP=1.800 typeMaxZ=1.16 textMaxZ=2.47 top="물론." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=119 n=1000 counts=401/214/385 pct=40.100/21.400/38.500 maxDeltaPP=1.500 typeMaxZ=1.11 textMaxZ=2.13 top="소라고동을 따라." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=120 n=1000 counts=392/201/407 pct=39.200/20.100/40.700 maxDeltaPP=0.800 typeMaxZ=0.52 textMaxZ=1.68 top="진행해." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=121 n=1000 counts=380/227/393 pct=38.000/22.700/39.300 maxDeltaPP=2.700 typeMaxZ=2.13 textMaxZ=2.87 top="나중에 다시 물어봐." topCount=67
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=122 n=1000 counts=425/206/369 pct=42.500/20.600/36.900 maxDeltaPP=3.100 typeMaxZ=2.00 textMaxZ=1.16 top="물론." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=123 n=1000 counts=415/183/402 pct=41.500/18.300/40.200 maxDeltaPP=1.700 typeMaxZ=1.34 textMaxZ=1.55 top="오늘은 절대 안 돼." topCount=58
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=124 n=1000 counts=429/188/383 pct=42.900/18.800/38.300 maxDeltaPP=2.900 typeMaxZ=1.87 textMaxZ=1.26 top="해도 돼." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=125 n=1000 counts=406/198/396 pct=40.600/19.800/39.600 maxDeltaPP=0.600 typeMaxZ=0.39 textMaxZ=2.44 top="소라고동을 따라." topCount=67
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=126 n=1000 counts=400/178/422 pct=40.000/17.800/42.200 maxDeltaPP=2.200 typeMaxZ=1.74 textMaxZ=1.81 top="좋아." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=127 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=1.36 top="그것도 안 돼." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=128 n=1000 counts=405/184/411 pct=40.500/18.400/41.100 maxDeltaPP=1.600 typeMaxZ=1.26 textMaxZ=3.37 top="묻지도 마." topCount=74
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=129 n=1000 counts=398/204/398 pct=39.800/20.400/39.800 maxDeltaPP=0.400 typeMaxZ=0.32 textMaxZ=1.86 top="안 돼." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=130 n=1000 counts=382/217/401 pct=38.200/21.700/40.100 maxDeltaPP=1.800 typeMaxZ=1.34 textMaxZ=2.51 top="나중에 다시 물어봐." topCount=67
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=131 n=1000 counts=371/203/426 pct=37.100/20.300/42.600 maxDeltaPP=2.900 typeMaxZ=1.87 textMaxZ=1.36 top="다 안 돼." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=132 n=1000 counts=396/210/394 pct=39.600/21.000/39.400 maxDeltaPP=1.000 typeMaxZ=0.79 textMaxZ=1.75 top="진행해." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=133 n=1000 counts=385/213/402 pct=38.500/21.300/40.200 maxDeltaPP=1.500 typeMaxZ=1.03 textMaxZ=1.87 top="언젠가는 하겠지." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=134 n=1000 counts=410/204/386 pct=41.000/20.400/38.600 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=2.73 top="그것도 안 돼." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=135 n=1000 counts=395/202/403 pct=39.500/20.200/40.300 maxDeltaPP=0.500 typeMaxZ=0.32 textMaxZ=1.75 top="다 안 돼." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=136 n=1000 counts=402/204/394 pct=40.200/20.400/39.400 maxDeltaPP=0.600 typeMaxZ=0.39 textMaxZ=3.13 top="진행해." topCount=71
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=137 n=1000 counts=419/181/400 pct=41.900/18.100/40.000 maxDeltaPP=1.900 typeMaxZ=1.50 textMaxZ=2.72 top="소라고동을 따라." topCount=70
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=138 n=1000 counts=412/212/376 pct=41.200/21.200/37.600 maxDeltaPP=2.400 typeMaxZ=1.55 textMaxZ=2.96 top="그것도 안 돼." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=139 n=1000 counts=430/187/383 pct=43.000/18.700/38.300 maxDeltaPP=3.000 typeMaxZ=1.94 textMaxZ=1.87 top="소라고동을 따라." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=140 n=1000 counts=414/189/397 pct=41.400/18.900/39.700 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=1.82 top="진행해." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=141 n=1000 counts=400/208/392 pct=40.000/20.800/39.200 maxDeltaPP=0.800 typeMaxZ=0.63 textMaxZ=1.76 top="나중에 다시 물어봐." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=142 n=1000 counts=391/216/393 pct=39.100/21.600/39.300 maxDeltaPP=1.600 typeMaxZ=1.26 textMaxZ=1.85 top="다시 한 번 물어봐." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=143 n=1000 counts=389/203/408 pct=38.900/20.300/40.800 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=2.25 top="불가능해." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=144 n=1000 counts=378/177/445 pct=37.800/17.700/44.500 maxDeltaPP=4.500 typeMaxZ=2.90 textMaxZ=2.13 top="묻지도 마." topCount=70
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=145 n=1000 counts=393/192/415 pct=39.300/19.200/41.500 maxDeltaPP=1.500 typeMaxZ=0.97 textMaxZ=1.91 top="안 돼." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=146 n=1000 counts=403/214/383 pct=40.300/21.400/38.300 maxDeltaPP=1.700 typeMaxZ=1.11 textMaxZ=2.05 top="좋아." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=147 n=1000 counts=398/206/396 pct=39.800/20.600/39.600 maxDeltaPP=0.600 typeMaxZ=0.47 textMaxZ=1.44 top="확실해." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=148 n=1000 counts=415/202/383 pct=41.500/20.200/38.300 maxDeltaPP=1.700 typeMaxZ=1.10 textMaxZ=1.41 top="진행해." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=149 n=1000 counts=447/184/369 pct=44.700/18.400/36.900 maxDeltaPP=4.700 typeMaxZ=3.03 textMaxZ=2.81 top="확실해." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=150 n=1000 counts=409/208/383 pct=40.900/20.800/38.300 maxDeltaPP=1.700 typeMaxZ=1.10 textMaxZ=2.24 top="언젠가는 하겠지." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=151 n=1000 counts=415/208/377 pct=41.500/20.800/37.700 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=2.88 top="불분명한 시기야." topCount=60
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=152 n=1000 counts=420/202/378 pct=42.000/20.200/37.800 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=1.99 top="진행해." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=153 n=1000 counts=391/207/402 pct=39.100/20.700/40.200 maxDeltaPP=0.900 typeMaxZ=0.58 textMaxZ=1.66 top="소라고동을 따라." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=154 n=1000 counts=389/197/414 pct=38.900/19.700/41.400 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=1.63 top="그것도 안 돼." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=155 n=1000 counts=377/198/425 pct=37.700/19.800/42.500 maxDeltaPP=2.500 typeMaxZ=1.61 textMaxZ=1.89 top="안 돼." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=156 n=1000 counts=361/211/428 pct=36.100/21.100/42.800 maxDeltaPP=3.900 typeMaxZ=2.52 textMaxZ=1.93 top="불분명한 시기야." topCount=58
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=157 n=1000 counts=372/202/426 pct=37.200/20.200/42.600 maxDeltaPP=2.800 typeMaxZ=1.81 textMaxZ=1.80 top="안 돼." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=158 n=1000 counts=364/199/437 pct=36.400/19.900/43.700 maxDeltaPP=3.700 typeMaxZ=2.39 textMaxZ=1.68 top="묻지도 마." topCount=59
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=159 n=1000 counts=411/201/388 pct=41.100/20.100/38.800 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=2.53 top="소라고동을 따라." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=160 n=1000 counts=406/209/385 pct=40.600/20.900/38.500 maxDeltaPP=1.500 typeMaxZ=0.97 textMaxZ=2.14 top="진행해." topCount=65
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=161 n=1000 counts=420/201/379 pct=42.000/20.100/37.900 maxDeltaPP=2.100 typeMaxZ=1.36 textMaxZ=1.92 top="물론." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=162 n=1000 counts=413/184/403 pct=41.300/18.400/40.300 maxDeltaPP=1.600 typeMaxZ=1.26 textMaxZ=2.77 top="소라고동은 모든 걸 알아." topCount=70
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=163 n=1000 counts=418/199/383 pct=41.800/19.900/38.300 maxDeltaPP=1.800 typeMaxZ=1.16 textMaxZ=1.56 top="진행해." topCount=61
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=164 n=1000 counts=410/166/424 pct=41.000/16.600/42.400 maxDeltaPP=3.400 typeMaxZ=2.69 textMaxZ=1.83 top="확실해." topCount=62
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=165 n=1000 counts=390/209/401 pct=39.000/20.900/40.100 maxDeltaPP=1.000 typeMaxZ=0.71 textMaxZ=1.94 top="묻지도 마." topCount=63
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=166 n=1000 counts=426/194/380 pct=42.600/19.400/38.000 maxDeltaPP=2.600 typeMaxZ=1.68 textMaxZ=1.58 top="좋아." topCount=64
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=167 n=1000 counts=390/218/392 pct=39.000/21.800/39.200 maxDeltaPP=1.800 typeMaxZ=1.42 textMaxZ=3.36 top="안 돼." topCount=71
+[MC ROOM TEST] STRATUM method=rng_sum group=byRoom bucket=168 n=1000 counts=407/204/389 pct=40.700/20.400/38.900 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=2.27 top="소라고동은 모든 걸 알아." topCount=66
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=0 n=13000 counts=5065/2618/5317 pct=38.962/20.138/40.900 maxDeltaPP=1.038 typeMaxZ=2.42 textMaxZ=1.65 top="그것도 안 돼." topCount=687
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=1 n=13000 counts=5235/2582/5183 pct=40.269/19.862/39.869 maxDeltaPP=0.269 typeMaxZ=0.63 textMaxZ=2.16 top="물론." topCount=678
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=2 n=13000 counts=5181/2679/5140 pct=39.854/20.608/39.538 maxDeltaPP=0.608 typeMaxZ=1.73 textMaxZ=1.66 top="불분명한 시기야." topCount=698
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=3 n=13000 counts=5209/2556/5235 pct=40.069/19.662/40.269 maxDeltaPP=0.338 typeMaxZ=0.96 textMaxZ=1.17 top="좋아." topCount=679
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=4 n=13000 counts=5168/2608/5224 pct=39.754/20.062/40.185 maxDeltaPP=0.246 typeMaxZ=0.57 textMaxZ=1.60 top="다 안 돼." topCount=687
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=5 n=13000 counts=5244/2550/5206 pct=40.338/19.615/40.046 maxDeltaPP=0.385 typeMaxZ=1.10 textMaxZ=1.88 top="물론." topCount=682
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=6 n=13000 counts=5260/2596/5144 pct=40.462/19.969/39.569 maxDeltaPP=0.462 typeMaxZ=1.07 textMaxZ=1.31 top="소라고동은 모든 걸 알아." topCount=686
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=7 n=13000 counts=5255/2574/5171 pct=40.423/19.800/39.777 maxDeltaPP=0.423 typeMaxZ=0.98 textMaxZ=1.66 top="확실해." topCount=682
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=8 n=13000 counts=5215/2622/5163 pct=40.115/20.169/39.715 maxDeltaPP=0.285 typeMaxZ=0.66 textMaxZ=1.83 top="불분명한 시기야." topCount=695
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=9 n=13000 counts=5232/2583/5185 pct=40.246/19.869/39.885 maxDeltaPP=0.246 typeMaxZ=0.57 textMaxZ=1.52 top="묻지도 마." topCount=683
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=10 n=13000 counts=5207/2646/5147 pct=40.054/20.354/39.592 maxDeltaPP=0.408 typeMaxZ=1.01 textMaxZ=1.38 top="나중에 다시 물어봐." topCount=676
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=11 n=13000 counts=5224/2598/5178 pct=40.185/19.985/39.831 maxDeltaPP=0.185 typeMaxZ=0.43 textMaxZ=1.61 top="그것도 안 돼." topCount=681
+[MC ROOM TEST] STRATUM method=rng_sum group=byRow bucket=12 n=13000 counts=5188/2597/5215 pct=39.908/19.977/40.115 maxDeltaPP=0.115 typeMaxZ=0.27 textMaxZ=2.98 top="안 돼." topCount=723
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=0 n=13000 counts=5201/2593/5206 pct=40.008/19.946/40.046 maxDeltaPP=0.054 typeMaxZ=0.15 textMaxZ=1.69 top="오늘은 절대 안 돼." topCount=691
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=1 n=13000 counts=5016/2633/5351 pct=38.585/20.254/41.162 maxDeltaPP=1.415 typeMaxZ=3.29 textMaxZ=1.67 top="가만있어." topCount=680
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=2 n=13000 counts=5107/2646/5247 pct=39.285/20.354/40.362 maxDeltaPP=0.715 typeMaxZ=1.66 textMaxZ=2.18 top="불분명한 시기야." topCount=708
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=3 n=13000 counts=5175/2589/5236 pct=39.808/19.915/40.277 maxDeltaPP=0.277 typeMaxZ=0.64 textMaxZ=2.03 top="그것도 안 돼." topCount=703
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=4 n=13000 counts=5193/2630/5177 pct=39.946/20.231/39.823 maxDeltaPP=0.231 typeMaxZ=0.66 textMaxZ=1.38 top="그것도 안 돼." topCount=680
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=5 n=13000 counts=5270/2587/5143 pct=40.538/19.900/39.562 maxDeltaPP=0.538 typeMaxZ=1.25 textMaxZ=1.35 top="확실해." topCount=682
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=6 n=13000 counts=5340/2524/5136 pct=41.077/19.415/39.508 maxDeltaPP=1.077 typeMaxZ=2.51 textMaxZ=1.22 top="좋아." topCount=686
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=7 n=13000 counts=5250/2606/5144 pct=40.385/20.046/39.569 maxDeltaPP=0.431 typeMaxZ=1.00 textMaxZ=1.05 top="물론." topCount=672
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=8 n=13000 counts=5268/2613/5119 pct=40.523/20.100/39.377 maxDeltaPP=0.623 typeMaxZ=1.45 textMaxZ=1.57 top="확실해." topCount=682
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=9 n=13000 counts=5213/2618/5169 pct=40.100/20.138/39.762 maxDeltaPP=0.238 typeMaxZ=0.55 textMaxZ=1.81 top="소라고동을 따라." topCount=683
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=10 n=13000 counts=5230/2576/5194 pct=40.231/19.815/39.954 maxDeltaPP=0.231 typeMaxZ=0.54 textMaxZ=1.41 top="확실해." topCount=681
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=11 n=13000 counts=5263/2594/5143 pct=40.485/19.954/39.562 maxDeltaPP=0.485 typeMaxZ=1.13 textMaxZ=1.79 top="진행해." topCount=685
+[MC ROOM TEST] STRATUM method=rng_sum group=byColumn bucket=12 n=13000 counts=5157/2600/5243 pct=39.669/20.000/40.331 maxDeltaPP=0.331 typeMaxZ=0.77 textMaxZ=1.85 top="안 돼." topCount=687
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=1 n=14196 counts=5643/2861/5692 pct=39.751/20.154/40.096 maxDeltaPP=0.249 typeMaxZ=0.61 textMaxZ=1.54 top="불분명한 시기야." topCount=742
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=2 n=14196 counts=5725/2819/5652 pct=40.328/19.858/39.814 maxDeltaPP=0.328 typeMaxZ=0.80 textMaxZ=1.91 top="해도 돼." topCount=747
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=3 n=14196 counts=5724/2814/5658 pct=40.321/19.822/39.856 maxDeltaPP=0.321 typeMaxZ=0.78 textMaxZ=1.02 top="물론." topCount=729
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=4 n=14196 counts=5742/2783/5671 pct=40.448/19.604/39.948 maxDeltaPP=0.448 typeMaxZ=1.18 textMaxZ=1.41 top="확실해." topCount=753
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=5 n=14027 counts=5621/2789/5617 pct=40.073/19.883/40.044 maxDeltaPP=0.117 typeMaxZ=0.35 textMaxZ=1.73 top="그것도 안 돼." topCount=745
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=6 n=14027 counts=5588/2817/5622 pct=39.837/20.083/40.080 maxDeltaPP=0.163 typeMaxZ=0.39 textMaxZ=1.46 top="가만있어." topCount=739
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=7 n=14027 counts=5617/2806/5604 pct=40.044/20.004/39.952 maxDeltaPP=0.048 typeMaxZ=0.12 textMaxZ=1.82 top="소라고동을 따라." topCount=735
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=8 n=14027 counts=5606/2829/5592 pct=39.966/20.168/39.866 maxDeltaPP=0.168 typeMaxZ=0.50 textMaxZ=1.10 top="좋아." topCount=727
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=9 n=14027 counts=5571/2850/5606 pct=39.716/20.318/39.966 maxDeltaPP=0.318 typeMaxZ=0.94 textMaxZ=1.39 top="묻지도 마." topCount=735
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=10 n=14027 counts=5582/2794/5651 pct=39.795/19.919/40.287 maxDeltaPP=0.287 typeMaxZ=0.69 textMaxZ=1.14 top="다 안 돼." topCount=728
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=11 n=14027 counts=5663/2826/5538 pct=40.372/20.147/39.481 maxDeltaPP=0.519 typeMaxZ=1.25 textMaxZ=1.61 top="진행해." topCount=748
+[MC ROOM TEST] STRATUM method=rng_sum group=byStage bucket=12 n=14027 counts=5601/2821/5605 pct=39.930/20.111/39.959 maxDeltaPP=0.111 typeMaxZ=0.33 textMaxZ=1.46 top="불분명한 시기야." topCount=731
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=0 n=16900 counts=6737/3360/6803 pct=39.864/19.882/40.254 maxDeltaPP=0.254 typeMaxZ=0.68 textMaxZ=1.43 top="묻지도 마." topCount=888
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=1 n=16900 counts=6798/3400/6702 pct=40.225/20.118/39.657 maxDeltaPP=0.343 typeMaxZ=0.91 textMaxZ=1.39 top="언젠가는 하겠지." topCount=877
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=2 n=16900 counts=6743/3360/6797 pct=39.899/19.882/40.219 maxDeltaPP=0.219 typeMaxZ=0.58 textMaxZ=1.65 top="그것도 안 돼." topCount=882
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=3 n=16731 counts=6727/3354/6650 pct=40.207/20.047/39.747 maxDeltaPP=0.253 typeMaxZ=0.67 textMaxZ=0.89 top="소라고동은 모든 걸 알아." topCount=865
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=4 n=16900 counts=6796/3337/6767 pct=40.213/19.746/40.041 maxDeltaPP=0.254 typeMaxZ=0.83 textMaxZ=1.14 top="금지야." topCount=877
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=5 n=16900 counts=6761/3407/6732 pct=40.006/20.160/39.834 maxDeltaPP=0.166 typeMaxZ=0.52 textMaxZ=1.79 top="불분명한 시기야." topCount=897
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=6 n=16900 counts=6790/3397/6713 pct=40.178/20.101/39.722 maxDeltaPP=0.278 typeMaxZ=0.74 textMaxZ=1.51 top="묻지도 마." topCount=880
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=7 n=16900 counts=6752/3403/6745 pct=39.953/20.136/39.911 maxDeltaPP=0.136 typeMaxZ=0.44 textMaxZ=1.18 top="불분명한 시기야." topCount=871
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=8 n=17069 counts=6795/3482/6792 pct=39.809/20.400/39.791 maxDeltaPP=0.400 typeMaxZ=1.31 textMaxZ=1.76 top="그것도 안 돼." topCount=897
+[MC ROOM TEST] STRATUM method=rng_sum group=bySeedResidue bucket=9 n=16900 counts=6784/3309/6807 pct=40.142/19.580/40.278 maxDeltaPP=0.420 typeMaxZ=1.37 textMaxZ=1.51 top="좋아." topCount=886
+[MC ROOM TEST] CONDITIONAL method=rng_sum relation=horizontal given bucket=negative n=62265 counts=17126/10657/34482 pct=27.505/17.116/55.379 maxDeltaPP=15.379 typeMaxZ=78.34 textMaxZ=1.60 top="묻지도 마." topCount=4376
+[MC ROOM TEST] CONDITIONAL method=rng_sum relation=horizontal given bucket=neutral n=31209 counts=10702/9498/11009 pct=34.291/30.434/35.275 maxDeltaPP=10.434 typeMaxZ=46.08 textMaxZ=2.14 top="언젠가는 하겠지." topCount=2465
+[MC ROOM TEST] CONDITIONAL method=rng_sum relation=horizontal given bucket=positive n=62526 counts=34654/11061/16811 pct=55.423/17.690/26.886 maxDeltaPP=15.423 typeMaxZ=78.72 textMaxZ=1.76 top="확실해." topCount=4423
+[MC ROOM TEST] CONDITIONAL method=rng_sum relation=vertical given bucket=negative n=62293 counts=23650/12175/26468 pct=37.966/19.545/42.490 maxDeltaPP=2.490 typeMaxZ=12.68 textMaxZ=1.75 top="그것도 안 돼." topCount=3383
+[MC ROOM TEST] CONDITIONAL method=rng_sum relation=vertical given bucket=neutral n=31212 counts=12214/6890/12108 pct=39.132/22.075/38.793 maxDeltaPP=2.075 typeMaxZ=9.16 textMaxZ=2.65 top="나중에 다시 물어봐." topCount=1731
+[MC ROOM TEST] CONDITIONAL method=rng_sum relation=vertical given bucket=positive n=62495 counts=26754/12126/23615 pct=42.810/19.403/37.787 maxDeltaPP=2.810 typeMaxZ=14.34 textMaxZ=2.02 top="좋아." topCount=3438
+[MC ROOM TEST] CONDITIONAL method=rng_sum relation=second_use given bucket=negative n=67508 counts=26872/13735/26901 pct=39.806/20.346/39.849 maxDeltaPP=0.346 typeMaxZ=2.25 textMaxZ=1.83 top="해도 돼." topCount=3458
+[MC ROOM TEST] CONDITIONAL method=rng_sum relation=second_use given bucket=neutral n=33809 counts=13541/6745/13523 pct=40.051/19.950/39.998 maxDeltaPP=0.051 typeMaxZ=0.23 textMaxZ=2.59 top="소라고동을 따라." topCount=1777
+[MC ROOM TEST] CONDITIONAL method=rng_sum relation=second_use given bucket=positive n=67683 counts=27119/13514/27050 pct=40.068/19.967/39.966 maxDeltaPP=0.068 typeMaxZ=0.36 textMaxZ=2.46 top="불분명한 시기야." topCount=3473
+[MC ROOM TEST] PAIR method=rng_sum relation=changed_stage n=169000 typeMatches=169000 textMatches=169000 typePct=100.000 textPct=100.000
+[MC ROOM TEST] PAIR method=rng_sum relation=changed_stageType n=169000 typeMatches=169000 textMatches=169000 typePct=100.000 textPct=100.000
+[MC ROOM TEST] PAIR method=rng_sum relation=changed_dimension n=169000 typeMatches=169000 textMatches=169000 typePct=100.000 textPct=100.000
+[MC ROOM TEST] PAIR method=rng_sum relation=right_first_vs_left_second n=156000 typeMatches=56009 textMatches=7786 typePct=35.903 textPct=4.991
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=positive count=8433 withinType=12.492% text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=positive count=8365 withinType=12.392% text="소라고동을 따라."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=positive count=8485 withinType=12.569% text="해도 돼."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=positive count=8400 withinType=12.444% text="확실해."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=positive count=8418 withinType=12.470% text="당연하지."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=positive count=8539 withinType=12.649% text="진행해."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=positive count=8499 withinType=12.590% text="물론."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=positive count=8366 withinType=12.393% text="좋아."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=neutral count=8283 withinType=24.408% text="다시 한 번 물어봐."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=neutral count=8591 withinType=25.315% text="불분명한 시기야."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=neutral count=8588 withinType=25.306% text="언젠가는 하겠지."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=neutral count=8474 withinType=24.971% text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=negative count=8495 withinType=12.574% text="가만있어."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=negative count=8426 withinType=12.472% text="묻지도 마."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=negative count=8396 withinType=12.428% text="그것도 안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=negative count=8372 withinType=12.392% text="안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=negative count=8429 withinType=12.477% text="불가능해."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=negative count=8571 withinType=12.687% text="오늘은 절대 안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=negative count=8346 withinType=12.354% text="다 안 돼."
+[MC ROOM TEST] PHRASE TOTAL method=keyed usage=0 type=negative count=8524 withinType=12.617% text="금지야."
+[MC ROOM TEST] TOTAL method=keyed usage=0 n=169000 counts=67505/33936/67559 pct=39.944/20.080/39.976 maxDeltaPP=0.080 typeMaxZ=0.83 textMaxZ=2.52 top="불분명한 시기야." topCount=8591
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=positive count=4 withinType=5.333% text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=positive count=10 withinType=13.333% text="소라고동을 따라."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=positive count=6 withinType=8.000% text="해도 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=positive count=15 withinType=20.000% text="확실해."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=positive count=6 withinType=8.000% text="당연하지."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=positive count=11 withinType=14.667% text="진행해."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=positive count=11 withinType=14.667% text="물론."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=positive count=12 withinType=16.000% text="좋아."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=neutral count=2 withinType=8.696% text="다시 한 번 물어봐."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=neutral count=6 withinType=26.087% text="불분명한 시기야."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=neutral count=7 withinType=30.435% text="언젠가는 하겠지."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=neutral count=8 withinType=34.783% text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=negative count=7 withinType=9.859% text="가만있어."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=negative count=10 withinType=14.085% text="묻지도 마."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=negative count=7 withinType=9.859% text="그것도 안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=negative count=12 withinType=16.901% text="안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=negative count=8 withinType=11.268% text="불가능해."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=negative count=9 withinType=12.676% text="오늘은 절대 안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=negative count=11 withinType=15.493% text="다 안 돼."
+[MC ROOM TEST] PHRASE CURRENT_GRID method=keyed type=negative count=7 withinType=9.859% text="금지야."
+[MC ROOM TEST] CURRENT_GRID method=keyed n=169 counts=75/23/71 pct=44.379/13.609/42.012 maxDeltaPP=6.391 typeMaxZ=2.08 textMaxZ=1.96 top="확실해." topCount=15
+[MC ROOM TEST] ADJACENT_SEEDS method=keyed n=1000 counts=427/199/374 pct=42.700/19.900/37.400 maxDeltaPP=2.700 typeMaxZ=1.74 textMaxZ=1.66 top="소라고동은 모든 걸 알아." topCount=61
+[MC ROOM TEST] SPECIAL_INDICES method=keyed n=13000 counts=5243/2500/5257 pct=40.331/19.231/40.438 maxDeltaPP=0.769 typeMaxZ=2.19 textMaxZ=1.70 top="오늘은 절대 안 돼." topCount=698
+[MC ROOM TEST] STRATUM method=keyed group=byUse bucket=0 n=169000 counts=67505/33936/67559 pct=39.944/20.080/39.976 maxDeltaPP=0.080 typeMaxZ=0.83 textMaxZ=2.52 top="불분명한 시기야." topCount=8591
+[MC ROOM TEST] STRATUM method=keyed group=byUse bucket=1 n=169000 counts=67297/34143/67560 pct=39.821/20.203/39.976 maxDeltaPP=0.203 typeMaxZ=2.09 textMaxZ=2.25 top="불분명한 시기야." topCount=8654
+[MC ROOM TEST] STRATUM method=keyed group=byUse bucket=2 n=169000 counts=67549/33621/67830 pct=39.970/19.894/40.136 maxDeltaPP=0.136 typeMaxZ=1.14 textMaxZ=2.08 top="안 돼." topCount=8607
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=0 n=1000 counts=420/205/375 pct=42.000/20.500/37.500 maxDeltaPP=2.500 typeMaxZ=1.61 textMaxZ=1.70 top="확실해." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=1 n=1000 counts=393/201/406 pct=39.300/20.100/40.600 maxDeltaPP=0.700 typeMaxZ=0.45 textMaxZ=1.83 top="불분명한 시기야." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=2 n=1000 counts=418/193/389 pct=41.800/19.300/38.900 maxDeltaPP=1.800 typeMaxZ=1.16 textMaxZ=2.33 top="당연하지." topCount=68
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=3 n=1000 counts=418/178/404 pct=41.800/17.800/40.400 maxDeltaPP=2.200 typeMaxZ=1.74 textMaxZ=2.33 top="좋아." topCount=68
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=4 n=1000 counts=377/230/393 pct=37.700/23.000/39.300 maxDeltaPP=3.000 typeMaxZ=2.37 textMaxZ=2.01 top="언젠가는 하겠지." topCount=69
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=5 n=1000 counts=408/207/385 pct=40.800/20.700/38.500 maxDeltaPP=1.500 typeMaxZ=0.97 textMaxZ=1.68 top="다시 한 번 물어봐." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=6 n=1000 counts=392/203/405 pct=39.200/20.300/40.500 maxDeltaPP=0.800 typeMaxZ=0.52 textMaxZ=1.75 top="그것도 안 돼." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=7 n=1000 counts=379/208/413 pct=37.900/20.800/41.300 maxDeltaPP=2.100 typeMaxZ=1.36 textMaxZ=1.81 top="물론." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=8 n=1000 counts=417/186/397 pct=41.700/18.600/39.700 maxDeltaPP=1.700 typeMaxZ=1.11 textMaxZ=1.57 top="불가능해." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=9 n=1000 counts=417/217/366 pct=41.700/21.700/36.600 maxDeltaPP=3.400 typeMaxZ=2.19 textMaxZ=3.54 top="물론." topCount=76
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=10 n=1000 counts=433/179/388 pct=43.300/17.900/38.800 maxDeltaPP=3.300 typeMaxZ=2.13 textMaxZ=2.23 top="다 안 돼." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=11 n=1000 counts=417/181/402 pct=41.700/18.100/40.200 maxDeltaPP=1.900 typeMaxZ=1.50 textMaxZ=1.85 top="좋아." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=12 n=1000 counts=418/182/400 pct=41.800/18.200/40.000 maxDeltaPP=1.800 typeMaxZ=1.42 textMaxZ=2.77 top="진행해." topCount=71
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=13 n=1000 counts=400/197/403 pct=40.000/19.700/40.300 maxDeltaPP=0.300 typeMaxZ=0.24 textMaxZ=1.66 top="해도 돼." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=14 n=1000 counts=385/206/409 pct=38.500/20.600/40.900 maxDeltaPP=1.500 typeMaxZ=0.97 textMaxZ=1.81 top="오늘은 절대 안 돼." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=15 n=1000 counts=398/216/386 pct=39.800/21.600/38.600 maxDeltaPP=1.600 typeMaxZ=1.26 textMaxZ=2.20 top="불분명한 시기야." topCount=68
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=16 n=1000 counts=403/211/386 pct=40.300/21.100/38.600 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=2.27 top="언젠가는 하겠지." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=17 n=1000 counts=423/202/375 pct=42.300/20.200/37.500 maxDeltaPP=2.500 typeMaxZ=1.61 textMaxZ=1.87 top="해도 돼." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=18 n=1000 counts=423/192/385 pct=42.300/19.200/38.500 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=1.60 top="소라고동은 모든 걸 알아." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=19 n=1000 counts=373/209/418 pct=37.300/20.900/41.800 maxDeltaPP=2.700 typeMaxZ=1.74 textMaxZ=3.07 top="불가능해." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=20 n=1000 counts=408/204/388 pct=40.800/20.400/38.800 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=2.10 top="좋아." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=21 n=1000 counts=402/194/404 pct=40.200/19.400/40.400 maxDeltaPP=0.600 typeMaxZ=0.47 textMaxZ=1.91 top="언젠가는 하겠지." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=22 n=1000 counts=380/197/423 pct=38.000/19.700/42.300 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=1.78 top="불가능해." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=23 n=1000 counts=414/166/420 pct=41.400/16.600/42.000 maxDeltaPP=3.400 typeMaxZ=2.69 textMaxZ=2.78 top="소라고동은 모든 걸 알아." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=24 n=1000 counts=409/203/388 pct=40.900/20.300/38.800 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=2.53 top="가만있어." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=25 n=1000 counts=381/209/410 pct=38.100/20.900/41.000 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=2.11 top="소라고동을 따라." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=26 n=1000 counts=393/209/398 pct=39.300/20.900/39.800 maxDeltaPP=0.900 typeMaxZ=0.71 textMaxZ=1.93 top="오늘은 절대 안 돼." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=27 n=1000 counts=401/209/390 pct=40.100/20.900/39.000 maxDeltaPP=1.000 typeMaxZ=0.71 textMaxZ=2.74 top="묻지도 마." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=28 n=1000 counts=421/192/387 pct=42.100/19.200/38.700 maxDeltaPP=2.100 typeMaxZ=1.36 textMaxZ=2.27 top="확실해." topCount=68
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=29 n=1000 counts=363/221/416 pct=36.300/22.100/41.600 maxDeltaPP=3.700 typeMaxZ=2.39 textMaxZ=2.82 top="다시 한 번 물어봐." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=30 n=1000 counts=420/180/400 pct=42.000/18.000/40.000 maxDeltaPP=2.000 typeMaxZ=1.58 textMaxZ=1.70 top="소라고동은 모든 걸 알아." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=31 n=1000 counts=380/204/416 pct=38.000/20.400/41.600 maxDeltaPP=2.000 typeMaxZ=1.29 textMaxZ=2.91 top="안 돼." topCount=70
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=32 n=1000 counts=398/185/417 pct=39.800/18.500/41.700 maxDeltaPP=1.700 typeMaxZ=1.19 textMaxZ=2.20 top="오늘은 절대 안 돼." topCount=67
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=33 n=1000 counts=386/217/397 pct=38.600/21.700/39.700 maxDeltaPP=1.700 typeMaxZ=1.34 textMaxZ=2.50 top="좋아." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=34 n=1000 counts=390/174/436 pct=39.000/17.400/43.600 maxDeltaPP=3.600 typeMaxZ=2.32 textMaxZ=2.03 top="다 안 돼." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=35 n=1000 counts=411/197/392 pct=41.100/19.700/39.200 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=1.99 top="소라고동을 따라." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=36 n=1000 counts=405/191/404 pct=40.500/19.100/40.400 maxDeltaPP=0.900 typeMaxZ=0.71 textMaxZ=2.33 top="안 돼." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=37 n=1000 counts=384/189/427 pct=38.400/18.900/42.700 maxDeltaPP=2.700 typeMaxZ=1.74 textMaxZ=1.54 top="묻지도 마." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=38 n=1000 counts=422/196/382 pct=42.200/19.600/38.200 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=2.80 top="언젠가는 하겠지." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=39 n=1000 counts=396/200/404 pct=39.600/20.000/40.400 maxDeltaPP=0.400 typeMaxZ=0.26 textMaxZ=2.63 top="안 돼." topCount=68
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=40 n=1000 counts=419/207/374 pct=41.900/20.700/37.400 maxDeltaPP=2.600 typeMaxZ=1.68 textMaxZ=2.37 top="소라고동을 따라." topCount=67
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=41 n=1000 counts=395/186/419 pct=39.500/18.600/41.900 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=1.58 top="오늘은 절대 안 돼." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=42 n=1000 counts=416/191/393 pct=41.600/19.100/39.300 maxDeltaPP=1.600 typeMaxZ=1.03 textMaxZ=1.38 top="좋아." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=43 n=1000 counts=389/206/405 pct=38.900/20.600/40.500 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=2.01 top="다 안 돼." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=44 n=1000 counts=394/218/388 pct=39.400/21.800/38.800 maxDeltaPP=1.800 typeMaxZ=1.42 textMaxZ=2.11 top="언젠가는 하겠지." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=45 n=1000 counts=394/204/402 pct=39.400/20.400/40.200 maxDeltaPP=0.600 typeMaxZ=0.39 textMaxZ=1.79 top="좋아." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=46 n=1000 counts=386/206/408 pct=38.600/20.600/40.800 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=2.25 top="가만있어." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=47 n=1000 counts=398/201/401 pct=39.800/20.100/40.100 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=1.55 top="좋아." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=48 n=1000 counts=398/215/387 pct=39.800/21.500/38.700 maxDeltaPP=1.500 typeMaxZ=1.19 textMaxZ=3.17 top="가만있어." topCount=69
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=49 n=1000 counts=405/202/393 pct=40.500/20.200/39.300 maxDeltaPP=0.700 typeMaxZ=0.45 textMaxZ=2.31 top="진행해." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=50 n=1000 counts=393/193/414 pct=39.300/19.300/41.400 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=2.41 top="다 안 돼." topCount=68
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=51 n=1000 counts=387/194/419 pct=38.700/19.400/41.900 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=2.60 top="불가능해." topCount=70
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=52 n=1000 counts=395/198/407 pct=39.500/19.800/40.700 maxDeltaPP=0.700 typeMaxZ=0.45 textMaxZ=2.23 top="소라고동은 모든 걸 알아." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=53 n=1000 counts=398/205/397 pct=39.800/20.500/39.700 maxDeltaPP=0.500 typeMaxZ=0.40 textMaxZ=1.76 top="금지야." topCount=58
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=54 n=1000 counts=405/195/400 pct=40.500/19.500/40.000 maxDeltaPP=0.500 typeMaxZ=0.40 textMaxZ=2.05 top="소라고동을 따라." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=55 n=1000 counts=406/213/381 pct=40.600/21.300/38.100 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=2.23 top="불분명한 시기야." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=56 n=1000 counts=389/205/406 pct=38.900/20.500/40.600 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=2.05 top="당연하지." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=57 n=1000 counts=392/198/410 pct=39.200/19.800/41.000 maxDeltaPP=1.000 typeMaxZ=0.65 textMaxZ=2.22 top="진행해." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=58 n=1000 counts=411/191/398 pct=41.100/19.100/39.800 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=2.54 top="진행해." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=59 n=1000 counts=384/227/389 pct=38.400/22.700/38.900 maxDeltaPP=2.700 typeMaxZ=2.13 textMaxZ=3.10 top="언젠가는 하겠지." topCount=77
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=60 n=1000 counts=394/196/410 pct=39.400/19.600/41.000 maxDeltaPP=1.000 typeMaxZ=0.65 textMaxZ=1.23 top="가만있어." topCount=58
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=61 n=1000 counts=397/220/383 pct=39.700/22.000/38.300 maxDeltaPP=2.000 typeMaxZ=1.58 textMaxZ=1.56 top="확실해." topCount=58
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=62 n=1000 counts=390/222/388 pct=39.000/22.200/38.800 maxDeltaPP=2.200 typeMaxZ=1.74 textMaxZ=1.80 top="나중에 다시 물어봐." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=63 n=1000 counts=402/188/410 pct=40.200/18.800/41.000 maxDeltaPP=1.200 typeMaxZ=0.95 textMaxZ=1.85 top="다 안 돼." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=64 n=1000 counts=408/220/372 pct=40.800/22.000/37.200 maxDeltaPP=2.800 typeMaxZ=1.81 textMaxZ=1.65 top="불분명한 시기야." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=65 n=1000 counts=432/194/374 pct=43.200/19.400/37.400 maxDeltaPP=3.200 typeMaxZ=2.07 textMaxZ=2.18 top="당연하지." topCount=69
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=66 n=1000 counts=378/196/426 pct=37.800/19.600/42.600 maxDeltaPP=2.600 typeMaxZ=1.68 textMaxZ=2.37 top="오늘은 절대 안 돼." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=67 n=1000 counts=410/172/418 pct=41.000/17.200/41.800 maxDeltaPP=2.800 typeMaxZ=2.21 textMaxZ=2.05 top="묻지도 마." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=68 n=1000 counts=418/204/378 pct=41.800/20.400/37.800 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=2.84 top="좋아." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=69 n=1000 counts=406/182/412 pct=40.600/18.200/41.200 maxDeltaPP=1.800 typeMaxZ=1.42 textMaxZ=1.99 top="좋아." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=70 n=1000 counts=403/201/396 pct=40.300/20.100/39.600 maxDeltaPP=0.400 typeMaxZ=0.26 textMaxZ=2.05 top="확실해." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=71 n=1000 counts=411/192/397 pct=41.100/19.200/39.700 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=1.88 top="다 안 돼." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=72 n=1000 counts=418/205/377 pct=41.800/20.500/37.700 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=2.06 top="불분명한 시기야." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=73 n=1000 counts=432/190/378 pct=43.200/19.000/37.800 maxDeltaPP=3.200 typeMaxZ=2.07 textMaxZ=1.36 top="좋아." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=74 n=1000 counts=380/215/405 pct=38.000/21.500/40.500 maxDeltaPP=2.000 typeMaxZ=1.29 textMaxZ=2.56 top="물론." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=75 n=1000 counts=404/189/407 pct=40.400/18.900/40.700 maxDeltaPP=1.100 typeMaxZ=0.87 textMaxZ=1.88 top="확실해." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=76 n=1000 counts=391/189/420 pct=39.100/18.900/42.000 maxDeltaPP=2.000 typeMaxZ=1.29 textMaxZ=1.82 top="소라고동은 모든 걸 알아." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=77 n=1000 counts=390/200/410 pct=39.000/20.000/41.000 maxDeltaPP=1.000 typeMaxZ=0.65 textMaxZ=1.57 top="해도 돼." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=78 n=1000 counts=420/203/377 pct=42.000/20.300/37.700 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=2.43 top="진행해." topCount=69
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=79 n=1000 counts=384/203/413 pct=38.400/20.300/41.300 maxDeltaPP=1.600 typeMaxZ=1.03 textMaxZ=1.88 top="오늘은 절대 안 돼." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=80 n=1000 counts=406/199/395 pct=40.600/19.900/39.500 maxDeltaPP=0.600 typeMaxZ=0.39 textMaxZ=2.07 top="가만있어." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=81 n=1000 counts=405/211/384 pct=40.500/21.100/38.400 maxDeltaPP=1.600 typeMaxZ=1.03 textMaxZ=2.82 top="언젠가는 하겠지." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=82 n=1000 counts=416/185/399 pct=41.600/18.500/39.900 maxDeltaPP=1.600 typeMaxZ=1.19 textMaxZ=1.91 top="소라고동을 따라." topCount=58
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=83 n=1000 counts=405/189/406 pct=40.500/18.900/40.600 maxDeltaPP=1.100 typeMaxZ=0.87 textMaxZ=2.44 top="가만있어." topCount=67
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=84 n=1000 counts=391/201/408 pct=39.100/20.100/40.800 maxDeltaPP=0.900 typeMaxZ=0.58 textMaxZ=1.50 top="묻지도 마." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=85 n=1000 counts=419/204/377 pct=41.900/20.400/37.700 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=1.27 top="좋아." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=86 n=1000 counts=405/212/383 pct=40.500/21.200/38.300 maxDeltaPP=1.700 typeMaxZ=1.10 textMaxZ=1.22 top="확실해." topCount=57
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=87 n=1000 counts=394/196/410 pct=39.400/19.600/41.000 maxDeltaPP=1.000 typeMaxZ=0.65 textMaxZ=2.40 top="진행해." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=88 n=1000 counts=401/189/410 pct=40.100/18.900/41.000 maxDeltaPP=1.100 typeMaxZ=0.87 textMaxZ=1.75 top="묻지도 마." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=89 n=1000 counts=350/232/418 pct=35.000/23.200/41.800 maxDeltaPP=5.000 typeMaxZ=3.23 textMaxZ=1.98 top="나중에 다시 물어봐." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=90 n=1000 counts=396/204/400 pct=39.600/20.400/40.000 maxDeltaPP=0.400 typeMaxZ=0.32 textMaxZ=2.36 top="해도 돼." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=91 n=1000 counts=369/204/427 pct=36.900/20.400/42.700 maxDeltaPP=3.100 typeMaxZ=2.00 textMaxZ=2.34 top="금지야." topCount=67
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=92 n=1000 counts=407/200/393 pct=40.700/20.000/39.300 maxDeltaPP=0.700 typeMaxZ=0.45 textMaxZ=2.61 top="언젠가는 하겠지." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=93 n=1000 counts=382/210/408 pct=38.200/21.000/40.800 maxDeltaPP=1.800 typeMaxZ=1.16 textMaxZ=2.10 top="가만있어." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=94 n=1000 counts=376/194/430 pct=37.600/19.400/43.000 maxDeltaPP=3.000 typeMaxZ=1.94 textMaxZ=1.56 top="안 돼." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=95 n=1000 counts=413/215/372 pct=41.300/21.500/37.200 maxDeltaPP=2.800 typeMaxZ=1.81 textMaxZ=2.14 top="소라고동을 따라." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=96 n=1000 counts=388/213/399 pct=38.800/21.300/39.900 maxDeltaPP=1.300 typeMaxZ=1.03 textMaxZ=1.92 top="당연하지." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=97 n=1000 counts=371/227/402 pct=37.100/22.700/40.200 maxDeltaPP=2.900 typeMaxZ=2.13 textMaxZ=2.49 top="불분명한 시기야." topCount=73
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=98 n=1000 counts=374/231/395 pct=37.400/23.100/39.500 maxDeltaPP=3.100 typeMaxZ=2.45 textMaxZ=2.38 top="불분명한 시기야." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=99 n=1000 counts=393/198/409 pct=39.300/19.800/40.900 maxDeltaPP=0.900 typeMaxZ=0.58 textMaxZ=2.07 top="안 돼." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=100 n=1000 counts=389/210/401 pct=38.900/21.000/40.100 maxDeltaPP=1.100 typeMaxZ=0.79 textMaxZ=2.09 top="물론." topCount=58
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=101 n=1000 counts=397/200/403 pct=39.700/20.000/40.300 maxDeltaPP=0.300 typeMaxZ=0.19 textMaxZ=1.63 top="다시 한 번 물어봐." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=102 n=1000 counts=414/197/389 pct=41.400/19.700/38.900 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=1.60 top="확실해." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=103 n=1000 counts=422/197/381 pct=42.200/19.700/38.100 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=1.45 top="진행해." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=104 n=1000 counts=393/193/414 pct=39.300/19.300/41.400 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=2.04 top="오늘은 절대 안 돼." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=105 n=1000 counts=404/187/409 pct=40.400/18.700/40.900 maxDeltaPP=1.300 typeMaxZ=1.03 textMaxZ=2.93 top="소라고동은 모든 걸 알아." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=106 n=1000 counts=391/205/404 pct=39.100/20.500/40.400 maxDeltaPP=0.900 typeMaxZ=0.58 textMaxZ=2.18 top="불가능해." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=107 n=1000 counts=401/208/391 pct=40.100/20.800/39.100 maxDeltaPP=0.900 typeMaxZ=0.63 textMaxZ=2.08 top="다시 한 번 물어봐." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=108 n=1000 counts=432/179/389 pct=43.200/17.900/38.900 maxDeltaPP=3.200 typeMaxZ=2.07 textMaxZ=2.20 top="진행해." topCount=68
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=109 n=1000 counts=407/206/387 pct=40.700/20.600/38.700 maxDeltaPP=1.300 typeMaxZ=0.84 textMaxZ=2.27 top="물론." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=110 n=1000 counts=382/198/420 pct=38.200/19.800/42.000 maxDeltaPP=2.000 typeMaxZ=1.29 textMaxZ=1.35 top="다 안 돼." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=111 n=1000 counts=400/210/390 pct=40.000/21.000/39.000 maxDeltaPP=1.000 typeMaxZ=0.79 textMaxZ=3.02 top="당연하지." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=112 n=1000 counts=374/214/412 pct=37.400/21.400/41.200 maxDeltaPP=2.600 typeMaxZ=1.68 textMaxZ=1.71 top="금지야." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=113 n=1000 counts=372/229/399 pct=37.200/22.900/39.900 maxDeltaPP=2.900 typeMaxZ=2.29 textMaxZ=2.27 top="다 안 돼." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=114 n=1000 counts=412/200/388 pct=41.200/20.000/38.800 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=1.86 top="진행해." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=115 n=1000 counts=405/222/373 pct=40.500/22.200/37.300 maxDeltaPP=2.700 typeMaxZ=1.74 textMaxZ=2.40 top="다시 한 번 물어봐." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=116 n=1000 counts=383/191/426 pct=38.300/19.100/42.600 maxDeltaPP=2.600 typeMaxZ=1.68 textMaxZ=3.57 top="당연하지." topCount=71
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=117 n=1000 counts=404/193/403 pct=40.400/19.300/40.300 maxDeltaPP=0.700 typeMaxZ=0.55 textMaxZ=1.79 top="물론." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=118 n=1000 counts=401/199/400 pct=40.100/19.900/40.000 maxDeltaPP=0.100 typeMaxZ=0.08 textMaxZ=2.58 top="소라고동을 따라." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=119 n=1000 counts=396/205/399 pct=39.600/20.500/39.900 maxDeltaPP=0.500 typeMaxZ=0.40 textMaxZ=2.59 top="묻지도 마." topCount=67
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=120 n=1000 counts=386/192/422 pct=38.600/19.200/42.200 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=1.66 top="가만있어." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=121 n=1000 counts=410/185/405 pct=41.000/18.500/40.500 maxDeltaPP=1.500 typeMaxZ=1.19 textMaxZ=2.61 top="가만있어." topCount=68
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=122 n=1000 counts=406/209/385 pct=40.600/20.900/38.500 maxDeltaPP=1.500 typeMaxZ=0.97 textMaxZ=1.99 top="확실해." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=123 n=1000 counts=386/215/399 pct=38.600/21.500/39.900 maxDeltaPP=1.500 typeMaxZ=1.19 textMaxZ=1.65 top="소라고동을 따라." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=124 n=1000 counts=397/198/405 pct=39.700/19.800/40.500 maxDeltaPP=0.500 typeMaxZ=0.32 textMaxZ=1.31 top="좋아." topCount=57
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=125 n=1000 counts=412/200/388 pct=41.200/20.000/38.800 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=1.56 top="진행해." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=126 n=1000 counts=408/181/411 pct=40.800/18.100/41.100 maxDeltaPP=1.900 typeMaxZ=1.50 textMaxZ=1.29 top="금지야." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=127 n=1000 counts=396/192/412 pct=39.600/19.200/41.200 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=2.90 top="오늘은 절대 안 돼." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=128 n=1000 counts=415/225/360 pct=41.500/22.500/36.000 maxDeltaPP=4.000 typeMaxZ=2.58 textMaxZ=1.73 top="불분명한 시기야." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=129 n=1000 counts=415/190/395 pct=41.500/19.000/39.500 maxDeltaPP=1.500 typeMaxZ=0.97 textMaxZ=2.19 top="불가능해." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=130 n=1000 counts=413/180/407 pct=41.300/18.000/40.700 maxDeltaPP=2.000 typeMaxZ=1.58 textMaxZ=1.63 top="가만있어." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=131 n=1000 counts=422/188/390 pct=42.200/18.800/39.000 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=1.57 top="소라고동은 모든 걸 알아." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=132 n=1000 counts=387/183/430 pct=38.700/18.300/43.000 maxDeltaPP=3.000 typeMaxZ=1.94 textMaxZ=2.09 top="다 안 돼." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=133 n=1000 counts=409/186/405 pct=40.900/18.600/40.500 maxDeltaPP=1.400 typeMaxZ=1.11 textMaxZ=1.81 top="좋아." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=134 n=1000 counts=405/214/381 pct=40.500/21.400/38.100 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=1.82 top="나중에 다시 물어봐." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=135 n=1000 counts=384/204/412 pct=38.400/20.400/41.200 maxDeltaPP=1.600 typeMaxZ=1.03 textMaxZ=1.71 top="불분명한 시기야." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=136 n=1000 counts=389/206/405 pct=38.900/20.600/40.500 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=1.45 top="안 돼." topCount=60
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=137 n=1000 counts=403/188/409 pct=40.300/18.800/40.900 maxDeltaPP=1.200 typeMaxZ=0.95 textMaxZ=2.11 top="그것도 안 돼." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=138 n=1000 counts=404/180/416 pct=40.400/18.000/41.600 maxDeltaPP=2.000 typeMaxZ=1.58 textMaxZ=1.73 top="진행해." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=139 n=1000 counts=394/192/414 pct=39.400/19.200/41.400 maxDeltaPP=1.400 typeMaxZ=0.90 textMaxZ=2.83 top="나중에 다시 물어봐." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=140 n=1000 counts=387/221/392 pct=38.700/22.100/39.200 maxDeltaPP=2.100 typeMaxZ=1.66 textMaxZ=1.94 top="소라고동을 따라." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=141 n=1000 counts=411/212/377 pct=41.100/21.200/37.700 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=1.69 top="당연하지." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=142 n=1000 counts=407/198/395 pct=40.700/19.800/39.500 maxDeltaPP=0.700 typeMaxZ=0.45 textMaxZ=1.82 top="진행해." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=143 n=1000 counts=430/186/384 pct=43.000/18.600/38.400 maxDeltaPP=3.000 typeMaxZ=1.94 textMaxZ=1.39 top="소라고동은 모든 걸 알아." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=144 n=1000 counts=402/199/399 pct=40.200/19.900/39.900 maxDeltaPP=0.200 typeMaxZ=0.13 textMaxZ=2.59 top="오늘은 절대 안 돼." topCount=67
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=145 n=1000 counts=377/198/425 pct=37.700/19.800/42.500 maxDeltaPP=2.500 typeMaxZ=1.61 textMaxZ=1.73 top="금지야." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=146 n=1000 counts=366/243/391 pct=36.600/24.300/39.100 maxDeltaPP=4.300 typeMaxZ=3.40 textMaxZ=2.57 top="다시 한 번 물어봐." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=147 n=1000 counts=381/212/407 pct=38.100/21.200/40.700 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=2.12 top="불가능해." topCount=65
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=148 n=1000 counts=422/189/389 pct=42.200/18.900/38.900 maxDeltaPP=2.200 typeMaxZ=1.42 textMaxZ=2.05 top="당연하지." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=149 n=1000 counts=397/191/412 pct=39.700/19.100/41.200 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=2.03 top="확실해." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=150 n=1000 counts=421/180/399 pct=42.100/18.000/39.900 maxDeltaPP=2.100 typeMaxZ=1.58 textMaxZ=2.01 top="해도 돼." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=151 n=1000 counts=409/199/392 pct=40.900/19.900/39.200 maxDeltaPP=0.900 typeMaxZ=0.58 textMaxZ=1.99 top="진행해." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=152 n=1000 counts=392/188/420 pct=39.200/18.800/42.000 maxDeltaPP=2.000 typeMaxZ=1.29 textMaxZ=2.14 top="금지야." topCount=66
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=153 n=1000 counts=381/200/419 pct=38.100/20.000/41.900 maxDeltaPP=1.900 typeMaxZ=1.23 textMaxZ=2.23 top="진행해." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=154 n=1000 counts=376/203/421 pct=37.600/20.300/42.100 maxDeltaPP=2.400 typeMaxZ=1.55 textMaxZ=2.41 top="오늘은 절대 안 돼." topCount=69
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=155 n=1000 counts=409/203/388 pct=40.900/20.300/38.800 maxDeltaPP=1.200 typeMaxZ=0.77 textMaxZ=1.90 top="물론." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=156 n=1000 counts=384/208/408 pct=38.400/20.800/40.800 maxDeltaPP=1.600 typeMaxZ=1.03 textMaxZ=2.40 top="나중에 다시 물어봐." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=157 n=1000 counts=406/195/399 pct=40.600/19.500/39.900 maxDeltaPP=0.600 typeMaxZ=0.40 textMaxZ=1.54 top="진행해." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=158 n=1000 counts=423/184/393 pct=42.300/18.400/39.300 maxDeltaPP=2.300 typeMaxZ=1.48 textMaxZ=1.70 top="소라고동은 모든 걸 알아." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=159 n=1000 counts=400/219/381 pct=40.000/21.900/38.100 maxDeltaPP=1.900 typeMaxZ=1.50 textMaxZ=2.27 top="언젠가는 하겠지." topCount=67
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=160 n=1000 counts=363/223/414 pct=36.300/22.300/41.400 maxDeltaPP=3.700 typeMaxZ=2.39 textMaxZ=3.16 top="그것도 안 돼." topCount=73
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=161 n=1000 counts=405/188/407 pct=40.500/18.800/40.700 maxDeltaPP=1.200 typeMaxZ=0.95 textMaxZ=3.06 top="소라고동은 모든 걸 알아." topCount=71
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=162 n=1000 counts=375/202/423 pct=37.500/20.200/42.300 maxDeltaPP=2.500 typeMaxZ=1.61 textMaxZ=2.66 top="금지야." topCount=71
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=163 n=1000 counts=393/207/400 pct=39.300/20.700/40.000 maxDeltaPP=0.700 typeMaxZ=0.55 textMaxZ=1.81 top="그것도 안 돼." topCount=62
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=164 n=1000 counts=415/190/395 pct=41.500/19.000/39.500 maxDeltaPP=1.500 typeMaxZ=0.97 textMaxZ=1.58 top="당연하지." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=165 n=1000 counts=398/215/387 pct=39.800/21.500/38.700 maxDeltaPP=1.500 typeMaxZ=1.19 textMaxZ=2.39 top="물론." topCount=64
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=166 n=1000 counts=411/198/391 pct=41.100/19.800/39.100 maxDeltaPP=1.100 typeMaxZ=0.71 textMaxZ=1.82 top="해도 돼." topCount=59
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=167 n=1000 counts=395/231/374 pct=39.500/23.100/37.400 maxDeltaPP=3.100 typeMaxZ=2.45 textMaxZ=1.99 top="불분명한 시기야." topCount=63
+[MC ROOM TEST] STRATUM method=keyed group=byRoom bucket=168 n=1000 counts=390/213/397 pct=39.000/21.300/39.700 maxDeltaPP=1.300 typeMaxZ=1.03 textMaxZ=2.07 top="가만있어." topCount=61
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=0 n=13000 counts=5307/2570/5123 pct=40.823/19.769/39.408 maxDeltaPP=0.823 typeMaxZ=1.92 textMaxZ=2.18 top="물론." topCount=715
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=1 n=13000 counts=5199/2606/5195 pct=39.992/20.046/39.962 maxDeltaPP=0.046 typeMaxZ=0.13 textMaxZ=1.70 top="언젠가는 하겠지." topCount=686
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=2 n=13000 counts=5174/2564/5262 pct=39.800/19.723/40.477 maxDeltaPP=0.477 typeMaxZ=1.11 textMaxZ=1.96 top="가만있어." topCount=686
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=3 n=13000 counts=5170/2623/5207 pct=39.769/20.177/40.054 maxDeltaPP=0.231 typeMaxZ=0.54 textMaxZ=1.59 top="진행해." topCount=684
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=4 n=13000 counts=5171/2678/5151 pct=39.777/20.600/39.623 maxDeltaPP=0.600 typeMaxZ=1.71 textMaxZ=2.10 top="나중에 다시 물어봐." topCount=709
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=5 n=13000 counts=5273/2529/5198 pct=40.562/19.454/39.985 maxDeltaPP=0.562 typeMaxZ=1.56 textMaxZ=2.47 top="확실해." topCount=696
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=6 n=13000 counts=5192/2628/5180 pct=39.938/20.215/39.846 maxDeltaPP=0.215 typeMaxZ=0.61 textMaxZ=2.06 top="해도 돼." topCount=698
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=7 n=13000 counts=5095/2696/5209 pct=39.192/20.738/40.069 maxDeltaPP=0.808 typeMaxZ=2.10 textMaxZ=1.90 top="불분명한 시기야." topCount=712
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=8 n=13000 counts=5156/2642/5202 pct=39.662/20.323/40.015 maxDeltaPP=0.338 typeMaxZ=0.92 textMaxZ=1.37 top="오늘은 절대 안 돼." topCount=683
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=9 n=13000 counts=5232/2584/5184 pct=40.246/19.877/39.877 maxDeltaPP=0.246 typeMaxZ=0.57 textMaxZ=2.39 top="진행해." topCount=694
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=10 n=13000 counts=5215/2552/5233 pct=40.115/19.631/40.254 maxDeltaPP=0.369 typeMaxZ=1.05 textMaxZ=2.13 top="해도 돼." topCount=692
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=11 n=13000 counts=5163/2591/5246 pct=39.715/19.931/40.354 maxDeltaPP=0.354 typeMaxZ=0.82 textMaxZ=2.81 top="금지야." topCount=723
+[MC ROOM TEST] STRATUM method=keyed group=byRow bucket=12 n=13000 counts=5158/2673/5169 pct=39.677/20.562/39.762 maxDeltaPP=0.562 typeMaxZ=1.60 textMaxZ=2.77 top="그것도 안 돼." topCount=705
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=0 n=13000 counts=5249/2570/5181 pct=40.377/19.769/39.854 maxDeltaPP=0.377 typeMaxZ=0.88 textMaxZ=2.09 top="소라고동은 모든 걸 알아." topCount=683
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=1 n=13000 counts=5200/2595/5205 pct=40.000/19.962/40.038 maxDeltaPP=0.038 typeMaxZ=0.11 textMaxZ=2.16 top="오늘은 절대 안 돼." topCount=698
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=2 n=13000 counts=5209/2538/5253 pct=40.069/19.523/40.408 maxDeltaPP=0.477 typeMaxZ=1.36 textMaxZ=1.97 top="불가능해." topCount=689
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=3 n=13000 counts=5167/2671/5162 pct=39.746/20.546/39.708 maxDeltaPP=0.546 typeMaxZ=1.56 textMaxZ=2.07 top="좋아." topCount=695
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=4 n=13000 counts=5224/2618/5158 pct=40.185/20.138/39.677 maxDeltaPP=0.323 typeMaxZ=0.75 textMaxZ=1.15 top="나중에 다시 물어봐." topCount=674
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=5 n=13000 counts=5217/2618/5165 pct=40.131/20.138/39.731 maxDeltaPP=0.269 typeMaxZ=0.63 textMaxZ=1.89 top="오늘은 절대 안 돼." topCount=688
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=6 n=13000 counts=5070/2624/5306 pct=39.000/20.185/40.815 maxDeltaPP=1.000 typeMaxZ=2.33 textMaxZ=2.48 top="금지야." topCount=723
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=7 n=13000 counts=5168/2685/5147 pct=39.754/20.654/39.592 maxDeltaPP=0.654 typeMaxZ=1.86 textMaxZ=2.69 top="좋아." topCount=710
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=8 n=13000 counts=5245/2534/5221 pct=40.346/19.492/40.162 maxDeltaPP=0.508 typeMaxZ=1.45 textMaxZ=1.41 top="진행해." topCount=682
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=9 n=13000 counts=5130/2672/5198 pct=39.462/20.554/39.985 maxDeltaPP=0.554 typeMaxZ=1.58 textMaxZ=1.72 top="물론." topCount=682
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=10 n=13000 counts=5236/2549/5215 pct=40.277/19.608/40.115 maxDeltaPP=0.392 typeMaxZ=1.12 textMaxZ=1.63 top="물론." topCount=680
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=11 n=13000 counts=5162/2665/5173 pct=39.708/20.500/39.792 maxDeltaPP=0.500 typeMaxZ=1.43 textMaxZ=1.96 top="나중에 다시 물어봐." topCount=710
+[MC ROOM TEST] STRATUM method=keyed group=byColumn bucket=12 n=13000 counts=5228/2597/5175 pct=40.215/19.977/39.808 maxDeltaPP=0.215 typeMaxZ=0.50 textMaxZ=3.07 top="진행해." topCount=697
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=1 n=14196 counts=5653/2874/5669 pct=39.821/20.245/39.934 maxDeltaPP=0.245 typeMaxZ=0.73 textMaxZ=2.22 top="불분명한 시기야." topCount=770
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=2 n=14196 counts=5627/2903/5666 pct=39.638/20.449/39.913 maxDeltaPP=0.449 typeMaxZ=1.34 textMaxZ=1.60 top="불분명한 시기야." topCount=760
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=3 n=14196 counts=5595/2909/5692 pct=39.413/20.492/40.096 maxDeltaPP=0.587 typeMaxZ=1.46 textMaxZ=2.20 top="언젠가는 하겠지." topCount=768
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=4 n=14196 counts=5630/2832/5734 pct=39.659/19.949/40.392 maxDeltaPP=0.392 typeMaxZ=0.95 textMaxZ=2.69 top="오늘은 절대 안 돼." topCount=784
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=5 n=14027 counts=5539/2796/5692 pct=39.488/19.933/40.579 maxDeltaPP=0.579 typeMaxZ=1.40 textMaxZ=1.90 top="다 안 돼." topCount=752
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=6 n=14027 counts=5590/2812/5625 pct=39.852/20.047/40.101 maxDeltaPP=0.148 typeMaxZ=0.36 textMaxZ=1.52 top="안 돼." topCount=740
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=7 n=14027 counts=5692/2850/5485 pct=40.579/20.318/39.103 maxDeltaPP=0.897 typeMaxZ=2.17 textMaxZ=2.10 top="언젠가는 하겠지." topCount=738
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=8 n=14027 counts=5584/2846/5597 pct=39.809/20.289/39.902 maxDeltaPP=0.289 typeMaxZ=0.86 textMaxZ=2.47 top="당연하지." topCount=759
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=9 n=14027 counts=5747/2736/5544 pct=40.971/19.505/39.524 maxDeltaPP=0.971 typeMaxZ=2.35 textMaxZ=1.99 top="다 안 돼." topCount=742
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=10 n=14027 counts=5652/2782/5593 pct=40.294/19.833/39.873 maxDeltaPP=0.294 typeMaxZ=0.71 textMaxZ=1.75 top="가만있어." topCount=741
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=11 n=14027 counts=5636/2805/5586 pct=40.180/19.997/39.823 maxDeltaPP=0.180 typeMaxZ=0.43 textMaxZ=2.60 top="진행해." topCount=750
+[MC ROOM TEST] STRATUM method=keyed group=byStage bucket=12 n=14027 counts=5560/2791/5676 pct=39.638/19.897/40.465 maxDeltaPP=0.465 typeMaxZ=1.12 textMaxZ=2.31 top="불가능해." topCount=761
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=0 n=16900 counts=6890/3385/6625 pct=40.769/20.030/39.201 maxDeltaPP=0.799 typeMaxZ=2.12 textMaxZ=1.42 top="진행해." topCount=886
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=1 n=16900 counts=6756/3356/6788 pct=39.976/19.858/40.166 maxDeltaPP=0.166 typeMaxZ=0.46 textMaxZ=1.19 top="가만있어." topCount=878
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=2 n=16900 counts=6727/3294/6879 pct=39.805/19.491/40.704 maxDeltaPP=0.704 typeMaxZ=1.87 textMaxZ=2.00 top="오늘은 절대 안 돼." topCount=899
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=3 n=16731 counts=6721/3386/6624 pct=40.171/20.238/39.591 maxDeltaPP=0.409 typeMaxZ=1.08 textMaxZ=2.64 top="불분명한 시기야." topCount=904
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=4 n=16900 counts=6745/3368/6787 pct=39.911/19.929/40.160 maxDeltaPP=0.160 typeMaxZ=0.42 textMaxZ=2.25 top="언젠가는 하겠지." topCount=897
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=5 n=16900 counts=6635/3461/6804 pct=39.260/20.479/40.260 maxDeltaPP=0.740 typeMaxZ=1.96 textMaxZ=1.99 top="오늘은 절대 안 돼." topCount=902
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=6 n=16900 counts=6734/3406/6760 pct=39.846/20.154/40.000 maxDeltaPP=0.154 typeMaxZ=0.50 textMaxZ=3.23 top="나중에 다시 물어봐." topCount=891
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=7 n=16900 counts=6777/3412/6711 pct=40.101/20.189/39.710 maxDeltaPP=0.290 typeMaxZ=0.77 textMaxZ=2.10 top="불분명한 시기야." topCount=903
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=8 n=17069 counts=6837/3479/6753 pct=40.055/20.382/39.563 maxDeltaPP=0.437 typeMaxZ=1.25 textMaxZ=2.06 top="오늘은 절대 안 돼." topCount=900
+[MC ROOM TEST] STRATUM method=keyed group=bySeedResidue bucket=9 n=16900 counts=6683/3389/6828 pct=39.544/20.053/40.402 maxDeltaPP=0.456 typeMaxZ=1.21 textMaxZ=1.70 top="안 돼." topCount=887
+[MC ROOM TEST] CONDITIONAL method=keyed relation=horizontal given bucket=negative n=62384 counts=24901/12630/24853 pct=39.916/20.246/39.839 maxDeltaPP=0.246 typeMaxZ=1.53 textMaxZ=1.41 top="언젠가는 하겠지." topCount=3216
+[MC ROOM TEST] CONDITIONAL method=keyed relation=horizontal given bucket=neutral n=31339 counts=12493/6229/12617 pct=39.864/19.876/40.260 maxDeltaPP=0.260 typeMaxZ=0.94 textMaxZ=1.70 top="오늘은 절대 안 돼." topCount=1634
+[MC ROOM TEST] CONDITIONAL method=keyed relation=horizontal given bucket=positive n=62277 counts=24862/12507/24908 pct=39.922/20.083/39.996 maxDeltaPP=0.083 typeMaxZ=0.52 textMaxZ=2.56 top="나중에 다시 물어봐." topCount=3207
+[MC ROOM TEST] CONDITIONAL method=keyed relation=vertical given bucket=negative n=62390 counts=24794/12612/24984 pct=39.740/20.215/40.045 maxDeltaPP=0.260 typeMaxZ=1.34 textMaxZ=2.78 top="언젠가는 하겠지." topCount=3226
+[MC ROOM TEST] CONDITIONAL method=keyed relation=vertical given bucket=neutral n=31263 counts=12471/6160/12632 pct=39.891/19.704/40.406 maxDeltaPP=0.406 typeMaxZ=1.46 textMaxZ=1.65 top="가만있어." topCount=1640
+[MC ROOM TEST] CONDITIONAL method=keyed relation=vertical given bucket=positive n=62347 counts=24933/12594/24820 pct=39.991/20.200/39.809 maxDeltaPP=0.200 typeMaxZ=1.25 textMaxZ=1.76 top="가만있어." topCount=3194
+[MC ROOM TEST] CONDITIONAL method=keyed relation=second_use given bucket=negative n=67559 counts=26735/13691/27133 pct=39.573/20.265/40.162 maxDeltaPP=0.427 typeMaxZ=2.27 textMaxZ=2.26 top="불분명한 시기야." topCount=3507
+[MC ROOM TEST] CONDITIONAL method=keyed relation=second_use given bucket=neutral n=33936 counts=13537/6884/13515 pct=39.890/20.285/39.825 maxDeltaPP=0.285 typeMaxZ=1.31 textMaxZ=2.61 top="나중에 다시 물어봐." topCount=1801
+[MC ROOM TEST] CONDITIONAL method=keyed relation=second_use given bucket=positive n=67505 counts=27025/13568/26912 pct=40.034/20.099/39.867 maxDeltaPP=0.133 typeMaxZ=0.71 textMaxZ=1.96 top="가만있어." topCount=3464
+[MC ROOM TEST] PAIR method=keyed relation=changed_stage n=169000 typeMatches=60713 textMatches=8293 typePct=35.925 textPct=4.907
+[MC ROOM TEST] PAIR method=keyed relation=changed_stageType n=169000 typeMatches=60745 textMatches=8381 typePct=35.944 textPct=4.959
+[MC ROOM TEST] PAIR method=keyed relation=changed_dimension n=169000 typeMatches=60811 textMatches=8497 typePct=35.983 textPct=5.028
+[MC ROOM TEST] PAIR method=keyed relation=right_first_vs_left_second n=156000 typeMatches=55988 textMatches=7691 typePct=35.890 textPct=4.930
+[MC ROOM TEST] FLOOR_SNAPSHOT rooms=14 stage=1 stageType=1 startingRoom=84 usage=0 counterfactual=true
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=0 index=47 grid=47 roomType=5 visited=0 spawnSeed=2200626114 decorationSeed=2556592756 dimension=0 response=neutral text="언젠가는 하겠지."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=1 index=43 grid=43 roomType=8 visited=0 spawnSeed=2698774752 decorationSeed=1315074310 dimension=0 response=negative text="오늘은 절대 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=2 index=124 grid=124 roomType=2 visited=0 spawnSeed=2381899257 decorationSeed=4282933039 dimension=0 response=negative text="묻지도 마."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=3 index=73 grid=73 roomType=4 visited=0 spawnSeed=711043113 decorationSeed=1619296981 dimension=0 response=negative text="다 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=4 index=69 grid=69 roomType=13 visited=0 spawnSeed=2768587985 decorationSeed=1009095298 dimension=0 response=positive text="확실해."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=5 index=100 grid=100 roomType=10 visited=0 spawnSeed=1315216965 decorationSeed=3915540663 dimension=0 response=neutral text="불분명한 시기야."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=6 index=112 grid=112 roomType=7 visited=0 spawnSeed=3592135348 decorationSeed=103404235 dimension=0 response=negative text="가만있어."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=7 index=96 grid=96 roomType=29 visited=0 spawnSeed=1581938535 decorationSeed=4005090222 dimension=0 response=negative text="가만있어."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=8 index=84 grid=84 roomType=1 visited=1 spawnSeed=3247829849 decorationSeed=3184667726 dimension=0 response=negative text="묻지도 마."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=9 index=58 grid=57 roomType=1 visited=0 spawnSeed=3263929410 decorationSeed=1544972344 dimension=0 response=neutral text="나중에 다시 물어봐."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=10 index=85 grid=85 roomType=1 visited=0 spawnSeed=3674417478 decorationSeed=3075885217 dimension=0 response=positive text="확실해."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=11 index=111 grid=111 roomType=1 visited=0 spawnSeed=1305610041 decorationSeed=1077287161 dimension=0 response=neutral text="언젠가는 하겠지."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=12 index=31 grid=31 roomType=1 visited=0 spawnSeed=2296255524 decorationSeed=3262061557 dimension=0 response=negative text="안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=legacy list=13 index=46 grid=46 roomType=1 visited=0 spawnSeed=4218496148 decorationSeed=1324395259 dimension=0 response=neutral text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=legacy type=positive count=2 withinType=100.000% text="확실해."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=legacy type=neutral count=1 withinType=20.000% text="불분명한 시기야."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=legacy type=neutral count=2 withinType=40.000% text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=legacy type=neutral count=2 withinType=40.000% text="언젠가는 하겠지."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=legacy type=negative count=2 withinType=28.571% text="묻지도 마."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=legacy type=negative count=1 withinType=14.286% text="안 돼."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=legacy type=negative count=2 withinType=28.571% text="가만있어."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=legacy type=negative count=1 withinType=14.286% text="다 안 돼."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=legacy type=negative count=1 withinType=14.286% text="오늘은 절대 안 돼."
+[MC ROOM TEST] ACTUAL_FLOOR method=legacy n=14 counts=2/5/7 pct=14.286/35.714/50.000 maxDeltaPP=25.714 typeMaxZ=1.96 textMaxZ=3.74 top="확실해." topCount=2
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=legacy bucket=1 n=6 counts=1/3/2 pct=16.667/50.000/33.333 maxDeltaPP=30.000 typeMaxZ=1.84 textMaxZ=2.65 top="나중에 다시 물어봐." topCount=2
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=legacy bucket=2 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="묻지도 마." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=legacy bucket=4 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="다 안 돼." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=legacy bucket=5 n=1 counts=0/1/0 pct=0.000/100.000/0.000 maxDeltaPP=80.000 typeMaxZ=2.00 textMaxZ=1.73 top="언젠가는 하겠지." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=legacy bucket=7 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="가만있어." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=legacy bucket=8 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="오늘은 절대 안 돼." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=legacy bucket=10 n=1 counts=0/1/0 pct=0.000/100.000/0.000 maxDeltaPP=80.000 typeMaxZ=2.00 textMaxZ=1.73 top="불분명한 시기야." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=legacy bucket=13 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="확실해." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=legacy bucket=29 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="가만있어." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=0 index=47 grid=47 roomType=5 visited=0 spawnSeed=2200626114 decorationSeed=2556592756 dimension=0 response=negative text="가만있어."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=1 index=43 grid=43 roomType=8 visited=0 spawnSeed=2698774752 decorationSeed=1315074310 dimension=0 response=neutral text="불분명한 시기야."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=2 index=124 grid=124 roomType=2 visited=0 spawnSeed=2381899257 decorationSeed=4282933039 dimension=0 response=neutral text="나중에 다시 물어봐."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=3 index=73 grid=73 roomType=4 visited=0 spawnSeed=711043113 decorationSeed=1619296981 dimension=0 response=positive text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=4 index=69 grid=69 roomType=13 visited=0 spawnSeed=2768587985 decorationSeed=1009095298 dimension=0 response=neutral text="다시 한 번 물어봐."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=5 index=100 grid=100 roomType=10 visited=0 spawnSeed=1315216965 decorationSeed=3915540663 dimension=0 response=negative text="다 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=6 index=112 grid=112 roomType=7 visited=0 spawnSeed=3592135348 decorationSeed=103404235 dimension=0 response=negative text="다 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=7 index=96 grid=96 roomType=29 visited=0 spawnSeed=1581938535 decorationSeed=4005090222 dimension=0 response=positive text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=8 index=84 grid=84 roomType=1 visited=1 spawnSeed=3247829849 decorationSeed=3184667726 dimension=0 response=positive text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=9 index=58 grid=57 roomType=1 visited=0 spawnSeed=3263929410 decorationSeed=1544972344 dimension=0 response=negative text="그것도 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=10 index=85 grid=85 roomType=1 visited=0 spawnSeed=3674417478 decorationSeed=3075885217 dimension=0 response=neutral text="불분명한 시기야."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=11 index=111 grid=111 roomType=1 visited=0 spawnSeed=1305610041 decorationSeed=1077287161 dimension=0 response=negative text="그것도 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=12 index=31 grid=31 roomType=1 visited=0 spawnSeed=2296255524 decorationSeed=3262061557 dimension=0 response=neutral text="불분명한 시기야."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_sum list=13 index=46 grid=46 roomType=1 visited=0 spawnSeed=4218496148 decorationSeed=1324395259 dimension=0 response=negative text="다 안 돼."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_sum type=positive count=3 withinType=100.000% text="소라고동은 모든 걸 알아."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_sum type=neutral count=3 withinType=60.000% text="불분명한 시기야."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_sum type=neutral count=1 withinType=20.000% text="다시 한 번 물어봐."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_sum type=neutral count=1 withinType=20.000% text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_sum type=negative count=1 withinType=16.667% text="가만있어."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_sum type=negative count=3 withinType=50.000% text="다 안 돼."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_sum type=negative count=2 withinType=33.333% text="그것도 안 돼."
+[MC ROOM TEST] ACTUAL_FLOOR method=rng_sum n=14 counts=3/5/6 pct=21.429/35.714/42.857 maxDeltaPP=18.571 typeMaxZ=1.47 textMaxZ=4.58 top="소라고동은 모든 걸 알아." topCount=3
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_sum bucket=1 n=6 counts=1/2/3 pct=16.667/33.333/50.000 maxDeltaPP=23.333 typeMaxZ=1.17 textMaxZ=2.84 top="불분명한 시기야." topCount=2
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_sum bucket=2 n=1 counts=0/1/0 pct=0.000/100.000/0.000 maxDeltaPP=80.000 typeMaxZ=2.00 textMaxZ=1.73 top="나중에 다시 물어봐." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_sum bucket=4 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="소라고동은 모든 걸 알아." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_sum bucket=5 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="가만있어." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_sum bucket=7 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="다 안 돼." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_sum bucket=8 n=1 counts=0/1/0 pct=0.000/100.000/0.000 maxDeltaPP=80.000 typeMaxZ=2.00 textMaxZ=1.73 top="불분명한 시기야." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_sum bucket=10 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="다 안 돼." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_sum bucket=13 n=1 counts=0/1/0 pct=0.000/100.000/0.000 maxDeltaPP=80.000 typeMaxZ=2.00 textMaxZ=1.73 top="다시 한 번 물어봐." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_sum bucket=29 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="소라고동은 모든 걸 알아." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=0 index=47 grid=47 roomType=5 visited=0 spawnSeed=2200626114 decorationSeed=2556592756 dimension=0 response=neutral text="나중에 다시 물어봐."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=1 index=43 grid=43 roomType=8 visited=0 spawnSeed=2698774752 decorationSeed=1315074310 dimension=0 response=neutral text="나중에 다시 물어봐."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=2 index=124 grid=124 roomType=2 visited=0 spawnSeed=2381899257 decorationSeed=4282933039 dimension=0 response=positive text="확실해."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=3 index=73 grid=73 roomType=4 visited=0 spawnSeed=711043113 decorationSeed=1619296981 dimension=0 response=positive text="물론."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=4 index=69 grid=69 roomType=13 visited=0 spawnSeed=2768587985 decorationSeed=1009095298 dimension=0 response=positive text="소라고동을 따라."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=5 index=100 grid=100 roomType=10 visited=0 spawnSeed=1315216965 decorationSeed=3915540663 dimension=0 response=negative text="그것도 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=6 index=112 grid=112 roomType=7 visited=0 spawnSeed=3592135348 decorationSeed=103404235 dimension=0 response=negative text="안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=7 index=96 grid=96 roomType=29 visited=0 spawnSeed=1581938535 decorationSeed=4005090222 dimension=0 response=negative text="오늘은 절대 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=8 index=84 grid=84 roomType=1 visited=1 spawnSeed=3247829849 decorationSeed=3184667726 dimension=0 response=negative text="안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=9 index=58 grid=57 roomType=1 visited=0 spawnSeed=3263929410 decorationSeed=1544972344 dimension=0 response=negative text="불가능해."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=10 index=85 grid=85 roomType=1 visited=0 spawnSeed=3674417478 decorationSeed=3075885217 dimension=0 response=neutral text="불분명한 시기야."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=11 index=111 grid=111 roomType=1 visited=0 spawnSeed=1305610041 decorationSeed=1077287161 dimension=0 response=neutral text="다시 한 번 물어봐."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=12 index=31 grid=31 roomType=1 visited=0 spawnSeed=2296255524 decorationSeed=3262061557 dimension=0 response=neutral text="다시 한 번 물어봐."
+[MC ROOM TEST] ACTUAL_ROOM method=rng_spawn list=13 index=46 grid=46 roomType=1 visited=0 spawnSeed=4218496148 decorationSeed=1324395259 dimension=0 response=positive text="확실해."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=positive count=1 withinType=25.000% text="소라고동을 따라."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=positive count=1 withinType=25.000% text="물론."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=positive count=2 withinType=50.000% text="확실해."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=neutral count=1 withinType=20.000% text="불분명한 시기야."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=neutral count=2 withinType=40.000% text="다시 한 번 물어봐."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=neutral count=2 withinType=40.000% text="나중에 다시 물어봐."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=negative count=1 withinType=20.000% text="불가능해."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=negative count=1 withinType=20.000% text="그것도 안 돼."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=negative count=1 withinType=20.000% text="오늘은 절대 안 돼."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=rng_spawn type=negative count=2 withinType=40.000% text="안 돼."
+[MC ROOM TEST] ACTUAL_FLOOR method=rng_spawn n=14 counts=4/5/5 pct=28.571/35.714/35.714 maxDeltaPP=15.714 typeMaxZ=1.47 textMaxZ=2.27 top="확실해." topCount=2
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_spawn bucket=1 n=6 counts=1/3/2 pct=16.667/50.000/33.333 maxDeltaPP=30.000 typeMaxZ=1.84 textMaxZ=2.65 top="다시 한 번 물어봐." topCount=2
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_spawn bucket=2 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="확실해." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_spawn bucket=4 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="물론." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_spawn bucket=5 n=1 counts=0/1/0 pct=0.000/100.000/0.000 maxDeltaPP=80.000 typeMaxZ=2.00 textMaxZ=1.73 top="나중에 다시 물어봐." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_spawn bucket=7 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="안 돼." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_spawn bucket=8 n=1 counts=0/1/0 pct=0.000/100.000/0.000 maxDeltaPP=80.000 typeMaxZ=2.00 textMaxZ=1.73 top="나중에 다시 물어봐." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_spawn bucket=10 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="그것도 안 돼." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_spawn bucket=13 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="소라고동을 따라." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=rng_spawn bucket=29 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="오늘은 절대 안 돼." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=0 index=47 grid=47 roomType=5 visited=0 spawnSeed=2200626114 decorationSeed=2556592756 dimension=0 response=positive text="물론."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=1 index=43 grid=43 roomType=8 visited=0 spawnSeed=2698774752 decorationSeed=1315074310 dimension=0 response=positive text="당연하지."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=2 index=124 grid=124 roomType=2 visited=0 spawnSeed=2381899257 decorationSeed=4282933039 dimension=0 response=positive text="물론."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=3 index=73 grid=73 roomType=4 visited=0 spawnSeed=711043113 decorationSeed=1619296981 dimension=0 response=positive text="물론."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=4 index=69 grid=69 roomType=13 visited=0 spawnSeed=2768587985 decorationSeed=1009095298 dimension=0 response=positive text="물론."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=5 index=100 grid=100 roomType=10 visited=0 spawnSeed=1315216965 decorationSeed=3915540663 dimension=0 response=negative text="그것도 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=6 index=112 grid=112 roomType=7 visited=0 spawnSeed=3592135348 decorationSeed=103404235 dimension=0 response=positive text="당연하지."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=7 index=96 grid=96 roomType=29 visited=0 spawnSeed=1581938535 decorationSeed=4005090222 dimension=0 response=neutral text="다시 한 번 물어봐."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=8 index=84 grid=84 roomType=1 visited=1 spawnSeed=3247829849 decorationSeed=3184667726 dimension=0 response=neutral text="언젠가는 하겠지."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=9 index=58 grid=57 roomType=1 visited=0 spawnSeed=3263929410 decorationSeed=1544972344 dimension=0 response=negative text="안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=10 index=85 grid=85 roomType=1 visited=0 spawnSeed=3674417478 decorationSeed=3075885217 dimension=0 response=negative text="그것도 안 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=11 index=111 grid=111 roomType=1 visited=0 spawnSeed=1305610041 decorationSeed=1077287161 dimension=0 response=negative text="가만있어."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=12 index=31 grid=31 roomType=1 visited=0 spawnSeed=2296255524 decorationSeed=3262061557 dimension=0 response=positive text="해도 돼."
+[MC ROOM TEST] ACTUAL_ROOM method=keyed list=13 index=46 grid=46 roomType=1 visited=0 spawnSeed=4218496148 decorationSeed=1324395259 dimension=0 response=negative text="안 돼."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=keyed type=positive count=2 withinType=28.571% text="당연하지."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=keyed type=positive count=4 withinType=57.143% text="물론."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=keyed type=positive count=1 withinType=14.286% text="해도 돼."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=keyed type=neutral count=1 withinType=50.000% text="언젠가는 하겠지."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=keyed type=neutral count=1 withinType=50.000% text="다시 한 번 물어봐."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=keyed type=negative count=2 withinType=40.000% text="그것도 안 돼."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=keyed type=negative count=1 withinType=20.000% text="가만있어."
+[MC ROOM TEST] PHRASE ACTUAL_FLOOR method=keyed type=negative count=2 withinType=40.000% text="안 돼."
+[MC ROOM TEST] ACTUAL_FLOOR method=keyed n=14 counts=7/2/5 pct=50.000/14.286/35.714 maxDeltaPP=10.000 typeMaxZ=0.76 textMaxZ=3.57 top="물론." topCount=4
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=keyed bucket=1 n=6 counts=1/1/4 pct=16.667/16.667/66.667 maxDeltaPP=26.667 typeMaxZ=1.33 textMaxZ=2.65 top="안 돼." topCount=2
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=keyed bucket=2 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="물론." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=keyed bucket=4 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="물론." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=keyed bucket=5 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="물론." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=keyed bucket=7 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="당연하지." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=keyed bucket=8 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="당연하지." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=keyed bucket=10 n=1 counts=0/0/1 pct=0.000/0.000/100.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="그것도 안 돼." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=keyed bucket=13 n=1 counts=1/0/0 pct=100.000/0.000/0.000 maxDeltaPP=60.000 typeMaxZ=1.22 textMaxZ=2.65 top="물론." topCount=1
+[MC ROOM TEST] ACTUAL_ROOM_TYPE method=keyed bucket=29 n=1 counts=0/1/0 pct=0.000/100.000/0.000 maxDeltaPP=80.000 typeMaxZ=2.00 textMaxZ=1.73 top="다시 한 번 물어봐." topCount=1
+[MC ROOM TEST] Actual snapshot is one floor, including unvisited descriptors; small/type-skewed samples are descriptive only.
+[MC ROOM TEST] TIMING only selection tested; input availability/spam cooldown can reject activation separately. frameMismatches=0
+[MC ROOM TEST] END runs=1000 firstUsesPerMethod=169000 draws=3084080 timingMismatches=0

@@ -1,0 +1,5253 @@
+{
+  "backend": "native Isaac mc test; actual game log",
+  "source": "C:\\Users\\rudgh\\Documents\\My Games\\Binding of Isaac Repentance+\\log.txt",
+  "header": {
+    "backend": "SplitMix64+Isaac.RNG",
+    "samples": "10000",
+    "rounds": "5",
+    "seed": "2067025391",
+    "room": "84",
+    "usage": "0",
+    "shift": "35"
+  },
+  "context": {
+    "selectorVersion": "2",
+    "stage": "1",
+    "stageType": "1",
+    "dimension": "0",
+    "list": "8",
+    "spawnSeed": "3247829849",
+    "decorationSeed": "3184667726"
+  },
+  "end": {
+    "draws": "1650000",
+    "rows": "165",
+    "skipped": "0",
+    "predictionErrors": "0",
+    "suspectLegacy": "10",
+    "suspectRNG": "0",
+    "suspectKeyed": "0"
+  },
+  "allDone": {
+    "sequenceDraws": "1650000",
+    "roomDraws": "3084080"
+  },
+  "rows": [
+    {
+      "case": "current",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "current",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "39.820%",
+      "neutral": "19.990%",
+      "negative": "40.190%",
+      "typeMaxZ": "0.39",
+      "textMaxZ": "1.79",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3982,
+        "neutral": 1999,
+        "negative": 4019
+      }
+    },
+    {
+      "case": "current",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "40.210%",
+      "neutral": "19.490%",
+      "negative": "40.300%",
+      "typeMaxZ": "1.27",
+      "textMaxZ": "3.40",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4021,
+        "neutral": 1949,
+        "negative": 4030
+      }
+    },
+    {
+      "case": "current",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "current",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "40.060%",
+      "neutral": "19.030%",
+      "negative": "40.910%",
+      "typeMaxZ": "2.42",
+      "textMaxZ": "1.77",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4006,
+        "neutral": 1903,
+        "negative": 4091
+      }
+    },
+    {
+      "case": "current",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "39.340%",
+      "neutral": "20.340%",
+      "negative": "40.320%",
+      "typeMaxZ": "1.35",
+      "textMaxZ": "1.43",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3934,
+        "neutral": 2034,
+        "negative": 4032
+      }
+    },
+    {
+      "case": "current",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "current",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "40.160%",
+      "neutral": "19.430%",
+      "negative": "40.410%",
+      "typeMaxZ": "1.43",
+      "textMaxZ": "1.62",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4016,
+        "neutral": 1943,
+        "negative": 4041
+      }
+    },
+    {
+      "case": "current",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "40.250%",
+      "neutral": "20.140%",
+      "negative": "39.610%",
+      "typeMaxZ": "0.80",
+      "textMaxZ": "2.19",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4025,
+        "neutral": 2014,
+        "negative": 3961
+      }
+    },
+    {
+      "case": "current",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "current",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "39.580%",
+      "neutral": "19.980%",
+      "negative": "40.440%",
+      "typeMaxZ": "0.90",
+      "textMaxZ": "1.45",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3958,
+        "neutral": 1998,
+        "negative": 4044
+      }
+    },
+    {
+      "case": "current",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "39.380%",
+      "neutral": "19.970%",
+      "negative": "40.650%",
+      "typeMaxZ": "1.33",
+      "textMaxZ": "2.38",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3938,
+        "neutral": 1997,
+        "negative": 4065
+      }
+    },
+    {
+      "case": "current",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "current",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "40.610%",
+      "neutral": "19.330%",
+      "negative": "40.060%",
+      "typeMaxZ": "1.68",
+      "textMaxZ": "1.42",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4061,
+        "neutral": 1933,
+        "negative": 4006
+      }
+    },
+    {
+      "case": "current",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "39.880%",
+      "neutral": "19.990%",
+      "negative": "40.130%",
+      "typeMaxZ": "0.27",
+      "textMaxZ": "1.83",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3988,
+        "neutral": 1999,
+        "negative": 4013
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "39.820%",
+      "neutral": "19.990%",
+      "negative": "40.190%",
+      "typeMaxZ": "0.39",
+      "textMaxZ": "1.79",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3982,
+        "neutral": 1999,
+        "negative": 4019
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "40.210%",
+      "neutral": "19.490%",
+      "negative": "40.300%",
+      "typeMaxZ": "1.27",
+      "textMaxZ": "3.40",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4021,
+        "neutral": 1949,
+        "negative": 4030
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "40.060%",
+      "neutral": "19.030%",
+      "negative": "40.910%",
+      "typeMaxZ": "2.42",
+      "textMaxZ": "1.77",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4006,
+        "neutral": 1903,
+        "negative": 4091
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "39.340%",
+      "neutral": "20.340%",
+      "negative": "40.320%",
+      "typeMaxZ": "1.35",
+      "textMaxZ": "1.43",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3934,
+        "neutral": 2034,
+        "negative": 4032
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "40.160%",
+      "neutral": "19.430%",
+      "negative": "40.410%",
+      "typeMaxZ": "1.43",
+      "textMaxZ": "1.62",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4016,
+        "neutral": 1943,
+        "negative": 4041
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "40.250%",
+      "neutral": "20.140%",
+      "negative": "39.610%",
+      "typeMaxZ": "0.80",
+      "textMaxZ": "2.19",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4025,
+        "neutral": 2014,
+        "negative": 3961
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "39.580%",
+      "neutral": "19.980%",
+      "negative": "40.440%",
+      "typeMaxZ": "0.90",
+      "textMaxZ": "1.45",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3958,
+        "neutral": 1998,
+        "negative": 4044
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "39.380%",
+      "neutral": "19.970%",
+      "negative": "40.650%",
+      "typeMaxZ": "1.33",
+      "textMaxZ": "2.38",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3938,
+        "neutral": 1997,
+        "negative": 4065
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "40.000%",
+      "neutral": "20.000%",
+      "negative": "40.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4000,
+        "neutral": 2000,
+        "negative": 4000
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "40.610%",
+      "neutral": "19.330%",
+      "negative": "40.060%",
+      "typeMaxZ": "1.68",
+      "textMaxZ": "1.42",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4061,
+        "neutral": 1933,
+        "negative": 4006
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "39.880%",
+      "neutral": "19.990%",
+      "negative": "40.130%",
+      "typeMaxZ": "0.27",
+      "textMaxZ": "1.83",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3988,
+        "neutral": 1999,
+        "negative": 4013
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "33.340%",
+      "neutral": "33.330%",
+      "negative": "33.330%",
+      "typeMaxZ": "0.01",
+      "textMaxZ": "0.04",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3334,
+        "neutral": 3333,
+        "negative": 3333
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "32.710%",
+      "neutral": "33.350%",
+      "negative": "33.940%",
+      "typeMaxZ": "1.32",
+      "textMaxZ": "2.44",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3271,
+        "neutral": 3335,
+        "negative": 3394
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "33.350%",
+      "neutral": "33.150%",
+      "negative": "33.500%",
+      "typeMaxZ": "0.39",
+      "textMaxZ": "3.51",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3335,
+        "neutral": 3315,
+        "negative": 3350
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "33.330%",
+      "neutral": "33.330%",
+      "negative": "33.340%",
+      "typeMaxZ": "0.01",
+      "textMaxZ": "0.04",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3333,
+        "neutral": 3333,
+        "negative": 3334
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "32.730%",
+      "neutral": "33.750%",
+      "negative": "33.520%",
+      "typeMaxZ": "1.28",
+      "textMaxZ": "1.54",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3273,
+        "neutral": 3375,
+        "negative": 3352
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "34.160%",
+      "neutral": "33.350%",
+      "negative": "32.490%",
+      "typeMaxZ": "1.79",
+      "textMaxZ": "2.01",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3416,
+        "neutral": 3335,
+        "negative": 3249
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "33.330%",
+      "neutral": "33.340%",
+      "negative": "33.330%",
+      "typeMaxZ": "0.01",
+      "textMaxZ": "0.03",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3333,
+        "neutral": 3334,
+        "negative": 3333
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "33.800%",
+      "neutral": "33.110%",
+      "negative": "33.090%",
+      "typeMaxZ": "0.99",
+      "textMaxZ": "1.69",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3380,
+        "neutral": 3311,
+        "negative": 3309
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "33.650%",
+      "neutral": "33.380%",
+      "negative": "32.970%",
+      "typeMaxZ": "0.77",
+      "textMaxZ": "1.86",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3365,
+        "neutral": 3338,
+        "negative": 3297
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "33.340%",
+      "neutral": "33.330%",
+      "negative": "33.330%",
+      "typeMaxZ": "0.01",
+      "textMaxZ": "0.04",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3334,
+        "neutral": 3333,
+        "negative": 3333
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "32.840%",
+      "neutral": "33.980%",
+      "negative": "33.180%",
+      "typeMaxZ": "1.37",
+      "textMaxZ": "2.59",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3284,
+        "neutral": 3398,
+        "negative": 3318
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "33.310%",
+      "neutral": "32.950%",
+      "negative": "33.740%",
+      "typeMaxZ": "0.86",
+      "textMaxZ": "2.38",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3331,
+        "neutral": 3295,
+        "negative": 3374
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "33.330%",
+      "neutral": "33.330%",
+      "negative": "33.340%",
+      "typeMaxZ": "0.01",
+      "textMaxZ": "0.04",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3333,
+        "neutral": 3333,
+        "negative": 3334
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "32.230%",
+      "neutral": "33.890%",
+      "negative": "33.880%",
+      "typeMaxZ": "2.34",
+      "textMaxZ": "2.55",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3223,
+        "neutral": 3389,
+        "negative": 3388
+      }
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "33.620%",
+      "neutral": "33.480%",
+      "negative": "32.900%",
+      "typeMaxZ": "0.92",
+      "textMaxZ": "2.02",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 3362,
+        "neutral": 3348,
+        "negative": 3290
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "119.52",
+      "textMaxZ": "0.00",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "40.810%",
+      "neutral": "17.780%",
+      "negative": "41.410%",
+      "typeMaxZ": "0.74",
+      "textMaxZ": "2.31",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4081,
+        "neutral": 1778,
+        "negative": 4141
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "40.920%",
+      "neutral": "17.220%",
+      "negative": "41.860%",
+      "typeMaxZ": "1.39",
+      "textMaxZ": "2.20",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4092,
+        "neutral": 1722,
+        "negative": 4186
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "119.52",
+      "textMaxZ": "0.00",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "41.500%",
+      "neutral": "17.920%",
+      "negative": "40.580%",
+      "typeMaxZ": "1.21",
+      "textMaxZ": "1.75",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4150,
+        "neutral": 1792,
+        "negative": 4058
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "41.150%",
+      "neutral": "17.280%",
+      "negative": "41.570%",
+      "typeMaxZ": "0.96",
+      "textMaxZ": "1.44",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4115,
+        "neutral": 1728,
+        "negative": 4157
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "119.52",
+      "textMaxZ": "0.00",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "41.990%",
+      "neutral": "17.810%",
+      "negative": "40.200%",
+      "typeMaxZ": "1.98",
+      "textMaxZ": "1.33",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4199,
+        "neutral": 1781,
+        "negative": 4020
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "41.110%",
+      "neutral": "17.140%",
+      "negative": "41.750%",
+      "typeMaxZ": "1.33",
+      "textMaxZ": "3.28",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4111,
+        "neutral": 1714,
+        "negative": 4175
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "119.52",
+      "textMaxZ": "0.00",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "41.660%",
+      "neutral": "17.620%",
+      "negative": "40.720%",
+      "typeMaxZ": "0.98",
+      "textMaxZ": "2.23",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4166,
+        "neutral": 1762,
+        "negative": 4072
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "41.570%",
+      "neutral": "17.520%",
+      "negative": "40.910%",
+      "typeMaxZ": "0.80",
+      "textMaxZ": "1.42",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4157,
+        "neutral": 1752,
+        "negative": 4091
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "119.52",
+      "textMaxZ": "0.00",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "40.460%",
+      "neutral": "18.080%",
+      "negative": "41.460%",
+      "typeMaxZ": "1.46",
+      "textMaxZ": "1.82",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4046,
+        "neutral": 1808,
+        "negative": 4146
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "41.360%",
+      "neutral": "17.080%",
+      "negative": "41.560%",
+      "typeMaxZ": "1.49",
+      "textMaxZ": "2.32",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 4136,
+        "neutral": 1708,
+        "negative": 4156
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "1.000%",
+      "neutral": "1.000%",
+      "negative": "98.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "17.32",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 100,
+        "neutral": 100,
+        "negative": 9800
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.830%",
+      "neutral": "1.060%",
+      "negative": "98.110%",
+      "typeMaxZ": "1.71",
+      "textMaxZ": "1.58",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 83,
+        "neutral": 106,
+        "negative": 9811
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "1.020%",
+      "neutral": "1.290%",
+      "negative": "97.690%",
+      "typeMaxZ": "2.91",
+      "textMaxZ": "2.47",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 102,
+        "neutral": 129,
+        "negative": 9769
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "1.000%",
+      "neutral": "1.000%",
+      "negative": "98.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "17.32",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 100,
+        "neutral": 100,
+        "negative": 9800
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "1.060%",
+      "neutral": "0.960%",
+      "negative": "97.980%",
+      "typeMaxZ": "0.60",
+      "textMaxZ": "1.84",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 106,
+        "neutral": 96,
+        "negative": 9798
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.950%",
+      "neutral": "0.970%",
+      "negative": "98.080%",
+      "typeMaxZ": "0.57",
+      "textMaxZ": "2.05",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 95,
+        "neutral": 97,
+        "negative": 9808
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "1.000%",
+      "neutral": "1.000%",
+      "negative": "98.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "17.32",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 100,
+        "neutral": 100,
+        "negative": 9800
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.980%",
+      "neutral": "1.030%",
+      "negative": "97.990%",
+      "typeMaxZ": "0.30",
+      "textMaxZ": "1.76",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 98,
+        "neutral": 103,
+        "negative": 9799
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "1.140%",
+      "neutral": "1.020%",
+      "negative": "97.840%",
+      "typeMaxZ": "1.41",
+      "textMaxZ": "2.29",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 114,
+        "neutral": 102,
+        "negative": 9784
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "1.000%",
+      "neutral": "1.000%",
+      "negative": "98.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "17.32",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 100,
+        "neutral": 100,
+        "negative": 9800
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "1.070%",
+      "neutral": "1.130%",
+      "negative": "97.800%",
+      "typeMaxZ": "1.43",
+      "textMaxZ": "2.23",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 107,
+        "neutral": 113,
+        "negative": 9780
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "1.150%",
+      "neutral": "0.960%",
+      "negative": "97.890%",
+      "typeMaxZ": "1.51",
+      "textMaxZ": "2.12",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 115,
+        "neutral": 96,
+        "negative": 9789
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "1.000%",
+      "neutral": "1.000%",
+      "negative": "98.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "17.32",
+      "frequency": "SUSPECT",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 100,
+        "neutral": 100,
+        "negative": 9800
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "1.060%",
+      "neutral": "0.980%",
+      "negative": "97.960%",
+      "typeMaxZ": "0.60",
+      "textMaxZ": "1.25",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 106,
+        "neutral": 98,
+        "negative": 9796
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "1.020%",
+      "neutral": "1.040%",
+      "negative": "97.940%",
+      "typeMaxZ": "0.43",
+      "textMaxZ": "2.02",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 102,
+        "neutral": 104,
+        "negative": 9794
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.69",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.87",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.51",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.12",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.33",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.84",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.27",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.24",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "positive_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.69",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.53",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.17",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.15",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.72",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.06",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.94",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.78",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.41",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.02",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "neutral_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.59",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.69",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.87",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.51",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.12",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.33",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.84",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.27",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.24",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "negative_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.69",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.36",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.87",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.12",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.12",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.06",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.33",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.15",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.27",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_positive",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "100.000%",
+      "neutral": "0.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.69",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 10000,
+        "neutral": 0,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.94",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.17",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.60",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.72",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.18",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.94",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.90",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.41",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.36",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_neutral",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "100.000%",
+      "negative": "0.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.59",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 10000,
+        "negative": 0
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.36",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.87",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.12",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.12",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.06",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.33",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.15",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.27",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "0.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "2.00",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    },
+    {
+      "case": "forced_negative",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "n": "10000",
+      "positive": "0.000%",
+      "neutral": "0.000%",
+      "negative": "100.000%",
+      "typeMaxZ": "0.00",
+      "textMaxZ": "1.69",
+      "frequency": "OK",
+      "predictionErrors": "0",
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 10000
+      }
+    }
+  ],
+  "lagRows": [
+    {
+      "case": "current",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "48.995%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "36.174%",
+      "sameType@100": "36.283%",
+      "iidType": "36.000%",
+      "sameText@200": "5.327%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "35.644%",
+      "sameType@100": "35.980%",
+      "iidType": "36.000%",
+      "sameText@200": "5.224%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "49.005%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "35.994%",
+      "sameType@100": "35.707%",
+      "iidType": "36.000%",
+      "sameText@200": "4.816%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "36.034%",
+      "sameType@100": "36.061%",
+      "iidType": "36.000%",
+      "sameText@200": "5.010%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "49.005%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "35.604%",
+      "sameType@100": "35.727%",
+      "iidType": "36.000%",
+      "sameText@200": "5.520%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "35.764%",
+      "sameType@100": "36.404%",
+      "iidType": "36.000%",
+      "sameText@200": "4.837%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "49.005%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "36.674%",
+      "sameType@100": "35.970%",
+      "iidType": "36.000%",
+      "sameText@200": "5.082%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "36.454%",
+      "sameType@100": "35.758%",
+      "iidType": "36.000%",
+      "sameText@200": "5.163%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "49.005%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "36.134%",
+      "sameType@100": "36.535%",
+      "iidType": "36.000%",
+      "sameText@200": "5.184%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "current",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "36.604%",
+      "sameType@100": "36.545%",
+      "iidType": "36.000%",
+      "sameText@200": "5.051%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "48.995%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "36.174%",
+      "sameType@100": "36.283%",
+      "iidType": "36.000%",
+      "sameText@200": "5.327%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "35.644%",
+      "sameType@100": "35.980%",
+      "iidType": "36.000%",
+      "sameText@200": "5.224%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "49.005%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "35.994%",
+      "sameType@100": "35.707%",
+      "iidType": "36.000%",
+      "sameText@200": "4.816%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "36.034%",
+      "sameType@100": "36.061%",
+      "iidType": "36.000%",
+      "sameText@200": "5.010%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "49.005%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "35.604%",
+      "sameType@100": "35.727%",
+      "iidType": "36.000%",
+      "sameText@200": "5.520%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "35.764%",
+      "sameType@100": "36.404%",
+      "iidType": "36.000%",
+      "sameText@200": "4.837%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "49.005%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "36.674%",
+      "sameType@100": "35.970%",
+      "iidType": "36.000%",
+      "sameText@200": "5.082%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "36.454%",
+      "sameType@100": "35.758%",
+      "iidType": "36.000%",
+      "sameText@200": "5.163%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "49.005%",
+      "sameType@100": "100.000%",
+      "iidType": "36.000%",
+      "sameText@200": "100.000%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "36.134%",
+      "sameType@100": "36.535%",
+      "iidType": "36.000%",
+      "sameText@200": "5.184%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "default_40_20_40",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "36.604%",
+      "sameType@100": "36.545%",
+      "iidType": "36.000%",
+      "sameText@200": "5.051%",
+      "iidText": "5.000%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "0.000%",
+      "sameType@100": "0.000%",
+      "iidType": "33.333%",
+      "sameText@200": "0.000%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "33.573%",
+      "sameType@100": "32.485%",
+      "iidType": "33.333%",
+      "sameText@200": "5.449%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "33.203%",
+      "sameType@100": "33.111%",
+      "iidType": "33.333%",
+      "sameText@200": "5.582%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "0.000%",
+      "sameType@100": "0.000%",
+      "iidType": "33.333%",
+      "sameText@200": "0.000%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "32.853%",
+      "sameType@100": "33.566%",
+      "iidType": "33.333%",
+      "sameText@200": "5.469%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "33.533%",
+      "sameType@100": "33.576%",
+      "iidType": "33.333%",
+      "sameText@200": "5.582%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "0.000%",
+      "sameType@100": "0.000%",
+      "iidType": "33.333%",
+      "sameText@200": "0.000%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "33.443%",
+      "sameType@100": "34.434%",
+      "iidType": "33.333%",
+      "sameText@200": "5.704%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "34.203%",
+      "sameType@100": "33.444%",
+      "iidType": "33.333%",
+      "sameText@200": "5.337%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "0.000%",
+      "sameType@100": "0.000%",
+      "iidType": "33.333%",
+      "sameText@200": "0.000%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "33.083%",
+      "sameType@100": "33.444%",
+      "iidType": "33.333%",
+      "sameText@200": "5.612%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "32.923%",
+      "sameType@100": "33.667%",
+      "iidType": "33.333%",
+      "sameText@200": "5.235%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "0.000%",
+      "sameType@100": "0.000%",
+      "iidType": "33.333%",
+      "sameText@200": "0.000%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "33.813%",
+      "sameType@100": "32.990%",
+      "iidType": "33.333%",
+      "sameText@200": "5.490%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "equal_1_1_1",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "33.523%",
+      "sameType@100": "33.737%",
+      "iidType": "33.333%",
+      "sameText@200": "5.449%",
+      "iidText": "5.556%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "37.024%",
+      "sameText@200": "100.000%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "36.984%",
+      "sameType@100": "37.283%",
+      "iidType": "37.024%",
+      "sameText@200": "4.827%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "37.114%",
+      "sameType@100": "37.929%",
+      "iidType": "37.024%",
+      "sameText@200": "5.061%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "37.024%",
+      "sameText@200": "100.000%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "36.724%",
+      "sameType@100": "37.616%",
+      "iidType": "37.024%",
+      "sameText@200": "4.561%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "37.544%",
+      "sameType@100": "37.960%",
+      "iidType": "37.024%",
+      "sameText@200": "5.051%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "37.024%",
+      "sameText@200": "100.000%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "36.814%",
+      "sameType@100": "37.061%",
+      "iidType": "37.024%",
+      "sameText@200": "5.000%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "37.334%",
+      "sameType@100": "37.525%",
+      "iidType": "37.024%",
+      "sameText@200": "4.939%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "37.024%",
+      "sameText@200": "100.000%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "38.024%",
+      "sameType@100": "37.081%",
+      "iidType": "37.024%",
+      "sameText@200": "5.041%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "37.304%",
+      "sameType@100": "36.798%",
+      "iidType": "37.024%",
+      "sameText@200": "4.918%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "37.024%",
+      "sameText@200": "100.000%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "36.974%",
+      "sameType@100": "36.960%",
+      "iidType": "37.024%",
+      "sameText@200": "4.929%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "total17_7_3_7",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "36.754%",
+      "sameType@100": "37.485%",
+      "iidType": "37.024%",
+      "sameText@200": "5.041%",
+      "iidText": "5.017%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "96.000%",
+      "sameType@100": "100.000%",
+      "iidType": "96.060%",
+      "sameText@200": "100.000%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "96.270%",
+      "sameType@100": "96.273%",
+      "iidType": "96.060%",
+      "sameText@200": "11.908%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "95.410%",
+      "sameType@100": "95.475%",
+      "iidType": "96.060%",
+      "sameText@200": "12.020%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "96.000%",
+      "sameType@100": "100.000%",
+      "iidType": "96.060%",
+      "sameText@200": "100.000%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "96.050%",
+      "sameType@100": "95.960%",
+      "iidType": "96.060%",
+      "sameText@200": "11.633%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "96.210%",
+      "sameType@100": "96.182%",
+      "iidType": "96.060%",
+      "sameText@200": "12.071%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "96.000%",
+      "sameType@100": "100.000%",
+      "iidType": "96.060%",
+      "sameText@200": "100.000%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "96.070%",
+      "sameType@100": "96.010%",
+      "iidType": "96.060%",
+      "sameText@200": "12.255%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "95.700%",
+      "sameType@100": "95.788%",
+      "iidType": "96.060%",
+      "sameText@200": "11.806%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "96.000%",
+      "sameType@100": "100.000%",
+      "iidType": "96.060%",
+      "sameText@200": "100.000%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "95.690%",
+      "sameType@100": "95.737%",
+      "iidType": "96.060%",
+      "sameText@200": "12.173%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "95.850%",
+      "sameType@100": "95.838%",
+      "iidType": "96.060%",
+      "sameText@200": "11.520%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "96.000%",
+      "sameType@100": "100.000%",
+      "iidType": "96.060%",
+      "sameText@200": "100.000%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "95.980%",
+      "sameType@100": "95.949%",
+      "iidType": "96.060%",
+      "sameText@200": "11.745%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "rare_1_1_98",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "95.930%",
+      "sameType@100": "95.949%",
+      "iidType": "96.060%",
+      "sameText@200": "11.949%",
+      "iidText": "12.009%"
+    },
+    {
+      "case": "positive_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.398%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.643%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.031%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.622%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.735%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.429%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.745%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.092%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.214%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "positive_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.459%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "25.153%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.745%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.755%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "25.112%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.980%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.643%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "25.031%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.908%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.663%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "neutral_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "25.041%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "negative_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.398%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.643%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.031%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.622%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.735%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.429%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.745%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.092%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.214%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "negative_only",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.459%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.418%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.643%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.612%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.622%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.265%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.429%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.133%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.092%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "11.888%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_positive",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.459%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "25.296%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.745%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.949%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "25.112%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "25.255%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.643%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.684%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "24.908%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "25.010%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_neutral",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "25.041%",
+      "iidText": "25.000%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.418%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "1",
+      "seed": "2067025391",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.643%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "2",
+      "seed": "426493857",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "2",
+      "seed": "426493857",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.612%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "2",
+      "seed": "426493857",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.622%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.265%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "3",
+      "seed": "3080929618",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.429%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.133%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "4",
+      "seed": "1440398084",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.092%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "legacy",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "100.000%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "rng",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "11.888%",
+      "iidText": "12.500%"
+    },
+    {
+      "case": "forced_negative",
+      "round": "5",
+      "seed": "4094833845",
+      "method": "keyed",
+      "sameType@1": "100.000%",
+      "sameType@100": "100.000%",
+      "iidType": "100.000%",
+      "sameText@200": "12.459%",
+      "iidText": "12.500%"
+    }
+  ],
+  "summary": [
+    {
+      "case": "default_40_20_40",
+      "method": "legacy",
+      "n": 50000,
+      "counts": {
+        "positive": 20000,
+        "neutral": 10000,
+        "negative": 20000
+      },
+      "pct": {
+        "positive": 40.0,
+        "neutral": 20.0,
+        "negative": 40.0
+      },
+      "lagPctRange": {
+        "sameType@1": [
+          48.995,
+          49.005
+        ],
+        "sameType@100": [
+          100.0,
+          100.0
+        ],
+        "sameText@200": [
+          100.0,
+          100.0
+        ]
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "method": "rng",
+      "n": 50000,
+      "counts": {
+        "positive": 20023,
+        "neutral": 9776,
+        "negative": 20201
+      },
+      "pct": {
+        "positive": 40.046,
+        "neutral": 19.552,
+        "negative": 40.402
+      },
+      "lagPctRange": {
+        "sameType@1": [
+          35.604,
+          36.674
+        ],
+        "sameType@100": [
+          35.707,
+          36.535
+        ],
+        "sameText@200": [
+          4.816,
+          5.52
+        ]
+      }
+    },
+    {
+      "case": "default_40_20_40",
+      "method": "keyed",
+      "n": 50000,
+      "counts": {
+        "positive": 19906,
+        "neutral": 9993,
+        "negative": 20101
+      },
+      "pct": {
+        "positive": 39.812,
+        "neutral": 19.986,
+        "negative": 40.202
+      },
+      "lagPctRange": {
+        "sameType@1": [
+          35.644,
+          36.604
+        ],
+        "sameType@100": [
+          35.758,
+          36.545
+        ],
+        "sameText@200": [
+          4.837,
+          5.224
+        ]
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "method": "legacy",
+      "n": 50000,
+      "counts": {
+        "positive": 0,
+        "neutral": 0,
+        "negative": 50000
+      },
+      "pct": {
+        "positive": 0.0,
+        "neutral": 0.0,
+        "negative": 100.0
+      },
+      "lagPctRange": {
+        "sameType@1": [
+          100.0,
+          100.0
+        ],
+        "sameType@100": [
+          100.0,
+          100.0
+        ],
+        "sameText@200": [
+          100.0,
+          100.0
+        ]
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "method": "rng",
+      "n": 50000,
+      "counts": {
+        "positive": 20642,
+        "neutral": 8921,
+        "negative": 20437
+      },
+      "pct": {
+        "positive": 41.284,
+        "neutral": 17.842,
+        "negative": 40.874
+      },
+      "lagPctRange": {
+        "sameType@1": [
+          36.724,
+          38.024
+        ],
+        "sameType@100": [
+          36.96,
+          37.616
+        ],
+        "sameText@200": [
+          4.561,
+          5.041
+        ]
+      }
+    },
+    {
+      "case": "total17_7_3_7",
+      "method": "keyed",
+      "n": 50000,
+      "counts": {
+        "positive": 20611,
+        "neutral": 8624,
+        "negative": 20765
+      },
+      "pct": {
+        "positive": 41.222,
+        "neutral": 17.248,
+        "negative": 41.53
+      },
+      "lagPctRange": {
+        "sameType@1": [
+          36.754,
+          37.544
+        ],
+        "sameType@100": [
+          36.798,
+          37.96
+        ],
+        "sameText@200": [
+          4.918,
+          5.061
+        ]
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "method": "legacy",
+      "n": 50000,
+      "counts": {
+        "positive": 500,
+        "neutral": 500,
+        "negative": 49000
+      },
+      "pct": {
+        "positive": 1.0,
+        "neutral": 1.0,
+        "negative": 98.0
+      },
+      "lagPctRange": {
+        "sameType@1": [
+          96.0,
+          96.0
+        ],
+        "sameType@100": [
+          100.0,
+          100.0
+        ],
+        "sameText@200": [
+          100.0,
+          100.0
+        ]
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "method": "rng",
+      "n": 50000,
+      "counts": {
+        "positive": 500,
+        "neutral": 516,
+        "negative": 48984
+      },
+      "pct": {
+        "positive": 1.0,
+        "neutral": 1.032,
+        "negative": 97.968
+      },
+      "lagPctRange": {
+        "sameType@1": [
+          95.69,
+          96.27
+        ],
+        "sameType@100": [
+          95.737,
+          96.273
+        ],
+        "sameText@200": [
+          11.633,
+          12.255
+        ]
+      }
+    },
+    {
+      "case": "rare_1_1_98",
+      "method": "keyed",
+      "n": 50000,
+      "counts": {
+        "positive": 528,
+        "neutral": 528,
+        "negative": 48944
+      },
+      "pct": {
+        "positive": 1.056,
+        "neutral": 1.056,
+        "negative": 97.888
+      },
+      "lagPctRange": {
+        "sameType@1": [
+          95.41,
+          96.21
+        ],
+        "sameType@100": [
+          95.475,
+          96.182
+        ],
+        "sameText@200": [
+          11.52,
+          12.071
+        ]
+      }
+    }
+  ],
+  "countRecovery": "n=10000: each 0.01 percentage point is one draw; logged 0.001% precision resolves exact counts."
+}

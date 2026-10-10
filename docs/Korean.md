@@ -344,9 +344,34 @@ end
 | `RegisterCallback(callback, modName)` | 콜백 등록 | function, string | boolean |
 | `UnregisterCallback(modName)` | 콜백 해제 | string | boolean |
 | `TriggerMagicConch(modName)` | Magic Conch 실행 | string | table |
+| `PreviewResult(offset)` | 현재 방의 다음 결과 미리보기 (횟수 소비 없음) | 생략 또는 0~1,000,000 정수 | table 또는 nil, 오류 코드 |
 | `IsReady()` | API 준비 상태 확인 | - | boolean |
 | `GetLastResult()` | 마지막 결과 조회 | - | table/nil |
 | `GetCallbackInfo()` | 등록된 콜백 정보 | - | table |
+
+### 다른 모드에서 결과 미리보기
+
+```lua
+local api = MagicConch and MagicConch.API
+if api and api.IsReady() and type(api.PreviewResult) == "function" then
+    local nextResult, errorCode = api.PreviewResult() -- 다음 성공한 사용
+    if nextResult then
+        print(nextResult.type)       -- "positive" / "neutral" / "negative"
+        print(nextResult.text)       -- 현재 언어의 문구
+        print(nextResult.id)         -- 언어와 무관한 문구 ID
+        print(nextResult.useNumber)  -- 이 방에서 몇 번째 사용인지 (1부터)
+    end
+    local afterNext = api.PreviewResult(1) -- 그다음 사용
+end
+```
+
+`.`으로 호출합니다. `offset`은 현재 미소비 횟수로부터 얼마나 뒤를 볼지이며 기본값 0입니다. 반환값은 `{id, text, type, usageCount, useNumber, offset}`입니다. `usageCount`는 그 추첨 직전의 사용 횟수이고 `useNumber = usageCount + 1`입니다. 각 호출은 새 테이블을 반환합니다.
+
+조회는 사용 횟수·RNG 상태를 소비하지 않고 저장, 애니메이션, 소리, 관측 로그, 등록 콜백을 실행하지 않습니다. 비활성화, 연출 진행 중, 방별 횟수 제한 상태에서도 예상 결과를 계산할 수 있지만 실제 활성화 가능 여부를 뜻하지는 않습니다. 연출 중에는 이미 시작한 답변이 아니라 **다음 미소비 사용**의 답변입니다.
+
+방·런·확률/강제 응답 설정·사용 횟수가 그대로라면 이후 성공한 `TriggerMagicConch` 결과와 일치합니다. 다른 사용이 끼어들거나 설정이 바뀌면 다시 조회하세요. 언어를 바꾸면 문구는 번역되고 ID는 같습니다. 다른 방 조회는 지원하지 않습니다.
+
+실패하면 `nil, errorCode`를 반환합니다: `API_NOT_READY`(초기화 전), `NO_ACTIVE_RUN`(런 없음), `INVALID_OFFSET`(잘못된 인자), `NO_RESPONSE`(사용 가능한 문구 없음). 새 함수를 사용하려면 수정된 모드를 다시 불러와야 합니다.
 
 ### 중요 주의사항
 

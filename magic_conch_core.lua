@@ -4,9 +4,12 @@ local MagicConch_Lang = include("magic_conch_lang")
 local MagicConch_MCM = include("magic_conch_mcm")
 local MagicConch_Render = include("magic_conch_render")
 local MagicConch_API = include("magic_conch_api")
+local MagicConch_RNGTest = include("magic_conch_rng_test")
+local MagicConch_Random = include("magic_conch_random")
 
 MagicConch = RegisterMod("Magic Conch", 1)
 MagicConch_Config.Init(MagicConch)
+MagicConch_RNGTest.Install(MagicConch, MagicConch_Lang)
 
 MagicConch.printDebug = function(text)
     if MagicConch.Config.debugMode then
@@ -47,21 +50,17 @@ local function getTiming()
     return MagicConch.Config.timing
 end
 
--- Get completely unique room key using Isaac's built-in unique identifiers
+-- Identify the run, floor, dimension and room that own this usage counter.
 local function getCurrentRoomKey()
-    local level = Game():GetLevel()
-    local room = Game():GetRoom()
-    local roomDesc = level:GetCurrentRoomDesc()
-    
-    -- Use multiple unique identifiers to create absolutely unique key
-    local decorationSeed = room:GetDecorationSeed()  -- Unique decoration seed for this room
-    local spawnSeed = room:GetSpawnSeed()            -- Unique spawn seed for this room
-    local roomIndex = level:GetCurrentRoomIndex()    -- Room index
-    local stage = level:GetStage()                   -- Stage number
-    local stageType = level:GetStageType()           -- Stage type
-    
-    -- Create absolutely unique key using seeds
-    return tostring(stage) .. "_" .. tostring(stageType) .. "_" .. tostring(roomIndex) .. "_" .. tostring(decorationSeed) .. "_" .. tostring(spawnSeed)
+    local context = MagicConch_Random.Capture()
+    local key = MagicConch_Random.RoomKey(context)
+    local oldKey = MagicConch_Random.LegacyRoomKey(context)
+    -- Preserve existing saved counts; consume the old entry once, never clone it.
+    if gameState.roomUsageCount[key] == nil and gameState.roomUsageCount[oldKey] ~= nil then
+        gameState.roomUsageCount[key] = gameState.roomUsageCount[oldKey]
+        gameState.roomUsageCount[oldKey] = nil
+    end
+    return key
 end
 
 -- Get current room usage count
@@ -204,7 +203,7 @@ local function resetGameState()
     gameState.lastInputTime = 0
 end
 
--- Reset room usage count (for new games and new levels)
+-- Reset room usage count for a new run.
 local function resetRoomUsageCount()
     gameState.roomUsageCount = {}
     gameState.currentRoomKey = nil
@@ -414,9 +413,8 @@ function MagicConch:OnHotkeyInput()
                 -- Execute Magic Conch sequence first
                 local success = MagicConch_API.ExecuteMagicConchSequence("hotkey")
                 
-                -- Only increment room usage if execution was successful
+                -- The shared API path has already committed one successful use.
                 if success then
-                    incrementRoomUsage()
                     if MagicConch.Config.debugMode then
                         local currentUsage = getCurrentRoomUsage()
                         local maxAttempts = MagicConch.Config.attemptsPerRoom
@@ -455,6 +453,12 @@ end
 -- Public function to get current room usage (for render module)
 function MagicConch:GetCurrentRoomUsage()
     return getCurrentRoomUsage()
+end
+
+-- Both hotkey and API activation commit exactly one successful use here.
+function MagicConch:RecordRoomUse()
+    incrementRoomUsage()
+    MagicConch_Config.SaveRuntime(self, { roomUsageCount = gameState.roomUsageCount, currentRoomKey = gameState.currentRoomKey })
 end
 
 -- Public function to get current room last result type
@@ -532,8 +536,7 @@ function MagicConch:OnNewRoom()
 end
 
 function MagicConch:OnNewLevel()
-    -- Reset room usage count when entering new level (floor)
-    resetRoomUsageCount()
+    -- Keep counters for previously visited floors. New room identities start at 0.
     resetGameState()
     MagicConch_Config.SaveRuntime(MagicConch, { roomUsageCount = gameState.roomUsageCount, currentRoomKey = gameState.currentRoomKey })
     

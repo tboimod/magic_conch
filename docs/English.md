@@ -346,9 +346,34 @@ Structure of the result table received in callback functions:
 | `RegisterCallback(callback, modName)` | Register callback | function, string | boolean |
 | `UnregisterCallback(modName)` | Remove callback | string | boolean |
 | `TriggerMagicConch(modName)` | Execute Magic Conch | string | table |
+| `PreviewResult(offset)` | Preview a future result in the current room without consuming a use | omitted or integer 0..1,000,000 | table or nil, error code |
 | `IsReady()` | Check API readiness | - | boolean |
 | `GetLastResult()` | Get last result | - | table/nil |
 | `GetCallbackInfo()` | Get registered callback info | - | table |
+
+### Preview results from another mod
+
+```lua
+local api = MagicConch and MagicConch.API
+if api and api.IsReady() and type(api.PreviewResult) == "function" then
+    local nextResult, errorCode = api.PreviewResult()
+    if nextResult then
+        print(nextResult.type)       -- "positive", "neutral", or "negative"
+        print(nextResult.text)       -- Localized response
+        print(nextResult.id)         -- Language-independent response ID
+        print(nextResult.useNumber)  -- One-based use number in this room
+    end
+    local afterNext = api.PreviewResult(1)
+end
+```
+
+Call with a dot, not a colon. `offset` defaults to 0 (the next unconsumed use); 1 means the following use. Returns a fresh `{id, text, type, usageCount, useNumber, offset}` table. `usageCount` is the count before the forecast draw; `useNumber = usageCount + 1`.
+
+Previewing does not consume a use or RNG state, save data, activate effects, record diagnostic observations, or invoke callbacks. It works while disabled, busy, or at the room limit, but does not promise that activation is currently allowed. During an animation it forecasts the next unconsumed use, not the answer already in progress.
+
+The forecast matches a later successful `TriggerMagicConch` while the run, room, probability/forced-reply settings and usage count remain unchanged. Query again after intervening activations or settings changes. Changing language translates the text while preserving the ID. Other-room queries are not supported.
+
+Failure returns `nil, errorCode`: `API_NOT_READY`, `NO_ACTIVE_RUN`, `INVALID_OFFSET`, or `NO_RESPONSE`. Reload the updated mod before using this new function.
 
 ### Important Precautions
 

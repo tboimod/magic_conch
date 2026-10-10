@@ -2,6 +2,7 @@
 ---@field LANGUAGE_MAP table
 ---@field getLanguageTable fun(config: table): table
 ---@field getRandomString fun(config: table): table
+local Random = include("magic_conch_random")
 
 ---@type MagicConchLang
 local LANGUAGE_MAP = {
@@ -102,7 +103,8 @@ end
 -- Random string from the language table
 -- @param config table Config table (e.g. MagicConch.Config)
 -- @return table { text = "...", type = "..." }
-local function getRandomString(config)
+-- Frozen old selector for comparison only; never used by normal gameplay.
+local function sampleLegacy(config, context, rng)
     local langTable = getLanguageTable(config)
     local strings = MagicConchStrings[langTable.code]
 
@@ -115,16 +117,9 @@ local function getRandomString(config)
     end
 
     -- Deterministic selection based on game seed, room number, and usage count
-    local game = Game()
-    local level = game:GetLevel()
-    local roomIndex = level:GetCurrentRoomIndex()
-    local startSeed = game:GetSeeds():GetStartSeed()
-    
-    -- Get current room usage count for this specific room
-    local usageCount = 0
-    if MagicConch and MagicConch.GetCurrentRoomUsage then
-        usageCount = MagicConch:GetCurrentRoomUsage()
-    end
+    local roomIndex = context.roomIndex
+    local startSeed = context.startSeed
+    local usageCount = context.usageCount
     
     -- Simple hash base
     local rngVal = startSeed + roomIndex + usageCount
@@ -142,7 +137,7 @@ local function getRandomString(config)
 
         -- Generate random value 0..total-1
         -- Use a slightly different hash multiplier to separate type selection from string selection
-        local typeRng = (rngVal * 17 + 11) % total
+        local typeRng = rng and rng:RandomInt(total) or (rngVal * 17 + 11) % total
         
         if typeRng < pos then
             desiredTypeLower = "positive"
@@ -173,13 +168,68 @@ local function getRandomString(config)
     end
     
     -- 3. Select String from Pool
-    local idx = (rngVal % #pool) + 1
+    local idx = rng and (rng:RandomInt(#pool) + 1) or ((rngVal % #pool) + 1)
     
     return pool[idx]
+end
+
+-- Sort translation IDs once. Lua pairs() order must not affect saved-seed results.
+local pools = {}
+for code, strings in pairs(MagicConchStrings) do
+    local keys, groups = {}, { positive = {}, neutral = {}, negative = {}, all = {} }
+    for key in pairs(strings) do keys[#keys + 1] = key end
+    table.sort(keys)
+    for _, key in ipairs(keys) do
+        local response = strings[key]
+        local entry = { id = key, type = response.type, text = response.text }
+        groups[response.type][#groups[response.type] + 1] = entry
+        groups.all[#groups.all + 1] = entry
+    end
+    pools[code] = groups
+end
+
+local function sample(config, context)
+    local key = Random.Key(context)
+    local kind = config and type(config.forcedReply) == "string" and string.lower(config.forcedReply) or "none"
+    if kind ~= "positive" and kind ~= "neutral" and kind ~= "negative" then
+        local pos, neu, neg = Random.Weights(config)
+        local roll = Random.Bounded(key, Random.TYPE_DOMAIN, pos + neu + neg)
+        kind = roll < pos and "positive" or (roll < pos + neu and "neutral" or "negative")
+    end
+    local groups = pools[getLanguageTable(config).code]
+    local pool = #groups[kind] > 0 and groups[kind] or groups.all
+    if #pool == 0 then return nil end
+    local entry = pool[Random.Bounded(key, Random.TEXT_DOMAIN, #pool) + 1]
+    return { id = entry.id, type = entry.type, text = entry.text }
+end
+
+local function getRandomContext()
+    local context = Random.Capture()
+    context.usageCount = (MagicConch and MagicConch.GetCurrentRoomUsage)
+        and MagicConch:GetCurrentRoomUsage() or 0
+    return context
+end
+
+local function getRandomString(config)
+    return sample(config, getRandomContext())
+end
+
+-- Return counts, not the mutable translation tables, for distribution diagnostics.
+local function getResponseCounts(config)
+    local counts = { positive = 0, neutral = 0, negative = 0 }
+    for _, response in pairs(MagicConchStrings[getLanguageTable(config).code]) do
+        local kind = string.lower(response.type)
+        counts[kind] = (counts[kind] or 0) + 1
+    end
+    return counts
 end
 
 return {
     LANGUAGE_MAP = LANGUAGE_MAP,
     getLanguageTable = getLanguageTable,
     getRandomString = getRandomString,
-} 
+    sample = sample,
+    sampleLegacy = sampleLegacy,
+    getRandomContext = getRandomContext,
+    getResponseCounts = getResponseCounts,
+}

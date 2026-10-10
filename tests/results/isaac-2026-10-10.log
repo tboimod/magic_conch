@@ -1,0 +1,251 @@
+[INFO] - Lua Debug: [MC RNG TEST] BEGIN v1 backend=Isaac.RNG samples=10000 rounds=5 seed=4263037529 room=84 usage=0 shift=35
+[INFO] - Lua Debug: [MC RNG TEST] Each round has a different recorded seed; both methods use identical weights and response pools.
+[INFO] - Lua Debug: [MC RNG TEST] frequency=OK means max |z| <= 5, a diagnostic screen, NOT proof of independence or randomness.
+[INFO] - Lua Debug: [MC RNG TEST] textMaxZ checks uniform phrases WITHIN each type; @100/@200 expose periodic patterns.
+[INFO] - Lua Debug: [MC RNG TEST] Predictions use private copies before sampling; same seed/state/call order is predictable for BOTH methods.
+[INFO] - Lua Debug: [MC RNG TEST] Phrase order uses existing Lua pairs(); exact text is only guaranteed within this loaded session.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW startSeed=4263037529 room=84 usage=0 language=KR forced=None
+[INFO] - Lua Debug: [MC RNG TEST] RNG preview is a NEW candidate stream from draw 0; legacy preview starts at current usage.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #1 legacy=positive:진행해. rng=positive:당연하지.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #2 legacy=neutral:불분명한 시기야. rng=positive:좋아.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #3 legacy=negative:그것도 안 돼. rng=neutral:불분명한 시기야.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #4 legacy=negative:다 안 돼. rng=positive:진행해.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #5 legacy=positive:소라고동은 모든 걸 알아. rng=negative:금지야.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #6 legacy=positive:당연하지. rng=positive:해도 돼.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #7 legacy=positive:소라고동을 따라. rng=negative:불가능해.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #8 legacy=neutral:나중에 다시 물어봐. rng=neutral:나중에 다시 물어봐.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #9 legacy=negative:묻지도 마. rng=negative:다 안 돼.
+[INFO] - Lua Debug: [MC RNG TEST] PREVIEW #10 legacy=negative:금지야. rng=negative:가만있어.
+[INFO] - Lua Debug: [MC RNG TEST] LIVE_SELECTOR prediction=MATCH (read-only; no use consumed)
+[INFO] - Lua Debug: [MC RNG TEST] CASE current expected=40.000/20.000/40.000% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=1 seed=4263037529 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=1 seed=4263037529 method=legacy sameType@1=48.995% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=1 seed=4263037529 method=rng n=10000 positive=40.290% neutral=20.350% negative=39.360% typeMaxZ=1.31 textMaxZ=2.11 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=1 seed=4263037529 method=rng sameType@1=35.694% sameType@100=36.444% iidType=36.000% sameText@200=5.010% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=2 seed=2622505995 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=2 seed=2622505995 method=legacy sameType@1=49.005% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=2 seed=2622505995 method=rng n=10000 positive=39.630% neutral=19.570% negative=40.800% typeMaxZ=1.63 textMaxZ=2.18 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=2 seed=2622505995 method=rng sameType@1=36.574% sameType@100=36.121% iidType=36.000% sameText@200=4.847% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=3 seed=981974461 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=3 seed=981974461 method=legacy sameType@1=49.005% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=3 seed=981974461 method=rng n=10000 positive=39.440% neutral=19.900% negative=40.660% typeMaxZ=1.35 textMaxZ=2.07 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=3 seed=981974461 method=rng sameType@1=35.834% sameType@100=36.162% iidType=36.000% sameText@200=5.153% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=4 seed=3636410222 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=4 seed=3636410222 method=legacy sameType@1=49.005% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=4 seed=3636410222 method=rng n=10000 positive=40.130% neutral=19.570% negative=40.300% typeMaxZ=1.07 textMaxZ=1.83 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=4 seed=3636410222 method=rng sameType@1=36.474% sameType@100=35.727% iidType=36.000% sameText@200=4.531% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=5 seed=1995878688 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=5 seed=1995878688 method=legacy sameType@1=48.995% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=5 seed=1995878688 method=rng n=10000 positive=40.050% neutral=20.230% negative=39.720% typeMaxZ=0.57 textMaxZ=2.18 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=current round=5 seed=1995878688 method=rng sameType@1=35.524% sameType@100=35.960% iidType=36.000% sameText@200=4.908% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] CASE default_40_20_40 expected=40.000/20.000/40.000% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=1 seed=4263037529 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=1 seed=4263037529 method=legacy sameType@1=48.995% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=1 seed=4263037529 method=rng n=10000 positive=40.290% neutral=20.350% negative=39.360% typeMaxZ=1.31 textMaxZ=2.11 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=1 seed=4263037529 method=rng sameType@1=35.694% sameType@100=36.444% iidType=36.000% sameText@200=5.010% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=2 seed=2622505995 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=2 seed=2622505995 method=legacy sameType@1=49.005% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=2 seed=2622505995 method=rng n=10000 positive=39.630% neutral=19.570% negative=40.800% typeMaxZ=1.63 textMaxZ=2.18 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=2 seed=2622505995 method=rng sameType@1=36.574% sameType@100=36.121% iidType=36.000% sameText@200=4.847% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=3 seed=981974461 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=3 seed=981974461 method=legacy sameType@1=49.005% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=3 seed=981974461 method=rng n=10000 positive=39.440% neutral=19.900% negative=40.660% typeMaxZ=1.35 textMaxZ=2.07 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=3 seed=981974461 method=rng sameType@1=35.834% sameType@100=36.162% iidType=36.000% sameText@200=5.153% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=4 seed=3636410222 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=4 seed=3636410222 method=legacy sameType@1=49.005% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=4 seed=3636410222 method=rng n=10000 positive=40.130% neutral=19.570% negative=40.300% typeMaxZ=1.07 textMaxZ=1.83 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=4 seed=3636410222 method=rng sameType@1=36.474% sameType@100=35.727% iidType=36.000% sameText@200=4.531% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=5 seed=1995878688 method=legacy n=10000 positive=40.000% neutral=20.000% negative=40.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=5 seed=1995878688 method=legacy sameType@1=48.995% sameType@100=100.000% iidType=36.000% sameText@200=100.000% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=5 seed=1995878688 method=rng n=10000 positive=40.050% neutral=20.230% negative=39.720% typeMaxZ=0.57 textMaxZ=2.18 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=default_40_20_40 round=5 seed=1995878688 method=rng sameType@1=35.524% sameType@100=35.960% iidType=36.000% sameText@200=4.908% iidText=5.000%
+[INFO] - Lua Debug: [MC RNG TEST] CASE equal_1_1_1 expected=33.333/33.333/33.333% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=1 seed=4263037529 method=legacy n=10000 positive=33.340% neutral=33.330% negative=33.330% typeMaxZ=0.01 textMaxZ=0.04 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=1 seed=4263037529 method=legacy sameType@1=0.000% sameType@100=0.000% iidType=33.333% sameText@200=0.000% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=1 seed=4263037529 method=rng n=10000 positive=32.930% neutral=33.660% negative=33.410% typeMaxZ=0.86 textMaxZ=2.39 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=1 seed=4263037529 method=rng sameType@1=32.933% sameType@100=33.162% iidType=33.333% sameText@200=5.551% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=2 seed=2622505995 method=legacy n=10000 positive=33.330% neutral=33.330% negative=33.340% typeMaxZ=0.01 textMaxZ=0.04 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=2 seed=2622505995 method=legacy sameType@1=0.000% sameType@100=0.000% iidType=33.333% sameText@200=0.000% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=2 seed=2622505995 method=rng n=10000 positive=33.170% neutral=33.160% negative=33.670% typeMaxZ=0.71 textMaxZ=2.08 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=2 seed=2622505995 method=rng sameType@1=33.343% sameType@100=32.596% iidType=33.333% sameText@200=5.388% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=3 seed=981974461 method=legacy n=10000 positive=33.330% neutral=33.340% negative=33.330% typeMaxZ=0.01 textMaxZ=0.03 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=3 seed=981974461 method=legacy sameType@1=0.000% sameType@100=0.000% iidType=33.333% sameText@200=0.000% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=3 seed=981974461 method=rng n=10000 positive=33.420% neutral=33.030% negative=33.550% typeMaxZ=0.64 textMaxZ=1.82 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=3 seed=981974461 method=rng sameType@1=34.113% sameType@100=33.778% iidType=33.333% sameText@200=5.714% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=4 seed=3636410222 method=legacy n=10000 positive=33.340% neutral=33.330% negative=33.330% typeMaxZ=0.01 textMaxZ=0.04 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=4 seed=3636410222 method=legacy sameType@1=0.000% sameType@100=0.000% iidType=33.333% sameText@200=0.000% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=4 seed=3636410222 method=rng n=10000 positive=33.450% neutral=33.760% negative=32.790% typeMaxZ=1.15 textMaxZ=2.38 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=4 seed=3636410222 method=rng sameType@1=32.473% sameType@100=33.758% iidType=33.333% sameText@200=5.082% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=5 seed=1995878688 method=legacy n=10000 positive=33.330% neutral=33.330% negative=33.340% typeMaxZ=0.01 textMaxZ=0.04 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=5 seed=1995878688 method=legacy sameType@1=0.000% sameType@100=0.000% iidType=33.333% sameText@200=0.000% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=5 seed=1995878688 method=rng n=10000 positive=32.970% neutral=33.070% negative=33.960% typeMaxZ=1.33 textMaxZ=1.74 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=equal_1_1_1 round=5 seed=1995878688 method=rng sameType@1=32.843% sameType@100=32.949% iidType=33.333% sameText@200=5.490% iidText=5.556%
+[INFO] - Lua Debug: [MC RNG TEST] CASE total17_7_3_7 expected=41.176/17.647/41.176% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=1 seed=4263037529 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=119.52 textMaxZ=0.00 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=1 seed=4263037529 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=37.024% sameText@200=100.000% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=1 seed=4263037529 method=rng n=10000 positive=41.710% neutral=17.420% negative=40.870% typeMaxZ=1.08 textMaxZ=1.86 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=1 seed=4263037529 method=rng sameType@1=37.684% sameType@100=37.333% iidType=37.024% sameText@200=5.122% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=2 seed=2622505995 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=119.52 textMaxZ=0.00 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=2 seed=2622505995 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=37.024% sameText@200=100.000% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=2 seed=2622505995 method=rng n=10000 positive=40.720% neutral=17.890% negative=41.390% typeMaxZ=0.93 textMaxZ=2.22 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=2 seed=2622505995 method=rng sameType@1=37.414% sameType@100=36.545% iidType=37.024% sameText@200=4.949% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=3 seed=981974461 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=119.52 textMaxZ=0.00 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=3 seed=981974461 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=37.024% sameText@200=100.000% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=3 seed=981974461 method=rng n=10000 positive=40.810% neutral=17.730% negative=41.460% typeMaxZ=0.74 textMaxZ=1.80 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=3 seed=981974461 method=rng sameType@1=37.324% sameType@100=37.818% iidType=37.024% sameText@200=4.684% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=4 seed=3636410222 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=119.52 textMaxZ=0.00 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=4 seed=3636410222 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=37.024% sameText@200=100.000% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=4 seed=3636410222 method=rng n=10000 positive=41.330% neutral=17.870% negative=40.800% typeMaxZ=0.76 textMaxZ=2.38 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=4 seed=3636410222 method=rng sameType@1=35.984% sameType@100=36.333% iidType=37.024% sameText@200=4.469% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=5 seed=1995878688 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=119.52 textMaxZ=0.00 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=5 seed=1995878688 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=37.024% sameText@200=100.000% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=5 seed=1995878688 method=rng n=10000 positive=41.450% neutral=17.560% negative=40.990% typeMaxZ=0.56 textMaxZ=1.82 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=total17_7_3_7 round=5 seed=1995878688 method=rng sameType@1=37.554% sameType@100=37.273% iidType=37.024% sameText@200=5.061% iidText=5.017%
+[INFO] - Lua Debug: [MC RNG TEST] CASE rare_1_1_98 expected=1.000/1.000/98.000% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=1 seed=4263037529 method=legacy n=10000 positive=1.000% neutral=1.000% negative=98.000% typeMaxZ=0.00 textMaxZ=17.32 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=1 seed=4263037529 method=legacy sameType@1=96.000% sameType@100=100.000% iidType=96.060% sameText@200=100.000% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=1 seed=4263037529 method=rng n=10000 positive=0.970% neutral=1.030% negative=98.000% typeMaxZ=0.30 textMaxZ=1.57 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=1 seed=4263037529 method=rng sameType@1=96.040% sameType@100=96.101% iidType=96.060% sameText@200=12.378% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=2 seed=2622505995 method=legacy n=10000 positive=1.000% neutral=1.000% negative=98.000% typeMaxZ=0.00 textMaxZ=17.32 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=2 seed=2622505995 method=legacy sameType@1=96.000% sameType@100=100.000% iidType=96.060% sameText@200=100.000% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=2 seed=2622505995 method=rng n=10000 positive=1.000% neutral=0.910% negative=98.090% typeMaxZ=0.90 textMaxZ=1.66 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=2 seed=2622505995 method=rng sameType@1=96.220% sameType@100=96.222% iidType=96.060% sameText@200=11.847% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=3 seed=981974461 method=legacy n=10000 positive=1.000% neutral=1.000% negative=98.000% typeMaxZ=0.00 textMaxZ=17.32 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=3 seed=981974461 method=legacy sameType@1=96.000% sameType@100=100.000% iidType=96.060% sameText@200=100.000% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=3 seed=981974461 method=rng n=10000 positive=0.850% neutral=0.970% negative=98.180% typeMaxZ=1.51 textMaxZ=2.16 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=3 seed=981974461 method=rng sameType@1=96.410% sameType@100=96.434% iidType=96.060% sameText@200=12.061% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=4 seed=3636410222 method=legacy n=10000 positive=1.000% neutral=1.000% negative=98.000% typeMaxZ=0.00 textMaxZ=17.32 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=4 seed=3636410222 method=legacy sameType@1=96.000% sameType@100=100.000% iidType=96.060% sameText@200=100.000% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=4 seed=3636410222 method=rng n=10000 positive=1.150% neutral=1.030% negative=97.820% typeMaxZ=1.51 textMaxZ=2.18 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=4 seed=3636410222 method=rng sameType@1=95.730% sameType@100=95.747% iidType=96.060% sameText@200=11.347% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=5 seed=1995878688 method=legacy n=10000 positive=1.000% neutral=1.000% negative=98.000% typeMaxZ=0.00 textMaxZ=17.32 frequency=SUSPECT predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=5 seed=1995878688 method=legacy sameType@1=96.000% sameType@100=100.000% iidType=96.060% sameText@200=100.000% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=5 seed=1995878688 method=rng n=10000 positive=0.890% neutral=0.940% negative=98.170% typeMaxZ=1.21 textMaxZ=2.20 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=rare_1_1_98 round=5 seed=1995878688 method=rng sameType@1=96.450% sameType@100=96.354% iidType=96.060% sameText@200=11.755% iidText=12.009%
+[INFO] - Lua Debug: [MC RNG TEST] CASE positive_only expected=100.000/0.000/0.000% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=1 seed=4263037529 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=1 seed=4263037529 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=1 seed=4263037529 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.39 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=1 seed=4263037529 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.847% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=2 seed=2622505995 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=2 seed=2622505995 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=2 seed=2622505995 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.33 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=2 seed=2622505995 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.224% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=3 seed=981974461 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=3 seed=981974461 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=3 seed=981974461 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=2.15 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=3 seed=981974461 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.500% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=4 seed=3636410222 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=4 seed=3636410222 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=4 seed=3636410222 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=2.24 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=4 seed=3636410222 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=11.847% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=5 seed=1995878688 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=5 seed=1995878688 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=5 seed=1995878688 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.90 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=positive_only round=5 seed=1995878688 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.316% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] CASE neutral_only expected=0.000/100.000/0.000% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=1 seed=4263037529 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=1 seed=4263037529 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=1 seed=4263037529 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.45 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=1 seed=4263037529 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=25.551% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=2 seed=2622505995 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=2 seed=2622505995 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=2 seed=2622505995 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.55 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=2 seed=2622505995 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=25.347% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=3 seed=981974461 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=3 seed=981974461 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=3 seed=981974461 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.90 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=3 seed=981974461 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=25.469% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=4 seed=3636410222 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=4 seed=3636410222 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=4 seed=3636410222 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.48 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=4 seed=3636410222 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=24.408% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=5 seed=1995878688 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=5 seed=1995878688 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=5 seed=1995878688 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.99 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=neutral_only round=5 seed=1995878688 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=24.857% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] CASE negative_only expected=0.000/0.000/100.000% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=1 seed=4263037529 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=1 seed=4263037529 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=1 seed=4263037529 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=1.39 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=1 seed=4263037529 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.847% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=2 seed=2622505995 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=2 seed=2622505995 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=2 seed=2622505995 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=1.33 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=2 seed=2622505995 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.224% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=3 seed=981974461 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=3 seed=981974461 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=3 seed=981974461 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=2.15 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=3 seed=981974461 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.500% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=4 seed=3636410222 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=4 seed=3636410222 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=4 seed=3636410222 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=2.24 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=4 seed=3636410222 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=11.847% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=5 seed=1995878688 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=5 seed=1995878688 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=5 seed=1995878688 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=1.90 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=negative_only round=5 seed=1995878688 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.316% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] CASE forced_positive expected=100.000/0.000/0.000% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=1 seed=4263037529 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=1 seed=4263037529 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=1 seed=4263037529 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=2.24 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=1 seed=4263037529 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.602% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=2 seed=2622505995 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=2 seed=2622505995 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=2 seed=2622505995 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=2.45 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=2 seed=2622505995 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=11.612% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=3 seed=981974461 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=3 seed=981974461 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=3 seed=981974461 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.24 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=3 seed=981974461 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.194% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=4 seed=3636410222 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=4 seed=3636410222 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=4 seed=3636410222 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.94 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=4 seed=3636410222 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.531% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=5 seed=1995878688 method=legacy n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=5 seed=1995878688 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=5 seed=1995878688 method=rng n=10000 positive=100.000% neutral=0.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.69 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_positive round=5 seed=1995878688 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=11.878% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] CASE forced_neutral expected=0.000/100.000/0.000% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=1 seed=4263037529 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=1 seed=4263037529 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=1 seed=4263037529 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=2.68 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=1 seed=4263037529 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=24.888% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=2 seed=2622505995 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=2 seed=2622505995 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=2 seed=2622505995 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=2.89 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=2 seed=2622505995 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=24.286% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=3 seed=981974461 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=3 seed=981974461 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=3 seed=981974461 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.76 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=3 seed=981974461 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=24.622% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=4 seed=3636410222 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=4 seed=3636410222 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=4 seed=3636410222 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=1.94 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=4 seed=3636410222 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=24.561% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=5 seed=1995878688 method=legacy n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=5 seed=1995878688 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=5 seed=1995878688 method=rng n=10000 positive=0.000% neutral=100.000% negative=0.000% typeMaxZ=0.00 textMaxZ=0.53 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_neutral round=5 seed=1995878688 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=24.367% iidText=25.000%
+[INFO] - Lua Debug: [MC RNG TEST] CASE forced_negative expected=0.000/0.000/100.000% (positive/neutral/negative)
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=1 seed=4263037529 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=1 seed=4263037529 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=1 seed=4263037529 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=2.24 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=1 seed=4263037529 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.602% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=2 seed=2622505995 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=2 seed=2622505995 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=2 seed=2622505995 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=2.45 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=2 seed=2622505995 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=11.612% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=3 seed=981974461 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=3 seed=981974461 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=3 seed=981974461 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=1.24 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=3 seed=981974461 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.194% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=4 seed=3636410222 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=4 seed=3636410222 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=4 seed=3636410222 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=1.94 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=4 seed=3636410222 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=12.531% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=5 seed=1995878688 method=legacy n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=0.00 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=5 seed=1995878688 method=legacy sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=100.000% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=5 seed=1995878688 method=rng n=10000 positive=0.000% neutral=0.000% negative=100.000% typeMaxZ=0.00 textMaxZ=1.69 frequency=OK predictionErrors=0
+[INFO] - Lua Debug: [MC RNG TEST] case=forced_negative round=5 seed=1995878688 method=rng sameType@1=100.000% sameType@100=100.000% iidType=100.000% sameText@200=11.878% iidText=12.500%
+[INFO] - Lua Debug: [MC RNG TEST] END draws=1100000 rows=110 skipped=0 predictionErrors=0 suspectLegacy=10 suspectRNG=0

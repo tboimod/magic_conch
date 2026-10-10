@@ -30,6 +30,8 @@ end
 -- @param triggerSource string - Source of trigger (e.g., "hotkey", "API: ModName")
 -- @return boolean - Success or failure
 local function executeMagicConchSequence(triggerSource)
+    local limit = MagicConch.Config.attemptsPerRoom or 0
+    if limit > 0 and MagicConch:GetCurrentRoomUsage() >= limit then return false end
     local currentTime = Game():GetFrameCount()
     
     -- Spam protection
@@ -47,6 +49,12 @@ local function executeMagicConchSequence(triggerSource)
         MagicConch.printError("Failed to get random string")
         gameState.canInput = true
         return false
+    end
+
+    -- Optional observation only; a diagnostic failure must not interrupt gameplay.
+    if MagicConch.RNGDiagnostics and MagicConch.RNGDiagnostics.Observe then
+        local ok, err = pcall(MagicConch.RNGDiagnostics.Observe, randomData, triggerSource)
+        if not ok then MagicConch.printError("RNG observation failed: " .. tostring(err)) end
     end
     
     -- Set pending data
@@ -99,6 +107,7 @@ local function executeMagicConchSequence(triggerSource)
     
     gameState.state = "shaking"
     gameState.timer = 0
+    MagicConch:RecordRoomUse()
     
     if MagicConch.Config.debugMode then
         MagicConch.printDebug("Started Magic Conch sequence (" .. triggerSource .. "): " .. gameState.pendingText)
@@ -159,6 +168,28 @@ local function executeCallbacks(result)
 end
 
 -- ===== Public API Functions =====
+
+-- Preview a future result in the current room without activating or consuming a use.
+-- offset=0 (default): next unconsumed use; offset=1: the use after that.
+-- Available even while busy/disabled/at the room limit; not an activation guarantee.
+-- Returns a fresh {id, text, type, usageCount, useNumber, offset}, or nil, errorCode.
+function MagicConch_API.PreviewResult(offset)
+    if not (MagicConch and gameState and MagicConch_Lang) then
+        return nil, "API_NOT_READY"
+    end
+    if offset == nil then offset = 0 end
+    if type(offset) ~= "number" or not math.tointeger(offset) or offset < 0 or offset > 1000000 then
+        return nil, "INVALID_OFFSET"
+    end
+    if Game():GetNumPlayers() == 0 then return nil, "NO_ACTIVE_RUN" end
+
+    local context = MagicConch_Lang.getRandomContext()
+    context.usageCount = context.usageCount + math.tointeger(offset)
+    local response = MagicConch_Lang.sample(MagicConch.Config, context)
+    if not response then return nil, "NO_RESPONSE" end
+    return { id = response.id, text = response.text, type = response.type,
+        usageCount = context.usageCount, useNumber = context.usageCount + 1, offset = math.tointeger(offset) }
+end
 
 -- Register callback to receive Magic Conch results from other mods
 -- @param callback function(result) - Function to receive the result
@@ -346,6 +377,11 @@ function MagicConch_API.CreateInterface()
         -- Output: table { success, reason, estimatedTime, pendingResult }
         TriggerMagicConch = function(modName) 
             return MagicConch_API.TriggerMagicConch(modName) 
+        end,
+
+        -- Read-only preview; offset=0 means the next unconsumed use in this room.
+        PreviewResult = function(offset)
+            return MagicConch_API.PreviewResult(offset)
         end,
         
         -- Check if API is ready
