@@ -200,6 +200,7 @@ local function loadCurrentLanguageFont(config)
 end
 
 local function resetGameState()
+    MagicConch_API.ResetNextResultReservation()
     gameState.state = "idle"
     gameState.timer = 0
     gameState.canInput = true

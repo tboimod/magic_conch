@@ -345,6 +345,9 @@ end
 | `UnregisterCallback(modName)` | 콜백 해제 | string | boolean |
 | `TriggerMagicConch(modName, options)` | 일반 또는 답변 지정 실행 | string, 선택적 table | table |
 | `PreviewResult(offset, options)` | 현재 방의 결과 미리보기 (횟수 소비 없음) | 선택적 정수 0~1,000,000, 선택적 table | table 또는 nil, 오류 코드 |
+| `ReserveNextResult(owner, options, isValid)` | 소라고둥을 쓰지 않고 다음 일반 실행 1회 예약 | string, table, 선택적 function | true, token / false, 오류 코드 |
+| `GetNextResultReservation(owner)` | 예약 복사본 조회, 선택적으로 소유자 제한 | 선택적 string | table/nil |
+| `ClearNextResultReservation(owner)` | 해당 소유자의 예약만 취소 | string | boolean |
 | `GetCurrentRoomUsage()` | 현재 방의 성공한 활성화 횟수 | - | number 또는 nil, 오류 코드 |
 | `GetResultPosition()` | 다음 결과의 표시 방식·좌표 | - | table 또는 nil, 오류 코드 |
 | `SetResultPosition(x, y)` | 결과 텍스트 화면 좌표 설정·저장 | number, number | boolean, 오류 코드 |
@@ -376,6 +379,35 @@ end
 방·런·확률/강제 응답 설정·사용 횟수가 그대로라면 이후 성공한 `TriggerMagicConch` 결과와 일치합니다. 다른 사용이 끼어들거나 설정이 바뀌면 다시 조회하세요. 언어를 바꾸면 문구는 번역되고 ID는 같습니다. 다른 방 조회는 지원하지 않습니다.
 
 실패하면 `nil, errorCode`를 반환합니다: `API_NOT_READY`(초기화 전), `NO_ACTIVE_RUN`(런 없음), `INVALID_OFFSET`(잘못된 인자), `NO_RESPONSE`(사용 가능한 문구 없음). 새 함수를 사용하려면 수정된 모드를 다시 불러와야 합니다.
+
+### 다음 일반 실행의 답변 예약
+
+소라고둥을 바로 실행하거나 `Config.forcedReply`를 바꾸지 않고 다음 답변만 정하는 별도 API입니다. 이전 제공자에는 없으므로 세 함수의 지원 여부를 확인하세요.
+
+```lua
+local api = MagicConch and MagicConch.API
+if api and api.IsReady() and type(api.ReserveNextResult) == "function"
+    and type(api.GetNextResultReservation) == "function"
+    and type(api.ClearNextResultReservation) == "function" then
+    local ok, tokenOrError = api.ReserveNextResult("YourMod", {type="positive"}, function()
+        return YourMod.HasChoiceItem() -- 실제 소유 여부를 읽고 정확히 true 반환
+    end)
+    -- 선택 키에서는 여기까지만 호출합니다. TriggerMagicConch를 호출하지 않습니다.
+    local queued = api.GetNextResultReservation("YourMod")
+    -- nil 또는 복사된 {owner, token, options} 테이블
+    -- 아이템 제거/모드 해제 시: api.ClearNextResultReservation("YourMod")
+end
+```
+
+- 다음 일반 단축키 또는 `TriggerMagicConch(name)`/`TriggerMagicConch(name,{})` 실행이 성공하면 예약한 답변을 적용하고 예약을 1회 소모합니다. 비활성·진행 중·쿨다운·방 사용 제한·잘못된 옵션으로 거절되면 예약은 남습니다.
+- 다른 호출에 명시적인 옵션이 있으면 그 호출은 해당 옵션을 우선하고 예약을 소모하지 않습니다. `PreviewResult(0)`은 예약을 반영하고, 명시적 미리보기 옵션은 예약보다 우선합니다. 1 이상 offset에는 예약을 반영하지 않습니다.
+- `options`의 유형/ID/사용자 문구 검증은 호출별 지정 API와 같습니다. 인자와 조회 결과는 복사됩니다. 예약·조회는 효과 실행, 사용 횟수 소비, 저장, RNG 진행을 하지 않습니다. 유형만 예약하면 현재 언어·설정으로 문구를 계속 계산합니다.
+- 협동 플레이에서도 소라고둥 결과처럼 전역 예약 한 칸을 공유합니다. 공백이 아닌 owner는 자기 예약을 변경·취소할 수 있습니다. 다른 owner가 차지했다면 `RESERVED_BY_OTHER_MOD`를 반환하고 덮어쓰거나 취소하지 않습니다. token으로 예약 변경을 구분합니다.
+- 선택적인 `isValid`는 예약 시와 조회/일반 실행 직전에 다시 검사합니다. 정확히 true가 아니거나 오류가 나면 예약을 지웁니다. 이 함수에서는 소유 여부만 읽고 예약을 변경하지 마세요. 아이템 제거와 자기 모드 해제에서도 직접 예약을 취소하세요.
+- 예약은 임시 상태이며 방·층 이동, 게임 종료/시작/Continue, API 재초기화 때 지웁니다. 저장 파일에 남지 않습니다. 이전 답변 재생 중 새로 한 예약은 재생 완료만으로 사라지지 않습니다.
+- 오류: `API_NOT_READY`, `NO_ACTIVE_RUN`, `INVALID_OWNER`, `INVALID_OWNER_CHECK`, `OWNER_UNAVAILABLE`, `RESERVED_BY_OTHER_MOD`, 아래의 답변 검증 오류. 잘못된 변경 요청은 기존의 유효한 예약을 보존합니다.
+
+오프라인 검증: `python tests/test_next_result.py`는 실제 core·단축키·API·선택기를 게임 UI/저장 대체 환경에서 실행합니다. 실제 게임의 입력·화면 검증은 별도입니다.
 
 ### 사용 횟수와 결과 텍스트 위치
 
@@ -417,13 +449,13 @@ if not result.success then print(result.reason) end
 local forecast, errorCode = MagicConch.API.PreviewResult(0, {id="No"})
 ```
 
-지원 옵션은 `{type=...}`, `{id=...}`, `{type=..., text=...}`입니다. 생략하거나 `{}`이면 기존 추첨을 사용합니다. 유형은 대소문자를 구분하지 않는 `positive/neutral/negative`입니다. ID는 대소문자를 구분하고 다른 필드와 함께 지정할 수 없습니다. 직접 문구는 공백만이 아닌 유효한 UTF-8 한 줄, 최대 256자이며 줄바꿈·탭·제어 문자는 허용하지 않습니다. 직접 문구의 `id`는 nil입니다.
+지원 옵션은 `{type=...}`, `{id=...}`, `{type=..., text=...}`입니다. 생략하거나 `{}`이면 현재 예약을 사용하고, 예약이 없으면 기존 추첨을 사용합니다. 유형은 대소문자를 구분하지 않는 `positive/neutral/negative`입니다. ID는 대소문자를 구분하고 다른 필드와 함께 지정할 수 없습니다. 직접 문구는 공백만이 아닌 유효한 UTF-8 한 줄, 최대 256자이며 줄바꿈·탭·제어 문자는 허용하지 않습니다. 직접 문구의 `id`는 nil입니다.
 
 기본 ID: `Yes`, `Absolutely`, `Definitely`, `OfCourse`, `FollowTheConch`, `ConchKnowsAll`, `YouMay`, `Proceed`, `Nothing`, `Neither`, `IDontThinkSo`, `No`, `DontEvenAsk`, `NotToday`, `Forbidden`, `Impossible`, `AskAgainLater`, `UncertainTimes`, `MaybeSomeday`, `TryAgain`.
 
 지정은 **이번 호출에만** 적용되고 `Config.forcedReply`나 확률 설정을 바꾸지 않습니다. 전역 강제 유형보다 호출별 지정이 우선합니다. 성공 시 횟수 1회를 소비하고 연출·유형별 효과(부정의 Delete Mode 포함)·콜백은 정상 실행합니다. 비활성화, 연출 중, 쿨다운, 방 사용 제한을 우회하지 않습니다. 이후 일반 추첨은 증가한 사용 횟수를 사용합니다.
 
-`pendingResult`, 최종 콜백, `GetLastResult()`에는 `id`, `forced`, `position`도 포함됩니다. `forced=true`는 호출별 지정을 뜻합니다. 각 반환값과 각 콜백은 복사본을 받아, 수정해도 다른 콜백이나 실제 표시 결과에 영향을 주지 않습니다. 최종 `position`은 실제 표시 위치, `pendingResult.position`은 요청한 위치입니다.
+`pendingResult`, 최종 콜백, `GetLastResult()`에는 `id`, `forced`, `position`도 포함됩니다. `forced=true`는 호출별 지정 또는 다음 답변 예약 적용을 뜻합니다. 각 반환값과 각 콜백은 복사본을 받아, 수정해도 다른 콜백이나 실제 표시 결과에 영향을 주지 않습니다. 최종 `position`은 실제 표시 위치, `pendingResult.position`은 요청한 위치입니다.
 
 잘못된 옵션은 횟수나 쿨다운을 소비하지 않습니다. 실행은 `{success=false, reason=...}`, 미리보기는 `nil, errorCode`로 실패합니다. 옵션 오류는 `INVALID_RESPONSE_OPTIONS`, `CONFLICTING_RESPONSE_OPTIONS`, `INVALID_RESPONSE_ID`, `INVALID_RESPONSE_TYPE`, `INVALID_RESPONSE_TEXT`입니다. 실행 제한은 `ROOM_LIMIT`, `COOLDOWN`이며, 기타 비활성/연출 중 실패는 기존 설명 문자열을 유지합니다.
 

@@ -347,6 +347,9 @@ Structure of the result table received in callback functions:
 | `UnregisterCallback(modName)` | Remove callback | string | boolean |
 | `TriggerMagicConch(modName, options)` | Normal or overridden activation | string, optional table | table |
 | `PreviewResult(offset, options)` | Preview without consuming a use | optional integer 0..1,000,000, optional table | table or nil, error code |
+| `ReserveNextResult(owner, options, isValid)` | Reserve one ordinary activation without using Conch | string, table, optional function | true, token / false, error code |
+| `GetNextResultReservation(owner)` | Read a detached reservation, optionally filtered by owner | optional string | table/nil |
+| `ClearNextResultReservation(owner)` | Cancel only this owner's reservation | string | boolean |
 | `GetCurrentRoomUsage()` | Successful activations in the current room | - | number or nil, error code |
 | `GetResultPosition()` | Read the mode/coordinates for future result text | - | table or nil, error code |
 | `SetResultPosition(x, y)` | Set and save result text screen coordinates | number, number | boolean, error code |
@@ -379,6 +382,35 @@ The forecast matches a later successful `TriggerMagicConch` while the run, room,
 
 Failure returns `nil, errorCode`: `API_NOT_READY`, `NO_ACTIVE_RUN`, `INVALID_OFFSET`, or `NO_RESPONSE`. Reload the updated mod before using this new function.
 
+### Reserve the next ordinary activation
+
+This separate API chooses the next answer without triggering Conch or changing `Config.forcedReply`. Check all three methods before using it; older providers do not expose them.
+
+```lua
+local api = MagicConch and MagicConch.API
+if api and api.IsReady() and type(api.ReserveNextResult) == "function"
+    and type(api.GetNextResultReservation) == "function"
+    and type(api.ClearNextResultReservation) == "function" then
+    local ok, tokenOrError = api.ReserveNextResult("YourMod", {type="positive"}, function()
+        return YourMod.HasChoiceItem() -- pure live ownership check; return exactly true
+    end)
+    -- C/another selection key stops here. Do not call TriggerMagicConch.
+    local queued = api.GetNextResultReservation("YourMod")
+    -- queued is nil or a detached {owner, token, options} table.
+    -- On item loss/mod unload: api.ClearNextResultReservation("YourMod")
+end
+```
+
+- The next successful native hotkey activation or `TriggerMagicConch(name)`/`TriggerMagicConch(name,{})` uses and consumes the reservation exactly once. Disabled, busy, cooldown, room-limit and invalid-option rejections leave it queued.
+- Explicit nonempty per-call options take precedence for that call and do **not** consume the reservation. `PreviewResult(0)` includes the reservation; explicit preview options override it; offsets greater than zero ignore it.
+- `options` has the same type/ID/custom-text validation as per-call overrides. Inputs and returned tables are copied. Reservation and queries neither activate effects nor consume uses, save data or advance RNG. Changing language/settings still affects live type-only resolution.
+- There is one global slot, matching Conch's global result in co-op. A nonblank owner can replace or clear its own choice. Another owner receives `RESERVED_BY_OTHER_MOD`; it cannot overwrite or clear it. Tokens identify replacements.
+- The optional pure `isValid` function is checked immediately and again on reads/ordinary activation. False, non-true or an error invalidates the queued choice before use; never mutate reservation state from this function. Explicitly clear on item loss and your mod's unload as well.
+- Reservations are runtime-only. Room/floor transitions, game exit/start/Continue and API reinitialization clear them; saves never contain them. Successful animation completion alone does not clear a new choice made while the previous answer was playing.
+- Errors include `API_NOT_READY`, `NO_ACTIVE_RUN`, `INVALID_OWNER`, `INVALID_OWNER_CHECK`, `OWNER_UNAVAILABLE`, `RESERVED_BY_OTHER_MOD`, and the response-validation errors below. Failed replacements preserve an existing valid choice.
+
+Offline verification: `python tests/test_next_result.py` runs the real core/hotkey/API/selector paths with mocked game UI and persistence. This does not replace an in-game input/render check.
+
 ### Room usage and result placement
 
 ```lua
@@ -410,13 +442,13 @@ if not result.success then print(result.reason) end
 local forecast, errorCode = MagicConch.API.PreviewResult(0, {id="No"})
 ```
 
-Supported options: `{type=...}`, `{id=...}`, or `{type=..., text=...}`. Omitted/empty options use normal selection. Types are case-insensitive positive/neutral/negative. IDs are case-sensitive and cannot be combined with other fields. Type-only overrides deterministically select a phrase from that type. Custom text must be nonblank valid UTF-8, a single line up to 256 codepoints, without tabs/newlines/control characters. Custom responses have no built-in ID.
+Supported options: `{type=...}`, `{id=...}`, or `{type=..., text=...}`. Omitted/empty options use the current next-result reservation, if any, otherwise normal selection. Types are case-insensitive positive/neutral/negative. IDs are case-sensitive and cannot be combined with other fields. Type-only overrides deterministically select a phrase from that type. Custom text must be nonblank valid UTF-8, a single line up to 256 codepoints, without tabs/newlines/control characters. Custom responses have no built-in ID.
 
 IDs: `Yes`, `Absolutely`, `Definitely`, `OfCourse`, `FollowTheConch`, `ConchKnowsAll`, `YouMay`, `Proceed`, `Nothing`, `Neither`, `IDontThinkSo`, `No`, `DontEvenAsk`, `NotToday`, `Forbidden`, `Impossible`, `AskAgainLater`, `UncertainTimes`, `MaybeSomeday`, `TryAgain`.
 
 Overrides take precedence over global forcedReply for that call without changing shared config. Success consumes one use and runs normal animation, type effects (including negative Delete Mode), and callbacks. Disabled/busy/cooldown/room-limit gates still apply. Subsequent normal draws use the advanced counter.
 
-`pendingResult`, callbacks and `GetLastResult()` include `id`, `forced`, and `position`. `forced=true` identifies a per-call override. Each returned result and callback gets a detached copy. Final positions reflect the actual renderer; pending positions describe the request.
+`pendingResult`, callbacks and `GetLastResult()` include `id`, `forced`, and `position`. `forced=true` identifies a per-call override or an applied next-result reservation. Each returned result and callback gets a detached copy. Final positions reflect the actual renderer; pending positions describe the request.
 
 Invalid options consume neither a use nor cooldown. Activation returns `{success=false, reason=...}`; preview returns `nil, errorCode`. Codes: `INVALID_RESPONSE_OPTIONS`, `CONFLICTING_RESPONSE_OPTIONS`, `INVALID_RESPONSE_ID`, `INVALID_RESPONSE_TYPE`, `INVALID_RESPONSE_TEXT`. Activation also reports `ROOM_LIMIT` and `COOLDOWN`; disabled/busy failures retain descriptive reason strings.
 

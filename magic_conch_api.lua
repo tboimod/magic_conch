@@ -12,9 +12,73 @@ local gameState = nil
 local getTiming = nil
 local MagicConch_Lang = nil
 local MagicConch_Config = nil
+-- Runtime-only, owner-scoped next-use override. Never part of saved Config.
+local nextResult, nextResultSerial = nil, 0
+
+local function copyOptions(options)
+    return {type=options.type, id=options.id, text=options.text}
+end
+
+local function activeReservation()
+    local reserved = nextResult
+    if reserved and reserved.isValid then
+        local ok, valid = pcall(reserved.isValid)
+        if not ok or valid ~= true then
+            if nextResult == reserved then nextResult = nil end
+            if not ok and MagicConch then MagicConch.printError("Next-result owner check failed: " .. tostring(valid)) end
+            return nil
+        end
+    end
+    return reserved
+end
+
+local function responseOptions(options)
+    -- An explicitly overridden API call belongs to that caller. It neither
+    -- steals nor consumes another mod's reservation.
+    if options ~= nil and (type(options) ~= "table" or next(options) ~= nil) then return options end
+    local reserved = activeReservation()
+    return reserved and reserved.options or options, reserved
+end
+
+function MagicConch_API.ResetNextResultReservation()
+    nextResult = nil
+end
+
+function MagicConch_API.ReserveNextResult(modName, options, isValid)
+    if not (MagicConch and gameState and MagicConch_Lang) then return false, "API_NOT_READY" end
+    if Game():GetNumPlayers() == 0 then return false, "NO_ACTIVE_RUN" end
+    if type(modName) ~= "string" or not modName:find("%S") then return false, "INVALID_OWNER" end
+    if type(options) ~= "table" or next(options) == nil then return false, "INVALID_RESPONSE_OPTIONS" end
+    if isValid ~= nil and type(isValid) ~= "function" then return false, "INVALID_OWNER_CHECK" end
+    local current = activeReservation()
+    if current and current.owner ~= modName then return false, "RESERVED_BY_OTHER_MOD" end
+    local response, reason = MagicConch_Lang.resolveResponse(MagicConch.Config,
+        MagicConch_Lang.getRandomContext(), options)
+    if not response then return false, reason end
+    if isValid then
+        local ok, valid = pcall(isValid)
+        if not ok or valid ~= true then return false, "OWNER_UNAVAILABLE" end
+    end
+    nextResultSerial = nextResultSerial + 1
+    nextResult = {owner=modName, options=copyOptions(options), isValid=isValid, token=nextResultSerial}
+    return true, nextResultSerial
+end
+
+function MagicConch_API.GetNextResultReservation(modName)
+    local reserved = activeReservation()
+    if not reserved or (modName ~= nil and reserved.owner ~= modName) then return nil end
+    return {owner=reserved.owner, token=reserved.token, options=copyOptions(reserved.options)}
+end
+
+function MagicConch_API.ClearNextResultReservation(modName)
+    if not nextResult or nextResult.owner ~= modName then return false end
+    nextResult = nil
+    return true
+end
 
 -- Initialize API with references from core module
 function MagicConch_API.Init(magicConchMod, gameStateRef, getTimingFunc, langModule, configModule)
+    nextResult = nil
     MagicConch = magicConchMod
     gameState = gameStateRef
     getTiming = getTimingFunc
@@ -42,8 +106,9 @@ local function executeMagicConchSequence(triggerSource, options)
     end
     
     -- Validate/select before changing state so an invalid override consumes nothing.
+    local effectiveOptions, reservation = responseOptions(options)
     local randomData, errorCode = MagicConch_Lang.resolveResponse(MagicConch.Config,
-        MagicConch_Lang.getRandomContext(), options)
+        MagicConch_Lang.getRandomContext(), effectiveOptions)
     if not randomData then
         return false, errorCode or "NO_RESPONSE"
     end
@@ -111,6 +176,7 @@ local function executeMagicConchSequence(triggerSource, options)
     gameState.state = "shaking"
     gameState.timer = 0
     MagicConch:RecordRoomUse()
+    if reservation and nextResult == reservation then nextResult = nil end
     
     if MagicConch.Config.debugMode then
         MagicConch.printDebug("Started Magic Conch sequence (" .. triggerSource .. "): " .. gameState.pendingText)
@@ -192,7 +258,9 @@ function MagicConch_API.PreviewResult(offset, options)
 
     local context = MagicConch_Lang.getRandomContext()
     context.usageCount = context.usageCount + math.tointeger(offset)
-    local response, errorCode = MagicConch_Lang.resolveResponse(MagicConch.Config, context, options)
+    local effectiveOptions = options
+    if offset == 0 then effectiveOptions = responseOptions(options) end
+    local response, errorCode = MagicConch_Lang.resolveResponse(MagicConch.Config, context, effectiveOptions)
     if not response then return nil, errorCode or "NO_RESPONSE" end
     return { id = response.id, text = response.text, type = response.type,
         forced = response.forced == true,
@@ -426,6 +494,10 @@ function MagicConch_API.CreateInterface()
             return MagicConch_API.PreviewResult(offset, options)
         end,
         GetCurrentRoomUsage = MagicConch_API.GetCurrentRoomUsage,
+        -- One accepted ordinary hotkey/API use; no activation or Config write.
+        ReserveNextResult = MagicConch_API.ReserveNextResult,
+        GetNextResultReservation = MagicConch_API.GetNextResultReservation,
+        ClearNextResultReservation = MagicConch_API.ClearNextResultReservation,
         GetResultPosition = MagicConch_API.GetResultPosition,
         SetResultPosition = MagicConch_API.SetResultPosition,
         ResetResultPosition = MagicConch_API.ResetResultPosition,

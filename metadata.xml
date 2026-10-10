@@ -28,7 +28,7 @@ Multi-language: Auto-detects Korean/English and switches accordingly
 Customizable: Adjustable timing, display style, hotkeys and more settings
 
 Compatible with Mod Config Menu</description>
-    <version>1.10</version>
+    <version>1.13</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Tweaks"/>
