@@ -210,6 +210,35 @@ local function getRandomContext()
     return context
 end
 
+-- Resolve a per-call response override without modifying shared configuration.
+local function resolveResponse(config, context, options)
+    if options == nil then return sample(config, context) end
+    if type(options) ~= "table" then return nil, "INVALID_RESPONSE_OPTIONS" end
+    for key in pairs(options) do
+        if key ~= "id" and key ~= "type" and key ~= "text" then return nil, "INVALID_RESPONSE_OPTIONS" end
+    end
+    if next(options) == nil then return sample(config, context) end
+    if options.id ~= nil then
+        if options.type ~= nil or options.text ~= nil then return nil, "CONFLICTING_RESPONSE_OPTIONS" end
+        if type(options.id) ~= "string" then return nil, "INVALID_RESPONSE_ID" end
+        local entry = MagicConchStrings[getLanguageTable(config).code][options.id]
+        if not entry then return nil, "INVALID_RESPONSE_ID" end
+        return { id = options.id, type = entry.type, text = entry.text, forced = true }
+    end
+    local kind = type(options.type) == "string" and string.lower(options.type)
+    if kind ~= "positive" and kind ~= "neutral" and kind ~= "negative" then return nil, "INVALID_RESPONSE_TYPE" end
+    if options.text ~= nil then
+        local text = options.text
+        if type(text) ~= "string" or not text:find("%S") or text:find("%c") then return nil, "INVALID_RESPONSE_TEXT" end
+        local length = utf8.len(text)
+        if not length or length > 256 then return nil, "INVALID_RESPONSE_TEXT" end
+        return { type = kind, text = text, forced = true } -- Custom text has no built-in ID.
+    end
+    local response = sample({ language = config.language, forcedReply = kind }, context)
+    response.forced = true
+    return response
+end
+
 local function getRandomString(config)
     return sample(config, getRandomContext())
 end
@@ -229,6 +258,7 @@ return {
     getLanguageTable = getLanguageTable,
     getRandomString = getRandomString,
     sample = sample,
+    resolveResponse = resolveResponse,
     sampleLegacy = sampleLegacy,
     getRandomContext = getRandomContext,
     getResponseCounts = getResponseCounts,

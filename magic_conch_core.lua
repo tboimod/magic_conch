@@ -6,6 +6,7 @@ local MagicConch_Render = include("magic_conch_render")
 local MagicConch_API = include("magic_conch_api")
 local MagicConch_RNGTest = include("magic_conch_rng_test")
 local MagicConch_Random = include("magic_conch_random")
+local MagicConch_Display = include("magic_conch_display")
 
 MagicConch = RegisterMod("Magic Conch", 1)
 MagicConch_Config.Init(MagicConch)
@@ -179,7 +180,11 @@ local function loadCurrentLanguageFont(config)
         return fontObj
     end
     
-    local ok, err = pcall(function() fontObj.font:Load(fontPath) end)
+    local ok, err = pcall(function()
+        fontObj.font = fontObj.font or Font()
+        fontObj.font:Load(fontPath)
+        assert(fontObj.font:IsLoaded(), "font did not load")
+    end)
     if ok then
         fontObj.fontPath = fontPath
         MagicConch.printDebug("Font loaded: " .. tostring(fontPath))
@@ -200,6 +205,11 @@ local function resetGameState()
     gameState.canInput = true
     gameState.pendingText = nil
     gameState.pendingType = nil
+    gameState.pendingID = nil
+    gameState.pendingForced = nil
+    gameState.pendingPosition = nil
+    gameState.pendingDisplayStyle = nil
+    gameState.displayResult = nil
     gameState.lastInputTime = 0
 end
 
@@ -233,21 +243,28 @@ local stateHandlers = {
         if gameState.timer >= timing.wait then
             local hud = Game():GetHUD()
             if gameState.pendingText and gameState.pendingType then
-                -- Display text
-                if MagicConch.Config.displayStyle == 0 then
-                    hud:ShowFortuneText(gameState.pendingText)
-                else
-                    local typeText = "[" .. gameState.pendingType .. "]"
-                    hud:ShowItemText(gameState.pendingText, typeText)
+                local position = gameState.pendingPosition or { mode = "hud" }
+                local style = gameState.pendingDisplayStyle
+                if position.mode == "custom" and not (fontObj.font and fontObj.font:IsLoaded()) then
+                    MagicConch.printError("Result font unavailable; using native HUD")
+                    position = { mode = "hud" }
+                end
+                if position.mode == "hud" then
+                    if style == 0 then hud:ShowFortuneText(gameState.pendingText)
+                    else hud:ShowItemText(gameState.pendingText, "[" .. gameState.pendingType .. "]") end
                 end
                 
                 -- Save result and execute callback
                 local result = {
+                    id = gameState.pendingID,
+                    forced = gameState.pendingForced == true,
                     text = gameState.pendingText,
                     type = gameState.pendingType,
                     timestamp = Game():GetFrameCount(),
-                    displayStyle = MagicConch.Config.displayStyle
+                    displayStyle = style,
+                    position = position,
                 }
+                gameState.displayResult = MagicConch_Display.CopyResult(result)
                 gameState.lastResult = result
                 gameState.lastResultTime = result.timestamp
                 -- Update per-room lastType when result is finalized
@@ -342,6 +359,7 @@ local stateHandlers = {
         if gameState.timer >= timing.display then
             gameState.state = "cooldown"
             gameState.timer = 0
+            gameState.displayResult = nil
         end
     end,
     
@@ -443,6 +461,9 @@ end
 function MagicConch:OnRender()
     -- Always render (for room attempts counter)
     MagicConch_Render:Render(MagicConch, nil, 0, MagicConch_Lang, fontObj)
+    if MagicConch.Config.enabled and gameState.state == "displaying" and gameState.displayResult then
+        MagicConch_Render:RenderResult(gameState.displayResult, fontObj)
+    end
 end
 
 -- ReloadFont
@@ -552,6 +573,7 @@ function MagicConch:OnGameExit()
     MagicConch_Config.Save(MagicConch)
     -- Save runtime so data persists across reload/continue
     MagicConch_Config.SaveRuntime(MagicConch, { roomUsageCount = gameState.roomUsageCount, currentRoomKey = gameState.currentRoomKey })
+    resetGameState()
 end
 
 -- Callbacks

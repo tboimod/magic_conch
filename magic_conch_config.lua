@@ -24,6 +24,7 @@ local DefaultConfig = {
     -- UI Positions
     iconX = 430,       -- Magic Conch icon X position
     iconY = 265,       -- Magic Conch icon Y position
+    resultPosition = false, -- false: native HUD; {x,y}: custom result text top-left
     
     -- Probability Weights (Total doesn't need to be 100, but Recommended)
     chances = {

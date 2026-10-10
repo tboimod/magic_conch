@@ -9,6 +9,20 @@ local function renderLine(text, x, y, r, g, b)
     Isaac.RenderText(text, x, y, r, g, b, 1)
 end
 
+-- Called only while the result is displaying. Coordinates are screen-space,
+-- top-left of the first text line. This does not reposition the attempts icon.
+function MagicConch_Render:RenderResult(result, fontObj)
+    local position, font = result.position, fontObj and fontObj.font
+    if not position or position.mode ~= "custom" or not font or not font:IsLoaded() then return end
+    local x, y = position.x, position.y
+    local function draw(text, atY)
+        font:DrawStringUTF8(text, x + 1, atY + 1, KColor(0, 0, 0, 0.85), 0, false)
+        font:DrawStringUTF8(text, x, atY, KColor(1, 1, 1, 1), 0, false)
+    end
+    draw(result.text, y)
+    if result.displayStyle == 1 then draw("[" .. result.type .. "]", y + font:GetLineHeight() + 2) end
+end
+
 -- Initialize or update sprite based on config
 local function updateSprite(mod)
     local currentDeleteMode = mod.Config.deleteMode

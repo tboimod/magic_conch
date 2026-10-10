@@ -343,8 +343,12 @@ end
 |------|------|------|--------|
 | `RegisterCallback(callback, modName)` | 콜백 등록 | function, string | boolean |
 | `UnregisterCallback(modName)` | 콜백 해제 | string | boolean |
-| `TriggerMagicConch(modName)` | Magic Conch 실행 | string | table |
-| `PreviewResult(offset)` | 현재 방의 다음 결과 미리보기 (횟수 소비 없음) | 생략 또는 0~1,000,000 정수 | table 또는 nil, 오류 코드 |
+| `TriggerMagicConch(modName, options)` | 일반 또는 답변 지정 실행 | string, 선택적 table | table |
+| `PreviewResult(offset, options)` | 현재 방의 결과 미리보기 (횟수 소비 없음) | 선택적 정수 0~1,000,000, 선택적 table | table 또는 nil, 오류 코드 |
+| `GetCurrentRoomUsage()` | 현재 방의 성공한 활성화 횟수 | - | number 또는 nil, 오류 코드 |
+| `GetResultPosition()` | 다음 결과의 표시 방식·좌표 | - | table 또는 nil, 오류 코드 |
+| `SetResultPosition(x, y)` | 결과 텍스트 화면 좌표 설정·저장 | number, number | boolean, 오류 코드 |
+| `ResetResultPosition()` | 게임 기본 HUD 표시로 복원·저장 | - | boolean, 오류 코드 |
 | `IsReady()` | API 준비 상태 확인 | - | boolean |
 | `GetLastResult()` | 마지막 결과 조회 | - | table/nil |
 | `GetCallbackInfo()` | 등록된 콜백 정보 | - | table |
@@ -365,13 +369,67 @@ if api and api.IsReady() and type(api.PreviewResult) == "function" then
 end
 ```
 
-`.`으로 호출합니다. `offset`은 현재 미소비 횟수로부터 얼마나 뒤를 볼지이며 기본값 0입니다. 반환값은 `{id, text, type, usageCount, useNumber, offset}`입니다. `usageCount`는 그 추첨 직전의 사용 횟수이고 `useNumber = usageCount + 1`입니다. 각 호출은 새 테이블을 반환합니다.
+`.`으로 호출합니다. `offset`은 현재 미소비 횟수로부터 얼마나 뒤를 볼지이며 기본값 0입니다. 반환값은 `{id, text, type, forced, usageCount, useNumber, offset}`입니다. `usageCount`는 추첨 직전 횟수이고 `useNumber = usageCount + 1`입니다. 각 호출은 새 테이블을 반환합니다. `options`에는 아래 실행 함수와 같은 답변 지정을 넣을 수 있습니다.
 
 조회는 사용 횟수·RNG 상태를 소비하지 않고 저장, 애니메이션, 소리, 관측 로그, 등록 콜백을 실행하지 않습니다. 비활성화, 연출 진행 중, 방별 횟수 제한 상태에서도 예상 결과를 계산할 수 있지만 실제 활성화 가능 여부를 뜻하지는 않습니다. 연출 중에는 이미 시작한 답변이 아니라 **다음 미소비 사용**의 답변입니다.
 
 방·런·확률/강제 응답 설정·사용 횟수가 그대로라면 이후 성공한 `TriggerMagicConch` 결과와 일치합니다. 다른 사용이 끼어들거나 설정이 바뀌면 다시 조회하세요. 언어를 바꾸면 문구는 번역되고 ID는 같습니다. 다른 방 조회는 지원하지 않습니다.
 
 실패하면 `nil, errorCode`를 반환합니다: `API_NOT_READY`(초기화 전), `NO_ACTIVE_RUN`(런 없음), `INVALID_OFFSET`(잘못된 인자), `NO_RESPONSE`(사용 가능한 문구 없음). 새 함수를 사용하려면 수정된 모드를 다시 불러와야 합니다.
+
+### 사용 횟수와 결과 텍스트 위치
+
+API가 준비된 런에서 호출합니다.
+
+```lua
+local api = MagicConch.API
+local used, errorCode = api.GetCurrentRoomUsage()
+local ok, errorCode = api.SetResultPosition(160, 80)
+local position = api.GetResultPosition()
+-- {mode="custom", x=160, y=80, anchor="top_left"}
+-- api.ResetResultPosition() -- 기본 게임 HUD로 복원
+```
+
+횟수 조회는 값을 바꾸지 않습니다. 초기화 전이나 런이 없으면 `nil, "API_NOT_READY"` 또는 `nil, "NO_ACTIVE_RUN"`을 반환합니다. 일반·강제 실행 모두 성공한 활성화만 1회씩 포함합니다.
+
+좌표는 **Isaac 화면 좌표**, 결과 첫 줄의 좌상단입니다. 유한한 0~10,000 숫자(소수 포함)를 허용합니다. 잘못된 입력은 `false, "INVALID_POSITION"`으로 실패하고 설정을 바꾸지 않습니다. 화면 밖 좌표는 자동 보정하지 않으므로 호출 모드에서 화면 크기에 맞춰 배치하세요. 아이콘·횟수 표시 위치는 별개입니다.
+
+좌표 설정은 재시작 후에도 유지되고 **다음 활성화부터** 적용됩니다. 진행 중인 답변은 활성화 시점의 좌표·표시 스타일을 유지합니다. 기본 모드는 `{mode="hud"}`를 반환합니다. 기본 HUD 좌표는 엔진이 관리하므로 `x/y`를 반환하지 않습니다. 좌표를 직접 관리하려면 `SetResultPosition`으로 custom 모드를 사용하세요.
+
+custom 모드는 모드의 한국어 지원 폰트로 `timing.display` 동안 표시합니다. `displayStyle=0`은 답변 한 줄, `1`은 답변과 유형 부제목입니다. 방 이동 시 표시가 끝납니다. 폰트가 로드되지 않으면 기본 HUD로 출력하며 최종 콜백과 `GetLastResult().position`에 실제 모드 `{mode="hud"}`를 전달합니다. `GetResultPosition()`은 다음 활성화에 요청할 설정을 나타냅니다.
+
+### 답변을 정해서 실행하기
+
+다음 예시는 각각 별도의 호출 방식입니다. 연출 중에는 추가 실행이 거절되므로 하나씩 호출하세요.
+
+```lua
+-- 유형만 고정: 해당 유형 안에서 문구는 방·횟수 기반으로 선택
+local result = MagicConch.API.TriggerMagicConch("OtherMod", {type="positive"})
+-- 기존 ID 고정: 현재 언어의 번역 사용
+-- local result = MagicConch.API.TriggerMagicConch("OtherMod", {id="Yes"})
+-- 직접 문구와 유형 지정
+-- local result = MagicConch.API.TriggerMagicConch("OtherMod", {
+--     type="neutral", text="이번에는 기다려."
+-- })
+if not result.success then print(result.reason) end
+
+-- 같은 옵션으로 미리보기 가능
+local forecast, errorCode = MagicConch.API.PreviewResult(0, {id="No"})
+```
+
+지원 옵션은 `{type=...}`, `{id=...}`, `{type=..., text=...}`입니다. 생략하거나 `{}`이면 기존 추첨을 사용합니다. 유형은 대소문자를 구분하지 않는 `positive/neutral/negative`입니다. ID는 대소문자를 구분하고 다른 필드와 함께 지정할 수 없습니다. 직접 문구는 공백만이 아닌 유효한 UTF-8 한 줄, 최대 256자이며 줄바꿈·탭·제어 문자는 허용하지 않습니다. 직접 문구의 `id`는 nil입니다.
+
+기본 ID: `Yes`, `Absolutely`, `Definitely`, `OfCourse`, `FollowTheConch`, `ConchKnowsAll`, `YouMay`, `Proceed`, `Nothing`, `Neither`, `IDontThinkSo`, `No`, `DontEvenAsk`, `NotToday`, `Forbidden`, `Impossible`, `AskAgainLater`, `UncertainTimes`, `MaybeSomeday`, `TryAgain`.
+
+지정은 **이번 호출에만** 적용되고 `Config.forcedReply`나 확률 설정을 바꾸지 않습니다. 전역 강제 유형보다 호출별 지정이 우선합니다. 성공 시 횟수 1회를 소비하고 연출·유형별 효과(부정의 Delete Mode 포함)·콜백은 정상 실행합니다. 비활성화, 연출 중, 쿨다운, 방 사용 제한을 우회하지 않습니다. 이후 일반 추첨은 증가한 사용 횟수를 사용합니다.
+
+`pendingResult`, 최종 콜백, `GetLastResult()`에는 `id`, `forced`, `position`도 포함됩니다. `forced=true`는 호출별 지정을 뜻합니다. 각 반환값과 각 콜백은 복사본을 받아, 수정해도 다른 콜백이나 실제 표시 결과에 영향을 주지 않습니다. 최종 `position`은 실제 표시 위치, `pendingResult.position`은 요청한 위치입니다.
+
+잘못된 옵션은 횟수나 쿨다운을 소비하지 않습니다. 실행은 `{success=false, reason=...}`, 미리보기는 `nil, errorCode`로 실패합니다. 옵션 오류는 `INVALID_RESPONSE_OPTIONS`, `CONFLICTING_RESPONSE_OPTIONS`, `INVALID_RESPONSE_ID`, `INVALID_RESPONSE_TYPE`, `INVALID_RESPONSE_TEXT`입니다. 실행 제한은 `ROOM_LIMIT`, `COOLDOWN`이며, 기타 비활성/연출 중 실패는 기존 설명 문자열을 유지합니다.
+
+`mc watch`는 호출별 강제 답변을 확률 표본에서 제외하고 `FORCED_EXCLUDED`/`excludedForced`로 셉니다. 전역 강제 유형은 이전처럼 해당 설정의 별도 관측 구간으로 집계합니다.
+
+렌더링 API 근거: [Font.DrawStringUTF8](https://wofsauge.github.io/IsaacDocs/rep/Font.html#drawstringutf8), [게임 HUD](https://wofsauge.github.io/IsaacDocs/rep/HUD.html).
 
 ### 중요 주의사항
 

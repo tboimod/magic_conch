@@ -4,6 +4,7 @@
 -- ========================================
 
 local MagicConch_API = {}
+local Display = include("magic_conch_display")
 
 -- Internal references (will be set by core module)
 local MagicConch = nil
@@ -29,27 +30,25 @@ end
 -- Execute Magic Conch sequence (shared between hotkey and API trigger)
 -- @param triggerSource string - Source of trigger (e.g., "hotkey", "API: ModName")
 -- @return boolean - Success or failure
-local function executeMagicConchSequence(triggerSource)
+local function executeMagicConchSequence(triggerSource, options)
     local limit = MagicConch.Config.attemptsPerRoom or 0
-    if limit > 0 and MagicConch:GetCurrentRoomUsage() >= limit then return false end
+    if limit > 0 and MagicConch:GetCurrentRoomUsage() >= limit then return false, "ROOM_LIMIT" end
     local currentTime = Game():GetFrameCount()
     
     -- Spam protection
     if currentTime - gameState.lastInputTime < 10 then 
         MagicConch.printDebug("Spam protection triggered (" .. triggerSource .. ")")
-        return false
+        return false, "COOLDOWN"
     end
     
+    -- Validate/select before changing state so an invalid override consumes nothing.
+    local randomData, errorCode = MagicConch_Lang.resolveResponse(MagicConch.Config,
+        MagicConch_Lang.getRandomContext(), options)
+    if not randomData then
+        return false, errorCode or "NO_RESPONSE"
+    end
     gameState.lastInputTime = currentTime
     gameState.canInput = false
-    
-    -- Get random answer
-    local randomData = MagicConch_Lang.getRandomString(MagicConch.Config)
-    if not randomData then
-        MagicConch.printError("Failed to get random string")
-        gameState.canInput = true
-        return false
-    end
 
     -- Optional observation only; a diagnostic failure must not interrupt gameplay.
     if MagicConch.RNGDiagnostics and MagicConch.RNGDiagnostics.Observe then
@@ -60,6 +59,10 @@ local function executeMagicConchSequence(triggerSource)
     -- Set pending data
     gameState.pendingText = randomData.text
     gameState.pendingType = randomData.type
+    gameState.pendingID = randomData.id
+    gameState.pendingForced = randomData.forced == true
+    gameState.pendingPosition = Display.Position(MagicConch.Config)
+    gameState.pendingDisplayStyle = MagicConch.Config.displayStyle
     
     -- Start sequence with slot machine sound and Magic Conch holding animation
     local sfxManager = SFXManager()
@@ -127,6 +130,9 @@ local function executeCallbacks(result)
     
     -- Create a safe copy of the result to prevent modification
     local safeResult = {
+        id = result.id,
+        forced = result.forced,
+        position = result.position,
         text = result.text,
         type = result.type,
         timestamp = result.timestamp,
@@ -142,7 +148,7 @@ local function executeCallbacks(result)
     for i, callbackData in ipairs(gameState.callbacks) do
         local ok, err = pcall(function()
             if type(callbackData.func) == "function" then
-                callbackData.func(safeResult)
+                callbackData.func(Display.CopyResult(safeResult))
                 return true
             else
                 error("Callback is not a function")
@@ -172,8 +178,9 @@ end
 -- Preview a future result in the current room without activating or consuming a use.
 -- offset=0 (default): next unconsumed use; offset=1: the use after that.
 -- Available even while busy/disabled/at the room limit; not an activation guarantee.
--- Returns a fresh {id, text, type, usageCount, useNumber, offset}, or nil, errorCode.
-function MagicConch_API.PreviewResult(offset)
+-- options: nil, {type=...}, {id=...}, or {type=...,text=...}; matches TriggerMagicConch.
+-- Returns fresh response/counter metadata, or nil, errorCode.
+function MagicConch_API.PreviewResult(offset, options)
     if not (MagicConch and gameState and MagicConch_Lang) then
         return nil, "API_NOT_READY"
     end
@@ -185,10 +192,38 @@ function MagicConch_API.PreviewResult(offset)
 
     local context = MagicConch_Lang.getRandomContext()
     context.usageCount = context.usageCount + math.tointeger(offset)
-    local response = MagicConch_Lang.sample(MagicConch.Config, context)
-    if not response then return nil, "NO_RESPONSE" end
+    local response, errorCode = MagicConch_Lang.resolveResponse(MagicConch.Config, context, options)
+    if not response then return nil, errorCode or "NO_RESPONSE" end
     return { id = response.id, text = response.text, type = response.type,
+        forced = response.forced == true,
         usageCount = context.usageCount, useNumber = context.usageCount + 1, offset = math.tointeger(offset) }
+end
+
+function MagicConch_API.GetCurrentRoomUsage()
+    if not (MagicConch and gameState) then return nil, "API_NOT_READY" end
+    if Game():GetNumPlayers() == 0 then return nil, "NO_ACTIVE_RUN" end
+    return MagicConch:GetCurrentRoomUsage()
+end
+
+function MagicConch_API.GetResultPosition()
+    if not MagicConch then return nil, "API_NOT_READY" end
+    return Display.Position(MagicConch.Config)
+end
+
+-- These settings apply to subsequent activations, and persist across restarts.
+function MagicConch_API.SetResultPosition(x, y)
+    if not MagicConch then return false, "API_NOT_READY" end
+    if not Display.ValidCoordinate(x) or not Display.ValidCoordinate(y) then return false, "INVALID_POSITION" end
+    MagicConch.Config.resultPosition = { x = x, y = y }
+    MagicConch_Config.Save(MagicConch)
+    return true
+end
+
+function MagicConch_API.ResetResultPosition()
+    if not MagicConch then return false, "API_NOT_READY" end
+    MagicConch.Config.resultPosition = false
+    MagicConch_Config.Save(MagicConch)
+    return true
 end
 
 -- Register callback to receive Magic Conch results from other mods
@@ -241,14 +276,18 @@ end
 
 -- Trigger Magic Conch (programming style)
 -- @param modName string - Mod name that called this function
+-- @param options table|nil - Per-call type, built-in ID, or type + custom text
 -- @return table - Result information
-function MagicConch_API.TriggerMagicConch(modName)
+function MagicConch_API.TriggerMagicConch(modName, options)
     local result = {
         success = false,
         reason = "",
         estimatedTime = 0,
         pendingResult = nil
     }
+    if not (MagicConch and gameState) then result.reason = "API_NOT_READY"; return result end
+    if Game():GetNumPlayers() == 0 then result.reason = "NO_ACTIVE_RUN"; return result end
+    modName = type(modName) == "string" and modName ~= "" and modName or "Unknown Mod"
     
     if not isAvailable() then
         if not MagicConch.Config.enabled then
@@ -276,10 +315,10 @@ function MagicConch_API.TriggerMagicConch(modName)
     
     -- Execute Magic Conch
     local triggerSource = "API: " .. (modName)
-    local executeSuccess = executeMagicConchSequence(triggerSource)
+    local executeSuccess, errorCode = executeMagicConchSequence(triggerSource, options)
     
     if not executeSuccess then
-        result.reason = "Failed to execute Magic Conch sequence"
+        result.reason = errorCode or "Failed to execute Magic Conch sequence"
         return result
     end
     
@@ -289,6 +328,9 @@ function MagicConch_API.TriggerMagicConch(modName)
     local timing = getTiming()
     result.estimatedTime = timing.shake + timing.wait + timing.display
     result.pendingResult = {
+        id = gameState.pendingID,
+        forced = gameState.pendingForced,
+        position = Display.Position(MagicConch.Config),
         text = gameState.pendingText,
         type = gameState.pendingType,
         willDisplayIn = timing.shake + timing.wait
@@ -352,7 +394,7 @@ end
 -- Get last result
 -- @return table - Last Magic Conch result or nil
 function MagicConch_API.GetLastResult()
-    return gameState.lastResult
+    return gameState and Display.CopyResult(gameState.lastResult) or nil
 end
 
 -- Create public API interface
@@ -373,16 +415,20 @@ function MagicConch_API.CreateInterface()
         end,
         
         -- Trigger Magic Conch: Execute Magic Conch programmatically
-        -- Input: modName (string, optional)
+        -- Input: modName (string, optional), options (table, optional)
         -- Output: table { success, reason, estimatedTime, pendingResult }
-        TriggerMagicConch = function(modName) 
-            return MagicConch_API.TriggerMagicConch(modName) 
+        TriggerMagicConch = function(modName, options)
+            return MagicConch_API.TriggerMagicConch(modName, options)
         end,
 
         -- Read-only preview; offset=0 means the next unconsumed use in this room.
-        PreviewResult = function(offset)
-            return MagicConch_API.PreviewResult(offset)
+        PreviewResult = function(offset, options)
+            return MagicConch_API.PreviewResult(offset, options)
         end,
+        GetCurrentRoomUsage = MagicConch_API.GetCurrentRoomUsage,
+        GetResultPosition = MagicConch_API.GetResultPosition,
+        SetResultPosition = MagicConch_API.SetResultPosition,
+        ResetResultPosition = MagicConch_API.ResetResultPosition,
         
         -- Check if API is ready
         -- Output: boolean (ready or not)

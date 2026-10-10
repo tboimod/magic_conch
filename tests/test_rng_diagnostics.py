@@ -4,7 +4,6 @@ Run: python tests/test_rng_diagnostics.py  (requires lupa)
 Native RNG evidence must come from `mc test` inside Isaac and log.txt.
 """
 from pathlib import Path
-import subprocess
 import tempfile
 import json
 import math
@@ -83,10 +82,8 @@ lua.globals().lang = lua.execute((ROOT / "magic_conch_lang.lua").read_text(encod
 lua.globals().roomTests = lua.execute((ROOT / "magic_conch_rng_rooms.lua").read_text(encoding="utf-8"))
 lua.globals().diagnostics = lua.execute((ROOT / "magic_conch_rng_test.lua").read_text(encoding="utf-8"))
 
-# Compare the shared legacy path with the repository's unmodified implementation.
-original = subprocess.check_output(
-    ["git", "show", "HEAD:magic_conch_lang.lua"], cwd=ROOT, encoding="utf-8"
-)
+# Keep the reference fixed after new implementations are committed to HEAD.
+original = (ROOT / "tests/fixtures/legacy_selector.lua").read_text(encoding="utf-8")
 lua.globals().original = lua.execute(original)
 lua.execute(r'''
 local configs = {
@@ -164,9 +161,15 @@ context.usageCount = 0
 api.Observe(lang.getRandomString(MagicConch.Config), "hotkey")
 context.roomFrame = 300
 api.Observe(lang.getRandomString(MagicConch.Config), "API: fixture")
+api.Observe(lang.resolveResponse(MagicConch.Config, context, {type="negative",text="Forced fixture"}), "API: forced fixture")
 MagicConch.Config.forcedReply = "Positive"
 api.Observe(lang.getRandomString(MagicConch.Config), "hotkey")
 api.Command(nil, "mc", "stats")
+local forcedExcluded = false
+for _, message in ipairs(logs) do
+    if message:find("WATCH samples=3 enabled=true excludedForced=1", 1, true) then forcedExcluded = true end
+end
+assert(forcedExcluded, "per-call forced responses contaminated RNG samples")
 api.Command(nil, "mc", "watch off")
 local countAfterStop = #logs
 api.Observe(lang.getRandomString(MagicConch.Config), "hotkey")

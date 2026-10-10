@@ -103,6 +103,8 @@ python tests/test_rng_diagnostics.py
 
 Python의 `lupa`가 필요합니다. 아래에 후속 인게임 검증 결과도 보존했습니다. 다른 모드의 읽기 전용 미리보기 함수는 `MagicConch.API.PreviewResult(offset)`이며 [API 사용법](Korean.md#다른-모드에서-결과-미리보기)을 참고하세요. 이 함수의 무부작용·오류 처리와 실제 활성화 결과 일치는 `test_room_usage.py`에서 검사합니다.
 
+API의 `PreviewResult(offset, options)`와 `TriggerMagicConch(modName, options)`는 같은 호출별 답변 지정 규칙을 사용합니다. 지정한 답변은 `mc watch`의 일반 RNG 표본에서 제외하며 `excludedForced`로 따로 셉니다. `test_room_usage.py`는 사용 횟수·결과 좌표 저장·지정 실행·렌더 호출 좌표와 표시 수명을 검사합니다. 렌더러는 실제 Lua 모듈을 쓰고 엔진의 폰트/화면 API를 대역으로 사용하므로 새 표시 방식의 실제 게임 화면 검증과는 구분합니다. 구버전 비교 기준은 커밋 이후에도 변하지 않도록 `tests/fixtures/legacy_selector.lua`에 고정했습니다.
+
 ## 새 선택기의 실제 게임 검증: 2026-10-10
 
 사용자가 실행한 최신 `log.txt`에서 `ALL_DONE`까지 확인했습니다. 시작 시드 2067025391, 방 84, 층 1, 층 종류 1, 차원 0, 방 목록 ID 8, 사용 횟수 0입니다. 연속 사용 1,650,000회와 방 검사 3,084,080회, 합계 **4,734,080회**가 완료됐습니다. 이번 비교의 `rng`/`rng_sum`은 실제 Isaac RNG입니다.

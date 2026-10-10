@@ -345,8 +345,12 @@ Structure of the result table received in callback functions:
 |----------|---------|-------|--------------|
 | `RegisterCallback(callback, modName)` | Register callback | function, string | boolean |
 | `UnregisterCallback(modName)` | Remove callback | string | boolean |
-| `TriggerMagicConch(modName)` | Execute Magic Conch | string | table |
-| `PreviewResult(offset)` | Preview a future result in the current room without consuming a use | omitted or integer 0..1,000,000 | table or nil, error code |
+| `TriggerMagicConch(modName, options)` | Normal or overridden activation | string, optional table | table |
+| `PreviewResult(offset, options)` | Preview without consuming a use | optional integer 0..1,000,000, optional table | table or nil, error code |
+| `GetCurrentRoomUsage()` | Successful activations in the current room | - | number or nil, error code |
+| `GetResultPosition()` | Read the mode/coordinates for future result text | - | table or nil, error code |
+| `SetResultPosition(x, y)` | Set and save result text screen coordinates | number, number | boolean, error code |
+| `ResetResultPosition()` | Restore and save native HUD mode | - | boolean, error code |
 | `IsReady()` | Check API readiness | - | boolean |
 | `GetLastResult()` | Get last result | - | table/nil |
 | `GetCallbackInfo()` | Get registered callback info | - | table |
@@ -367,13 +371,58 @@ if api and api.IsReady() and type(api.PreviewResult) == "function" then
 end
 ```
 
-Call with a dot, not a colon. `offset` defaults to 0 (the next unconsumed use); 1 means the following use. Returns a fresh `{id, text, type, usageCount, useNumber, offset}` table. `usageCount` is the count before the forecast draw; `useNumber = usageCount + 1`.
+Call with a dot, not a colon. `offset` defaults to 0 (the next unconsumed use); 1 means the following use. Returns a fresh `{id, text, type, forced, usageCount, useNumber, offset}` table. `usageCount` is the count before the forecast draw; `useNumber = usageCount + 1`. Optional overrides follow the same rules as activation below.
 
 Previewing does not consume a use or RNG state, save data, activate effects, record diagnostic observations, or invoke callbacks. It works while disabled, busy, or at the room limit, but does not promise that activation is currently allowed. During an animation it forecasts the next unconsumed use, not the answer already in progress.
 
 The forecast matches a later successful `TriggerMagicConch` while the run, room, probability/forced-reply settings and usage count remain unchanged. Query again after intervening activations or settings changes. Changing language translates the text while preserving the ID. Other-room queries are not supported.
 
 Failure returns `nil, errorCode`: `API_NOT_READY`, `NO_ACTIVE_RUN`, `INVALID_OFFSET`, or `NO_RESPONSE`. Reload the updated mod before using this new function.
+
+### Room usage and result placement
+
+```lua
+local api = MagicConch.API -- after API readiness in an active run
+local used, errorCode = api.GetCurrentRoomUsage()
+local ok, errorCode = api.SetResultPosition(160, 80)
+local position = api.GetResultPosition()
+-- {mode="custom", x=160, y=80, anchor="top_left"}
+-- api.ResetResultPosition() -- restore native HUD
+```
+
+Usage includes successful normal and overridden activations. Rejected calls and previews do not consume a use. Failure returns `nil, "API_NOT_READY"` or `nil, "NO_ACTIVE_RUN"`.
+
+Position is the top-left of the first line in Isaac screen coordinates, not world coordinates. Finite numbers from 0 to 10,000, including fractions, are accepted; invalid inputs return `false, "INVALID_POSITION"` without changes. Coordinates are not clamped to the viewport. The calling mod should choose coordinates appropriate to the screen. Icon/counter placement is separate.
+
+Settings persist across restarts and apply to subsequent activations. In-progress responses keep their original placement/style. Native mode returns `{mode="hud"}` without invented x/y values; use custom mode to control coordinates. Custom mode uses the bundled Unicode font during `timing.display`: style 0 shows the response, style 1 also shows the type subtitle. Room transitions clear the text. Font failure falls back to native HUD; final callbacks and `GetLastResult().position` report this actual mode. `GetResultPosition()` still describes the setting for future activations.
+
+### Per-call response overrides
+
+Choose one example per activation; another activation while busy will be rejected.
+
+```lua
+local result = MagicConch.API.TriggerMagicConch("OtherMod", {type="positive"})
+-- Or pin a localized built-in answer:
+-- local result = MagicConch.API.TriggerMagicConch("OtherMod", {id="Yes"})
+-- Or supply text and a type:
+-- local result = MagicConch.API.TriggerMagicConch("OtherMod", {type="neutral", text="Wait here."})
+if not result.success then print(result.reason) end
+local forecast, errorCode = MagicConch.API.PreviewResult(0, {id="No"})
+```
+
+Supported options: `{type=...}`, `{id=...}`, or `{type=..., text=...}`. Omitted/empty options use normal selection. Types are case-insensitive positive/neutral/negative. IDs are case-sensitive and cannot be combined with other fields. Type-only overrides deterministically select a phrase from that type. Custom text must be nonblank valid UTF-8, a single line up to 256 codepoints, without tabs/newlines/control characters. Custom responses have no built-in ID.
+
+IDs: `Yes`, `Absolutely`, `Definitely`, `OfCourse`, `FollowTheConch`, `ConchKnowsAll`, `YouMay`, `Proceed`, `Nothing`, `Neither`, `IDontThinkSo`, `No`, `DontEvenAsk`, `NotToday`, `Forbidden`, `Impossible`, `AskAgainLater`, `UncertainTimes`, `MaybeSomeday`, `TryAgain`.
+
+Overrides take precedence over global forcedReply for that call without changing shared config. Success consumes one use and runs normal animation, type effects (including negative Delete Mode), and callbacks. Disabled/busy/cooldown/room-limit gates still apply. Subsequent normal draws use the advanced counter.
+
+`pendingResult`, callbacks and `GetLastResult()` include `id`, `forced`, and `position`. `forced=true` identifies a per-call override. Each returned result and callback gets a detached copy. Final positions reflect the actual renderer; pending positions describe the request.
+
+Invalid options consume neither a use nor cooldown. Activation returns `{success=false, reason=...}`; preview returns `nil, errorCode`. Codes: `INVALID_RESPONSE_OPTIONS`, `CONFLICTING_RESPONSE_OPTIONS`, `INVALID_RESPONSE_ID`, `INVALID_RESPONSE_TYPE`, `INVALID_RESPONSE_TEXT`. Activation also reports `ROOM_LIMIT` and `COOLDOWN`; disabled/busy failures retain descriptive reason strings.
+
+`mc watch` excludes per-call overrides from probability samples, recording `FORCED_EXCLUDED` and `excludedForced`. Global forcedReply remains in its own configuration segment.
+
+Rendering references: [Font.DrawStringUTF8](https://wofsauge.github.io/IsaacDocs/rep/Font.html#drawstringutf8), [HUD](https://wofsauge.github.io/IsaacDocs/rep/HUD.html).
 
 ### Important Precautions
 

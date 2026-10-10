@@ -240,9 +240,15 @@ function Diagnostics.Install(mod, lang)
     if mod.RNGDiagnostics then mod.RNGDiagnostics.Uninstall() end
     local job = nil
     local api = { lastReport = nil }
-    local watch = { enabled = false, segments = {}, n = 0 }
+    local watch = { enabled = false, segments = {}, n = 0, excludedForced = 0 }
     function api.Observe(response, source)
         if not watch.enabled then return end
+        -- Explicit per-call responses are decisions by another mod, not RNG samples.
+        if response.forced then
+            watch.excludedForced = watch.excludedForced + 1
+            Isaac.DebugString("[MC RNG WATCH] FORCED_EXCLUDED n=" .. watch.excludedForced .. " source=" .. tostring(source))
+            return
+        end
         local game, config = Game(), copyConfig(mod.Config)
         config.language = lang.getLanguageTable(config).code
         local expected = probabilities(config)
@@ -275,7 +281,7 @@ function Diagnostics.Install(mod, lang)
             tostring(source), response.type, response.text))
     end
     local function watchSummary()
-        log("WATCH samples=" .. watch.n .. " enabled=" .. tostring(watch.enabled))
+        log("WATCH samples=" .. watch.n .. " enabled=" .. tostring(watch.enabled) .. " excludedForced=" .. watch.excludedForced)
         for key, segment in pairs(watch.segments) do
             RoomTests.Describe("OBSERVED config=" .. key, segment.total, segment.expected, segment.pools, true)
             for name, groups in pairs(segment.groups) do
@@ -313,7 +319,7 @@ function Diagnostics.Install(mod, lang)
         if action == "watch" then
             if args[2] == "off" then watch.enabled = false; watchSummary()
             elseif args[2] == nil or args[2] == "on" then
-                watch = { enabled = true, segments = {}, n = 0 }
+                watch = { enabled = true, segments = {}, n = 0, excludedForced = 0 }
                 log("WATCH enabled with fresh counters. Draws go to log.txt; mc stats summarizes; mc watch off stops.")
             else log("Usage: mc watch [on|off]") end
             return
